@@ -1,4 +1,4 @@
-# ISO country flags svg collection - high quality vector graphics country flag icons
+# ISO country flags SVG collection - high quality vector graphics country flag icons
 
 ## Description
 This repository contains 248 country flag SVG icons as shown in the following image.
