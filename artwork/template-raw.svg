@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="768"
+   height="768"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="template-raw.svg">
+  <metadata
+     id="metadata13866">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPathFlag">
+      <rect
+         id="rect3918"
+         height="511"
+         x="0.5"
+         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
+         width="511"
+         y="0.5"
+         ry="57" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.65494792"
+     inkscape:cx="384"
+     inkscape:cy="384"
+     inkscape:document-units="px"
+     inkscape:current-layer="01"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="723"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <g
+     id="01"
+     inkscape:label="01"
+     style="display:inline"
+     transform="translate(128,128)">
+    <rect
+       id="mask"
+       height="512"
+       x="0"
+       style="fill:#0000ff;fill-opacity:1;stroke:none"
+       width="512"
+       y="0"
+       ry="57"
+       clip-path="url(#clipPathFlag)"
+       inkscape:label="#rect4203" />
+  </g>
+</svg>
