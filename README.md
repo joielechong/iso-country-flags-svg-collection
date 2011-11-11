@@ -1,17 +1,17 @@
 # ISO country flags SVG collection - high quality vector graphics country flag icons
 
 ## Description
-This repository contains 248 country flag SVG icons as shown in the following image.
+This repository contains 248 country flag SVG icons as shown in the following sheet:
 
 ![iso-country-flags-sheet-flat.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/iso-country-flags-sheet-flat.png "ISO country flags svg collection")
 
-You can build the above sheet and different styles using templates in the artwork directory: flat, simple, fancy, glossy:
+You can build the above icon sheet with different icon styles using templates in the artwork directory: flat, simple, fancy, glossy:
 
 ![templates.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/templates.png "Country flag icons templates")
 
-Simply type "make" to build png versions of the country flags contained in this collection. This will create about 320MB of data: flat, simple, fancy, glossy template based PNG files with the following resolutions: 512x512 (web), 256x256, 128x128, 96x96, 72x72, 64x64, 48x48, 36x36, 32x32, 24x24, 16x16.
+Simply type "make" to build PNG versions of the country flags contained in this collection. This will create about 320MB of data: flat, simple, fancy, glossy template based PNG files with the following resolutions: 512x512 (web), 256x256, 128x128, 96x96, 72x72, 64x64, 48x48, 36x36, 32x32, 24x24, 16x16.
 
-For example the results with the template "flat" applied to the "United States" country flag looks like follows:
+For example the results with the template "flat" applied to the "United States" country flag icon looks like follows:
 
 ![resolutions.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/resolutions.png "Country flag icon resoultions")
  
