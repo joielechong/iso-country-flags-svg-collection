@@ -27,7 +27,7 @@ Want to be featured in a gallery of apps using it? Then please send a screenshot
 
 ## License / Info
 
-The country flag icons in this repository were collected from Wikipedia Commons project during the [EUHackathon 2011](http://www.euhackathon.eu/). We did not find an up to date free collection of SVG vector graphics icons during the hack marathon. So we decided to build up this collection and share it with future EUHackathoners.
+The country flag icons in this repository were collected from Wikipedia Commons project during the [EUHackathon 2011](http://www.euhackathon.eu/). We did not find an up to date free collection of SVG vector graphics icons during the hack marathon. So we decided to build up this collection and share it here with future EUHackathoners and the Internet.
 
 Most of the country flag icons are licensed under the [Public Domain](http://en.wikipedia.org/wiki/Public_domain).
 
