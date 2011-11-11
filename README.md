@@ -25,6 +25,11 @@ For converting the SVG files to different formats using different templates, you
 
 Want to be featured in a gallery of apps using it? Then please send a screenshot and details of your app to [Jakob Flierl](https://github.com/koppi).
 
+### examples
+
+* Google Earth - G+ users of the world [KMZ file](http://goo.gl/YJjv3) ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/example-google-earth.png) 
+* Google Maps - G+ users of the world [picasaweb album](http://goo.gl/mHyJb) ![G+ users of the world picasaweb album](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/example-google-maps.png)
+
 ## License / Info
 
 The country flag icons in this repository were collected from Wikipedia Commons project during the [EUHackathon 2011](http://www.euhackathon.eu/). We did not find an up to date free collection of SVG vector graphics icons during the hack marathon. So we decided to build up this collection and share it here with future EUHackathoners and the Internet.
