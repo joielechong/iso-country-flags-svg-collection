@@ -16,7 +16,7 @@ For example the result with the template "flat" applied to the "United States" c
 ![resolutions.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/resolutions.png "Country flag icon resoultions")
  
 ## Requirements
-For converting the SVG files to different formats using different layouts, you need the following software:
+For converting the SVG files to different formats using different templates, you need the following software:
 
 * Inkscape [here](http://www.inkscape.org/).
 * ImageMagick [here](http://www.imagemagick.org/).
