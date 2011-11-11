@@ -5,7 +5,7 @@ This repository contains 248 country flag SVG icons as shown in the following im
 
 ![iso-country-flags-sheet-flat.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/iso-country-flags-sheet-flat.png "ISO country flags svg collection")
 
-You can build this sheet and different styles using templates in the artwork directory: flat, simple, fancy, glossy:
+You can build the above sheet and different styles using templates in the artwork directory: flat, simple, fancy, glossy:
 
 ![templates.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/templates.png "Country flag icons templates")
 
