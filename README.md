@@ -51,6 +51,6 @@ Modifications to support this by [Tit Petric](https://github.com/titpetric).
 
 ## TODO
 
-Support non 1:1 ratio icons (like 3:2, 4:3, 16:9) for some special use cases (exceptions)
-Define generated resolutions per svg folder, so we can limit the amount of created output.
-Generate a browsable index.html file per folder, so we might check the icons visually.
+* Support non 1:1 ratio icons (like 3:2, 4:3, 16:9) for some special use cases (exceptions)
+* Define generated resolutions per svg folder, so we can limit the amount of created output.
+* Generate a browsable index.html file per folder, so we might check the icons visually.
