@@ -29,11 +29,11 @@ Want to be featured in a gallery of apps using it? Then please send a screenshot
 
 * Google Earth - [G+ users of the world - KMZ file](http://goo.gl/YJjv3):
 
-  ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/example-google-earth.png)
+  ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-earth.png)
 
 * Google Maps - [G+ users of the world - PicasaWeb album](http://goo.gl/mHyJb):
 
-  ![G+ users of the world picasaweb album](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/example-google-maps.png) Notice: you first have to zoom out to see anything on the world map (it seems, that there is a bug in Google Maps, which prevents to show the country icons).
+  ![G+ users of the world picasaweb album](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-maps.png) Notice: you first have to zoom out to see anything on the world map (it seems, that there is a bug in Google Maps, which prevents to show the country icons).
 
 ## License / Info
 
