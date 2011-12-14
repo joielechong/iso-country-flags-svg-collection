@@ -3,17 +3,17 @@
 ## Description
 This repository contains 248 country flag SVG icons as shown in the following sheet:
 
-![iso-country-flags-sheet-flat.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/iso-country-flags-sheet-flat.png "ISO country flags svg collection")
+![iso-country-flags-sheet-flat.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/iso-country-flags-sheet-flat.png "ISO country flags svg collection")
 
 You can build the above icon sheet with different icon styles using templates in the artwork directory: flat, simple, fancy, glossy:
 
-![templates.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/templates.png "Country flag icons templates")
+![templates.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/templates.png "Country flag icons templates")
 
 Simply type "make" to build PNG versions of the country flags contained in this collection. This will create about 320MB of data: flat, simple, fancy, glossy template based PNG files with the following resolutions: 512x512 (web), 256x256, 128x128, 96x96, 72x72, 64x64, 48x48, 36x36, 32x32, 24x24, 16x16.
 
 For example the results with the template "flat" applied to the "United States" country flag icon looks like follows:
 
-![resolutions.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/resolutions.png "Country flag icon resoultions")
+![resolutions.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/resolutions.png "Country flag icon resoultions")
  
 ## Requirements
 For converting the SVG files to different formats using different templates, you need the following software:
@@ -43,15 +43,13 @@ Most of the country flag icons are licensed under the [Public Domain](http://en.
 
 ## Building your own icon sets
 
-If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under 'svg/', and drop your .svg files in there. Run make to (re-)generate the output.
+If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under [svg/](https://github.com/koppi/iso-country-flags-svg-collection/tree/master/svg), and drop your .svg files in there. Run make to (re-)generate the output.
 
 Country flag examples use a surface area of 512x512, but this size is not a requirement, but be sure to keep the 1:1 ratio for best results.
 
 ## TODO
 
-* Work in progress (taken by @koppi,  2011-12-12): Support non 1:1 ratio icons (like 3:2, 4:3, 16:9) for some special use cases (exceptions)
-* Define generated resolutions per svg folder, so we can limit the amount of created output.
-* Generate a browsable index.html file per folder, so we might check the icons visually.
+We try to keep the TODO list short. You can [browse issues related to iso-country-flags-svg-collection](https://github.com/koppi/iso-country-flags-svg-collection/issues) to see, what's being worked on.
 
 ## Authors
 
