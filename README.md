@@ -49,7 +49,7 @@ Country flag examples use a surface area of 512x512, but this size is not a requ
 
 ## TODO
 
-We try to keep the TODO list short. You can [browse issues]](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
+We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
 
 ## Authors
 
