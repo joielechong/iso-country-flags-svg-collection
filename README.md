@@ -47,10 +47,13 @@ If you want to build your own icon sets with the same templates used for the fla
 
 Country flag examples use a surface area of 512x512, but this size is not a requirement, but be sure to keep the 1:1 ratio for best results.
 
-Modifications to support this by [Tit Petric](https://github.com/titpetric).
-
 ## TODO
 
-* Support non 1:1 ratio icons (like 3:2, 4:3, 16:9) for some special use cases (exceptions)
+* Work in progress (taken by @koppi,  2011-12-12): Support non 1:1 ratio icons (like 3:2, 4:3, 16:9) for some special use cases (exceptions)
 * Define generated resolutions per svg folder, so we can limit the amount of created output.
 * Generate a browsable index.html file per folder, so we might check the icons visually.
+
+## Authors
+
+* Initial import of the iso-country-flags-collection to github - [Jakob Flierl](https://github.com/koppi).
+* Makefile based build system - [Tit Petric](https://github.com/titpetric). (See: "Building your own icon sets" above.)
