@@ -12,7 +12,7 @@ do
 	((COUNT++))
 done
 
-MESSAGE="Building $DIR-$STYLE/$RES graphics (step 3/3) ..."
+MESSAGE="Building $DIR-$STYLE/$RES graphics (step 3/4) ..."
 
 printf "T := $COUNT\n\n"
 
@@ -41,6 +41,6 @@ do
 	# relative path from Makefile folder to build folder
 	printf "$DIR-$STYLE/res-$RES/$FILE: $DIR-$STYLE/web/$FILE\n"
 	# -label %s: assigns label to image, removed as not used
-	printf "\t@\$(ECHO)\n\t@printf \" $MESSAGE\\r\"\n\t@convert -scale $RES \$< \$@\n\n"
+	printf "\t@\$(ECHO)\n\t@printf \" $MESSAGE\\r\"\n\t@convert -scale $RES\! \$< \$@\n\n"
 	((INDEX++))
 done
