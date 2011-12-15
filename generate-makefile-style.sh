@@ -12,7 +12,7 @@ do
 	((COUNT++))
 done
 
-MESSAGE="Building $DIR-$STYLE/$RES graphics (step 3/3) ..."
+MESSAGE="Building $DIR-$STYLE/$RES graphics (step 3/4) ..."
 
 printf "T := $COUNT\n\n"
 

@@ -14,7 +14,7 @@ COUNT=`cat /tmp/svg_list | wc -l`
 
 printf "T := $COUNT\n\n" >> $GENMAKEFILE
 
-MESSAGE="Converting .svg files to png (step 1/3) ..."
+MESSAGE="Converting .svg files to png (step 1/4) ..."
 
 printf "all: finish\n\nfolders:\n" >> $GENMAKEFILE
 for DIR in $DIRS
@@ -38,8 +38,8 @@ do
 		./generate-makefile-masks.sh build/$DIR $STYLE > build/$DIR-$STYLE/Makefile.masks
 		for RES in $RESOLUTIONS
 		do
-			printf "" > build/$DIR-$STYLE/Makefile.$RES
-			./generate-makefile-style.sh build/$DIR $STYLE $RES >> build/$DIR-$STYLE/Makefile.$RES
+			./generate-makefile-style.sh build/$DIR $STYLE $RES > build/$DIR-$STYLE/Makefile.$RES
+			./generate-makefile-sheets.sh build/$DIR $STYLE $RES > build/$DIR-$STYLE/Makefile.sheets.$RES
 		done
 	done
 	rm -rf build/$DIR/index
@@ -47,7 +47,20 @@ done
 
 # entry point Makefile
 
-printf "all: masks\n" > Makefile.sources
+printf "all: resize\n" > Makefile.sources
+
+for DIR in $DIRS
+do
+	for STYLE in $STYLES
+	do
+		for RES in $RESOLUTIONS
+		do
+			printf "\t@\$(MAKE) --no-print-directory -f build/$DIR-$STYLE/Makefile.sheets.$RES\n" >> Makefile.sources
+		done
+	done
+done
+
+printf "\nresize: masks\n" >> Makefile.sources
 
 for DIR in $DIRS
 do

@@ -13,7 +13,7 @@ do
 	((COUNT++))
 done
 
-MESSAGE="Building $DIR-$STYLE/web button templates (step 2/3) ..."
+MESSAGE="Building $DIR-$STYLE/web button templates (step 2/4) ..."
 
 printf "T := $COUNT\n\n"
 
