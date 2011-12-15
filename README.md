@@ -9,7 +9,7 @@ You can build the above icon sheet with different icon styles using templates in
 
 ![templates.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/templates.png "Country flag icons templates")
 
-Simply type "make" to build PNG versions of the country flags contained in this collection. This will create about 320MB of data: flat, simple, fancy, glossy template based PNG files with the following resolutions: 512x512 (web), 256x256, 128x128, 96x96, 72x72, 64x64, 48x48, 36x36, 32x32, 24x24, 16x16.
+Simply type "make" to build PNG versions of the country flags contained in this collection. This will create about 320MB of data: flat, simple, fancy, glossy template based PNG files with the following resolutions: "512x512 (web), 256x256, 128x128, 96x96, 72x72, 64x64, 48x48, 36x36, 32x32, 24x24, 16x16".
 
 For example the results with the template "flat" applied to the "United States" country flag icon looks like follows:
 
@@ -49,7 +49,7 @@ Country flag examples use a surface area of 512x512, but this size is not a requ
 
 ### Building custom resolutions
 
-By default, the project Makefile generates icon sets with the following resolutions: "256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16". You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file "svg/country-squared.resolutions", which looks like follows:
+By default, the project Makefile generates icon sets with the following resolutions: "512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16". You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file "svg/country-squared.resolutions", which looks like follows:
 
 ```
 5x5 8x8
