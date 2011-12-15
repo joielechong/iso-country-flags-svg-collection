@@ -1,6 +1,7 @@
 #!/bin/bash
 find svg/ -name '*.svg' -type f | perl -pi -e 's/^([^\/]+)\/([^\/]+)\/(.*).svg/\1 \2 \3/' > /tmp/svg_list
 RESOLUTIONS_DEFAULT="256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16"
+RESOLUTIONS=""
 STYLES="fancy flat glossy simple"
 DIRS=`cat /tmp/svg_list | awk '{print $2}' | sort | uniq`
 
@@ -36,9 +37,9 @@ do
 	do
 		mkdir -p build/$DIR-$STYLE
 		./generate-makefile-masks.sh build/$DIR $STYLE > build/$DIR-$STYLE/Makefile.masks
-		RESOLUTIONS=$DEFAULT_RESOLUTIONS
-		if [ -f "build/$DIR.resolutions" ]; then
-			RESOLUTIONS=`cat build/$DIR.resolutions`
+		RESOLUTIONS=$RESOLUTIONS_DEFAULT
+		if [ -f "svg/$DIR.resolutions" ]; then
+			RESOLUTIONS=`cat svg/$DIR.resolutions`
 		fi
 		for RES in $RESOLUTIONS
 		do
@@ -57,9 +58,9 @@ for DIR in $DIRS
 do
 	for STYLE in $STYLES
 	do
-		RESOLUTIONS=$DEFAULT_RESOLUTIONS
-		if [ -f "build/$DIR.resolutions" ]; then
-			RESOLUTIONS=`cat build/$DIR.resolutions`
+		RESOLUTIONS=$RESOLUTIONS_DEFAULT
+		if [ -f "svg/$DIR.resolutions" ]; then
+			RESOLUTIONS=`cat svg/$DIR.resolutions`
 		fi
 		for RES in $RESOLUTIONS
 		do
@@ -74,9 +75,9 @@ for DIR in $DIRS
 do
 	for STYLE in $STYLES
 	do
-		RESOLUTIONS=$DEFAULT_RESOLUTIONS
-		if [ -f "build/$DIR.resolutions" ]; then
-			RESOLUTIONS=`cat build/$DIR.resolutions`
+		RESOLUTIONS=$RESOLUTIONS_DEFAULT
+		if [ -f "svg/$DIR.resolutions" ]; then
+			RESOLUTIONS=`cat svg/$DIR.resolutions`
 		fi
 		for RES in $RESOLUTIONS
 		do
