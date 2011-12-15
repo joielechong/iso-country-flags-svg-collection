@@ -47,6 +47,16 @@ If you want to build your own icon sets with the same templates used for the fla
 
 Country flag examples use a surface area of 512x512, but this size is not a requirement, but be sure to keep the 1:1 ratio for best results.
 
+### Building custom resolutions
+
+By default, the project Makefile generates icon sets with the following resolutions: "256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16". You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file "svg/country-squared.resolutions", which looks like follows:
+
+```
+5x5 8x8
+```
+
+Typing "make" will then generate icon sets with the resolutions defined above for all country-squared icons.
+
 ## TODO
 
 We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
