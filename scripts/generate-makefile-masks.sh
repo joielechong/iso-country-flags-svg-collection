@@ -42,8 +42,7 @@ for FILE in $FILES
 do
 	# relative path from Makefile folder to build folder
 	printf "$DIR-$STYLE/web/$FILE: $DIR/orig/$FILE\n"
-	printf "\t@\$(ECHO)\n\t@printf \" $MESSAGE\\r\"\n\t@convert \$< -alpha set -gravity center -scale 403x403 -extent 512x512 artwork/mask.png -compose DstIn -composite artwork/fore-$STYLE.png -compose Over -gravity South-East -composite \( -scale 512 artwork/\$(logo) \) -compose Over -composite artwork/back-shadow.png -compose DstOver -composite \$@\n\n"
-#	printf "\t@printf \"$INDEX/$COUNT\\\r\"\n\t@convert \$< -alpha set -gravity center -scale 403x403 -extent 512x512 artwork/mask.png -compose DstIn -composite artwork/fore-$STYLE.png -compose Over -gravity South-East -composite \( -scale 512 artwork/\$(logo) \) -compose Over -composite artwork/back-shadow.png -compose DstOver -composite \$@\n\n"
+	printf "\t@\$(ECHO)\n\t@printf \" $MESSAGE\\r\"\n\t@convert \$< -alpha set -gravity center -scale 403x403 -extent 512x512 artwork/common/mask.png -compose DstIn -composite artwork/styles/$STYLE/fore.png -compose Over -gravity South-East -composite \( -scale 512 artwork/common/logo.png \) -compose Over -composite artwork/common/back-shadow.png -compose DstOver -composite \$@\n\n"
 	((INDEX++))
 done
 
@@ -51,7 +50,6 @@ for FILE in $FILES
 do
 	# relative path from Makefile folder to build folder
 	printf "$DIR-$STYLE/web-noshadow/$FILE: $DIR/orig/$FILE\n"
-	printf "\t@\$(ECHO)\n\t@printf \" $MESSAGE\\r\"\n\t@convert \$< -alpha set -gravity center -scale 403x403 -extent 512x512 artwork/mask.png -compose DstIn -composite artwork/fore-$STYLE.png -compose Over -gravity South-East -composite \( -scale 512 artwork/\$(logo) \) -compose Over -composite artwork/back-empty.png -compose DstOver -composite \$@\n\n"
-#	printf "\t@printf \"$INDEX/$COUNT\\\r\"\n\t@convert \$< -alpha set -gravity center -scale 403x403 -extent 512x512 artwork/mask.png -compose DstIn -composite artwork/fore-$STYLE.png -compose Over -gravity South-East -composite \( -scale 512 artwork/\$(logo) \) -compose Over -composite artwork/back-empty.png -compose DstOver -composite \$@\n\n"
+	printf "\t@\$(ECHO)\n\t@printf \" $MESSAGE\\r\"\n\t@convert \$< -alpha set -gravity center -scale 403x403 -extent 512x512 artwork/common/mask.png -compose DstIn -composite artwork/styles/$STYLE/fore.png -compose Over -gravity South-East -composite \( -scale 512 artwork/common/logo.png \) -compose Over -composite artwork/common/back-empty.png -compose DstOver -composite \$@\n\n"
 	((INDEX++))
 done
