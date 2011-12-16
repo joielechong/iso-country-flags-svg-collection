@@ -7,7 +7,9 @@ fi
 find svg/ -name '*.svg' -type f | perl -pi -e 's/^([^\/]+)\/([^\/]+)\/(.*).svg/\1 \2 \3/' > /tmp/svg_list
 RESOLUTIONS_DEFAULT="256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16"
 RESOLUTIONS=""
-STYLES="fancy flat glossy simple"
+STYLES_DEFAULT=`ls -d artwork/styles/* | sed "s/.*\///g"`
+STYLES=""
+
 DIRS=`cat /tmp/svg_list | awk '{print $2}' | sort | uniq`
 
 GENMAKEFILE="build/Makefile.svg2png"
@@ -37,6 +39,10 @@ for DIR in $DIRS
 do
 	mkdir -p build/$DIR
 	find svg/$DIR -type f -name '*.svg' | perl -pi -e 's/.*\///g' | perl -pi -e 's/\.svg$/.png/g' > build/$DIR/index
+	STYLES=$STYLES_DEFAULT
+	if [ -f "svg/$DIR.styles" ]; then
+		STYLES=`cat svg/$DIR.styles`
+	fi
 	for STYLE in $STYLES
 	do
 		mkdir -p build/$DIR-$STYLE
@@ -62,6 +68,10 @@ printf "all: resize\n" > $GENMAKEFILE
 
 for DIR in $DIRS
 do
+	STYLES=$STYLES_DEFAULT
+	if [ -f "svg/$DIR.styles" ]; then
+		STYLES=`cat svg/$DIR.styles`
+	fi
 	for STYLE in $STYLES
 	do
 		RESOLUTIONS=$RESOLUTIONS_DEFAULT
@@ -79,6 +89,10 @@ printf "\nresize: masks\n" >> $GENMAKEFILE
 
 for DIR in $DIRS
 do
+	STYLES=$STYLES_DEFAULT
+	if [ -f "svg/$DIR.styles" ]; then
+		STYLES=`cat svg/$DIR.styles`
+	fi
 	for STYLE in $STYLES
 	do
 		RESOLUTIONS=$RESOLUTIONS_DEFAULT
@@ -96,6 +110,10 @@ printf "\nmasks: sources\n" >> $GENMAKEFILE
 
 for DIR in $DIRS
 do
+	STYLES=$STYLES_DEFAULT
+	if [ -f "svg/$DIR.styles" ]; then
+		STYLES=`cat svg/$DIR.styles`
+	fi
 	for STYLE in $STYLES
 	do
 		printf "\t@\$(MAKE) --no-print-directory -f build/$DIR-$STYLE/Makefile.masks\n" >> $GENMAKEFILE
