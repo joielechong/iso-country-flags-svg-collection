@@ -2,7 +2,7 @@
 DIR=$1
 STYLE=$2
 RES=$3
-./generate-makefile-headers.sh
+./scripts/generate-makefile-headers.sh
 
 FILES=`cat $DIR/index`
 

@@ -3,7 +3,7 @@ DIR=$1
 STYLE=$2
 RES=$3
 
-./generate-makefile-headers.sh
+./scripts/generate-makefile-headers.sh
 
 MESSAGE="Building $DIR-$STYLE/$RES Sheets (step 4/4) ..."
 
