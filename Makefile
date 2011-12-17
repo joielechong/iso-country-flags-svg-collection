@@ -12,6 +12,9 @@ png-country-squared: svg-country-squared
 svg-country-squared:
 	scripts/svg-country-squared.sh
 
+xplanet:
+	scripts/build.pl --cmd xplanet --json iso-3166-1.json --out build --res 16x16 --lang all
+
 clean:
 	/bin/rm -rf build/svg-*/*.svg
 	/bin/rm -rf build/png-*/*.png
