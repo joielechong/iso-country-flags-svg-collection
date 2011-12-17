@@ -9,6 +9,8 @@
 use strict;
 use warnings;
 
+use utf8;
+
 use Data::Dumper;
 
 use File::Find;
@@ -91,6 +93,8 @@ my $jsonDB;
 
 if (defined $json) {
     $jsonDB = readJson($json);
+
+    if (!defined $jsonDB) {usage("Error reading json db. Exiting", 1)}
 }
 
 if ($cmd eq "xplanet") {
@@ -116,10 +120,11 @@ if ($cmd eq "xplanet") {
     my @langs;
 
     if (!defined $lang or $lang eq "all") {
-	# TODO add translated language names here
-	push @langs, "en";
+	foreach my $l (split(",", "af,sq,ar,be,bg,ca,zh,zh-TW,hr,cs,da,nl,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi")) {
+	    push @langs, $l;
+	}
     } else {
-	foreach my $l (split(",",$lang)) {
+	foreach my $l (split(",", $lang)) {
 	    push @langs, $l;
 	}
     }
@@ -128,8 +133,6 @@ if ($cmd eq "xplanet") {
 	usage("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\". Exiting.",1);
     }
 
-    my $content = "";
-
     print STDERR " generating:\n";
     foreach my $l (@langs) {
 
@@ -137,6 +140,7 @@ if ($cmd eq "xplanet") {
 
 	print STDERR "  ".$file."\n";
 
+	my $content = "";
 	foreach my $co (sort keys %d) {
 	    my $img = lc($co);
 	    
@@ -144,11 +148,16 @@ if ($cmd eq "xplanet") {
 	    my $y = $d{$co}{GeoPt}[1];
 	    
 	    my $name = $d{$co}{Name};
+
+	    if (defined $d{$co}{Names}{$l}) {
+		$name = $d{$co}{Names}{$l}; # get translated country name
+		print STDERR "  ".$img." ".$name."\n";
+	    }
 	    
 	    $content .= sprintf "%05.2f %05.2f\t\"%s\"\t\timage=res-%sx%s/%s.png\n", $x, $y, $name, $resX, $resY, $img;
 	}
 
-	writeFile($file, $content);
+	writeFile($file, $content, ":utf8");
     }
     print STDERR " done.\n";
 }
@@ -436,6 +445,7 @@ sub fileAge {
 sub writeFile {
     my $fName = shift;
     my $content = shift;
+    my $binmode = shift;
 
     my($filename, $dirs, $suffix) = fileparse($fName);
 
@@ -444,7 +454,9 @@ sub writeFile {
     }
 
     open FILE, ">$fName" or die "Error writing file $fName: $!";
-
+    if (defined $binmode) {
+	binmode(FILE, $binmode);
+    }
     print FILE $content;
     close FILE;
 }
