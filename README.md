@@ -63,6 +63,8 @@ Typing "make" will then generate icon sets with the resolutions defined above fo
 
 ## TODO
 
+Notice: the repository gets currently (as of 2012-12-17) lots of changes. If you want to change/add something, please first contact [Jakob Flierl](https://github.com/koppi).
+
 We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
 
 ## Authors
