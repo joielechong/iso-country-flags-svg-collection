@@ -59,6 +59,8 @@ my $imgSvg; # rel. image path to svg file
 my $imgFore; my $imgFlag; my $imgBack; # images for template command
 my $mask; # [D+D+DxD] mask spec for template command
 
+my $zoom; # for svg2png
+
 GetOptions(
     "cmd=s" => \$cmd,
     "svg=s" => \$imgSvg,
@@ -71,6 +73,7 @@ GetOptions(
     "flag=s" => \$imgFlag,
     "mask=s" => \$mask,
     "back=s" => \$imgBack,
+    "zoom=f" => \$zoom,
     );
 
 if (!$cmd) { usage("missing  --cmd. Exiting.", 1); }
@@ -78,10 +81,14 @@ if ($cmd eq "help") { usage(); }
 if ($cmd !~ /^($cmds)$/) { usage("valid --cmd [$cmds]", 1); }
 
 sub svg2png {
-    my ($in, $out, $w, $h) = @_;
+    my ($in, $out, $w, $h, $zoom) = @_;
 
-    return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." ".$in;
-#    return "inkscape -w ".$w." -h ".$h." --export-png=".$out. " ".$in;
+    if (defined $zoom) {
+	return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." -z ".$zoom." ".$in;
+#       return "inkscape -w ".$w." -h ".$h." --export-png=".$out. " ".$in;
+    } else {
+	return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." ".$in;
+    }
 }
 
 sub cmd_exec {
@@ -300,7 +307,7 @@ if ($cmd eq "svg2png") {
 
 	    $path =~ s#/#-#g; # keep things simple, make only 1 sub-directory.
 	    my $png_out = $out."/".$path."res-".$rx."x".$ry."/".$name.$suffix;
-	    my $cmd = svg2png($s, $png_out, $rx, $ry);
+	    my $cmd = svg2png($s, $png_out, $rx, $ry, $zoom);
 
 	    my ($n, $p, $s) = fileparse($png_out, (".png"));
 	    if (! -d $p) {
