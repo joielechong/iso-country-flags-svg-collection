@@ -18,6 +18,8 @@ use File::Basename;
 
 use Getopt::Long qw(GetOptions);
 
+use JSON -support_by_pp;
+
 use Term::ANSIColor qw(:constants);
 
 use XML::LibXML;
@@ -27,7 +29,7 @@ binmode(STDERR, ":utf8");
 
 local $| = 1; # auto flush
 
-my $cmds = "help|svg2png|template";
+my $cmds = "help|svg2png|template|xplanet";
 my $stys = "flat|simple|fancy|glossy";
 
 sub usage {
@@ -61,6 +63,9 @@ my $mask; # [D+D+DxD] mask spec for template command
 
 my $zoom; # for svg2png
 
+# for xplanet
+my $json; my $lang;
+
 GetOptions(
     "cmd=s" => \$cmd,
     "svg=s" => \$imgSvg,
@@ -74,34 +79,78 @@ GetOptions(
     "mask=s" => \$mask,
     "back=s" => \$imgBack,
     "zoom=f" => \$zoom,
+    "json=s" => \$json,
+    "lang=s" => \$lang,
     );
 
 if (!$cmd) { usage("missing  --cmd. Exiting.", 1); }
 if ($cmd eq "help") { usage(); }
 if ($cmd !~ /^($cmds)$/) { usage("valid --cmd [$cmds]", 1); }
 
-sub svg2png {
-    my ($in, $out, $w, $h, $zoom) = @_;
+my $jsonDB;
 
-    if (defined $zoom) {
-	return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." -z ".$zoom." ".$in;
-#       return "inkscape -w ".$w." -h ".$h." --export-png=".$out. " ".$in;
-    } else {
-	return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." ".$in;
-    }
+if (defined $json) {
+    $jsonDB = readJson($json);
 }
 
-sub cmd_exec {
-    my $cmd = shift;
-
-    my $out = `$cmd`; my $ret = ${^CHILD_ERROR_NATIVE};
-
-    if ($ret eq 0) {
-	print STDERR " ".$cmd." # ".GREEN."ok".RESET."\n";
-    } else {
-	print STDERR " ".$cmd." # ".RED."fail".RESET.": ".$out."\n";
-	exit 1;
+if ($cmd eq "xplanet") {
+    if (!defined $jsonDB) {
+	usage("missing --json [file], eg.: iso-3166-1.json. Exiting.",1);
     }
+
+    if (!$out)   {usage("missing --out [dir], eg.: build. Exiting.",1)}
+    if (!-d $out){usage("--out dir \"".$out."\" does not exist. Exiting.",1)}
+
+    if (!$res) { usage("missing --res [DxD], eg.: 16x16. Exiting.", 1) }
+    my ($resX,$resY) = $res =~ m#(\d+)x(\d+)#;
+
+    if (!defined $resX or $resX eq 0){
+	usage("invalid res: \"".$res."\", width  must be > 0.",1)
+    }
+    if (!defined $resY or $resY eq 0){
+	usage("invalid res: \"".$res."\", height must be > 0.",1)
+    }
+
+    my %d = %{$jsonDB->{Results}};
+
+    my @langs;
+
+    if (!defined $lang or $lang eq "all") {
+	# TODO add translated language names here
+	push @langs, "en";
+    } else {
+	foreach my $l (split(",",$lang)) {
+	    push @langs, $l;
+	}
+    }
+
+    if (!scalar @langs) {
+	usage("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\". Exiting.",1);
+    }
+
+    my $content = "";
+
+    print STDERR " generating:\n";
+    foreach my $l (@langs) {
+
+	my $file = $out."/xplanet/markers/iso-country-code-".$l; 
+
+	print STDERR "  ".$file."\n";
+
+	foreach my $co (sort keys %d) {
+	    my $img = lc($co);
+	    
+	    my $x = $d{$co}{GeoPt}[0];
+	    my $y = $d{$co}{GeoPt}[1];
+	    
+	    my $name = $d{$co}{Name};
+	    
+	    $content .= sprintf "%05.2f %05.2f\t\"%s\"\t\timage=res-%sx%s/%s.png\n", $x, $y, $name, $resX, $resY, $img;
+	}
+
+	writeFile($file, $content);
+    }
+    print STDERR " done.\n";
 }
 
 my @svgs = ();
@@ -412,6 +461,43 @@ sub readFile {
     close FILE;
 
     return $string;
+}
+
+sub readJson {
+    my $file = shift;
+
+    my $content = readFile($file);
+    if (defined $content) {
+	my $json = JSON->new->allow_nonref->utf8->relaxed->escape_slash->loose->allow_singlequote->allow_barekey->decode($content);
+	if ($@){ usage("Error reading json: $@", 1) }
+	return $json;
+    } else {
+	usage("Error reading ".$file.". Exiting.", 1);
+    }
+}
+
+sub svg2png {
+    my ($in, $out, $w, $h, $zoom) = @_;
+
+    if (defined $zoom) {
+	return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." -z ".$zoom." ".$in;
+#       return "inkscape -w ".$w." -h ".$h." --export-png=".$out. " ".$in;
+    } else {
+	return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." ".$in;
+    }
+}
+
+sub cmd_exec {
+    my $cmd = shift;
+
+    my $out = `$cmd`; my $ret = ${^CHILD_ERROR_NATIVE};
+
+    if ($ret eq 0) {
+	print STDERR " ".$cmd." # ".GREEN."ok".RESET."\n";
+    } else {
+	print STDERR " ".$cmd." # ".RED."fail".RESET.": ".$out."\n";
+	exit 1;
+    }
 }
 
 1;

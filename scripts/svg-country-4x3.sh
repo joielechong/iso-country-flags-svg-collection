@@ -1,6 +1,6 @@
 #!/bin/sh
 
-scripts/build.pl --cmd svg2png --out build --res 640x480 \
+scripts/build.pl --cmd svg2png --out build --res 1280x960 --zoom 2.0 \
                  --svgdir svg/country-4x3
 
 STYLE="simple flat fancy glossy"
@@ -18,7 +18,7 @@ for f in $(cd svg/country-4x3; ls -1 *.svg); do
 	    --back back.png \
 	    --flag $PNG \
 	    --fore fore.png \
-	    --svgdir ../svg-country-4x3-res-640x480 --svg $f; \
+	    --svgdir ../svg-country-4x3-res-1280x960 --svg $f; \
     done
     echo " ok.";
 done
