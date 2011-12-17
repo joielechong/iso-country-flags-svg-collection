@@ -18,7 +18,7 @@ For example the results with the template "flat" applied to the "United States" 
 ## Requirements
 For converting the SVG files to different formats using different templates, you need the following software:
 
-* Inkscape [here](http://www.inkscape.org/).
+* Perl Modules: XML::LibXML, JSON.
 * ImageMagick [here](http://www.imagemagick.org/).
 
 ## Are you using this country flags collection?
