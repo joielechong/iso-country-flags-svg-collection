@@ -12,7 +12,7 @@ png-country-squared: svg-country-squared
 svg-country-squared:
 	scripts/svg-country-squared.sh
 
-sheet:
+sheet: png-country-squared png-country-4x2
 	scripts/sheet.sh
 
 xplanet:
