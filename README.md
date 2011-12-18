@@ -85,6 +85,10 @@ You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file
 
 Typing "make" will then generate icon sets with the resolutions defined above for all country-squared icons.
 
+## Generating the sheet files
+
+Type "make sheet" to generate icon sheets for the icon sets created above.
+
 ## Adding custom build targets
 
 You can add your build target commands to the Makefile.local, which gets invoked with the "all" target of the main Makefile.
