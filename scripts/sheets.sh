@@ -14,7 +14,8 @@ for f in $(cd build; ls -d1 png-*); do
 #	    echo "   $bg";
 	    OUTPD="build/$f/sheets";
 	    FLAGS="build/$f/$res/??.png";
-	    SHEET="$OUTPD/Sheet-$bg-$res.png";
+	    SHEET="$OUTPD/$bg-$res.png";
+	    RES=`echo $res | sed s/^res-//g`
 
 	    mkdir -p $OUTPD;
 	    echo "  $SHEET";
@@ -23,6 +24,7 @@ for f in $(cd build; ls -d1 png-*); do
 		-limit memory 64 -limit map 128 \
 		-font DroidSans-Bold.ttf \
 		-pointsize 8 \
+		-geometry $RES! \
 		$FLAGS \
 		-label "%f" \
 		-fill Black \
