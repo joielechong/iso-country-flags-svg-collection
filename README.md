@@ -88,7 +88,7 @@ which looks like follows:
 5x5 8x8
 ```
 
-Typing "make" will then generate icon sets with the resolutions defined above for all country-squared icons.
+Typing "make" will then generate icon sets with the resolutions defined above for all country-squared/4x3 icons.
 
 ## Generating the icon sheet files
 
