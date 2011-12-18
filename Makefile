@@ -1,4 +1,4 @@
-all: png-country-4x2 png-country-squared
+all: local png-country-4x2 png-country-squared
 
 png-country-4x2: svg-country-4x2
 	scripts/png-country-4x2.sh
@@ -20,3 +20,4 @@ clean:
 	/bin/rm -rvf build/png-*/res-*
 	/bin/rm -rvf build/xplanet
 
+include Makefile.local
