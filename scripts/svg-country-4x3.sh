@@ -18,7 +18,7 @@ for f in $(cd svg/country-4x3; ls -1 *.svg); do
 	    --back back.png \
 	    --flag $PNG \
 	    --fore fore.png \
-	    --svgdir ../svg-country-4x3-res-1280x960 --svg $f; \
+	    --svgdir ../png-country-4x3/res-1280x960 --svg $f; \
     done
     echo " ok.";
 done
