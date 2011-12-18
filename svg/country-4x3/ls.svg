@@ -21,9 +21,9 @@
   <sodipodi:namedview
      id="base"
      showgrid="false"
-     inkscape:zoom="0.30856401"
-     inkscape:cx="531.49426"
-     inkscape:cy="372.04724"
+     inkscape:zoom="1.0958333"
+     inkscape:cx="240.60837"
+     inkscape:cy="208.06084"
      inkscape:window-width="1280"
      inkscape:window-height="746"
      inkscape:window-x="0"
@@ -57,13 +57,12 @@
   </defs>
   <g
      id="flag"
-     clip-path="url(#clipPath3438)"
-     inkscape:label="#g3404">
+     inkscape:label="#g2998">
     <rect
-       y="32"
+       y="0"
        x="3.2917016e-09"
        height="480"
-       width="480"
+       width="640"
        id="rect628"
        style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke-width:1pt" />
     <g
