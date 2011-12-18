@@ -57,6 +57,20 @@ The country flag icons in this repository were collected from Wikipedia Commons 
 
 Most of the country flag icons are licensed under the [Public Domain](http://en.wikipedia.org/wiki/Public_domain).
 
+## Building the icon sets
+
+Simply type "make" to generate the icon sets. By default, the project Makefile generates icon sets with the following resolutions for the country-squared svg files:
+
+```
+512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16
+```
+
+And for the country-4x3 svg files with the following resolutions:
+
+```
+1280x960 640x480 320x240 160x120 80x60 40x30 20x15
+```
+
 ## Building your own icon sets
 
 If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under [svg/](https://github.com/koppi/iso-country-flags-svg-collection/tree/master/svg), and drop your .svg files in there. Run make to (re-)generate the output.
@@ -64,18 +78,6 @@ If you want to build your own icon sets with the same templates used for the fla
 Country flag examples use a surface area of 512x512 (1:1) and 640x480 (4:3), so be sure to keep the 1:1 or 4:3 ratios for best results.
 
 ### Building custom resolutions
-
-By default, the project Makefile generates icon sets with the following resolutions for the country-squared svg files:
-
-```
-512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16
-```
-
-And the following resolutions for the country-4x3 svg files:
-
-```
-1280x960 640x480 320x240 160x120 80x60 40x30 20x15
-```
 
 You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file:
 
@@ -94,9 +96,9 @@ Typing "make" will then generate icon sets with the resolutions defined above fo
 
 Type "make sheet" to generate icon sheets for the icon sets created above.
 
-## Adding custom build targets
+## Adding local build targets
 
-You can add your build target commands to the Makefile.local, which gets invoked with the "all" target of the main Makefile.
+You can add your local build target commands to the Makefile.local, which gets invoked with the "all" target of the main Makefile.
 
 ## TODO
 
@@ -105,4 +107,3 @@ We try to keep the TODO list short. You can [browse issues](https://github.com/k
 ## Authors
 
 * Initial import of the iso-country-flags-collection to github - [Jakob Flierl](https://github.com/koppi).
-* Makefile based build system - [Tit Petric](https://github.com/titpetric). (See: "Building your own icon sets" above.)
