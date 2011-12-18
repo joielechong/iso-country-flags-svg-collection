@@ -90,7 +90,7 @@ which looks like follows:
 
 Typing "make" will then generate icon sets with the resolutions defined above for all country-squared icons.
 
-## Generating the sheet files
+## Generating the icon sheet files
 
 Type "make sheet" to generate icon sheets for the icon sets created above.
 
