@@ -9,7 +9,7 @@ for s in $STYLE; do
 	--cmd svg2png \
 	--out build \
 	--res 1280x960 \
-        --svgdir build/svg-country-4x3-$s
+        --svgs build/svg-country-4x3-$s
 
     echo "Processing style $s ..";
     scripts/build.pl \

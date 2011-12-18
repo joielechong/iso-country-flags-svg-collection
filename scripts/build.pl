@@ -2,9 +2,16 @@
 #
 # convert, build and montage svg files.
 #
-# we use ImageMagick (convert, montage), JSON, XML::LibXML and librsvg2.
+# we use:
+# *  ImageMagick: convert, montage
+# * Perl Modules: JSON, XML::LibXML
+# *     librsvg2: rsvg-convert
 #
-# sudo apt-get -y install libxml-libxml-perl libjson-perl librsvg2-bin
+# on Debian / Ubuntu you can install these packages as follows:
+#
+# $ sudo apt-get -y install imagemagick
+# $ sudo apt-get -y install libxml-libxml-perl libjson-perl librsvg2-bin
+#
 
 use strict;
 use warnings;
@@ -56,7 +63,7 @@ my $json; my $lang;
 GetOptions(
     "cmd=s" => \$cmd,
     "svg=s" => \$imgSvg,
-    "svgdir=s" => \$dirSvg,
+    "svgs=s" => \$dirSvg,
     "geo=s" => \$geo,
     "res=s" => \$res,
     "sty=s" => \$sty,
@@ -72,7 +79,7 @@ GetOptions(
     "pngs=s"  => \$pngDir,
     );
 
-my $cmds = "help|svg2png|png2png|template|xplanet";
+my $cmds = "help|svg2png|png2png|svg2svg|xplanet";
 my $stys = "flat|simple|fancy|glossy";
 
 sub u {
@@ -83,14 +90,14 @@ sub u {
 
 USAGE
     if (defined $err) {
-	print STDERR " ".RED."error:".RESET." ".$err."\n\n";
+	print STDERR " ".RED."error:".RESET." ".$err." Exiting.\n\n";
 	exit 1;
     } else {
 	exit 0;
     }
 }
 
-if (!$cmd)               {u("missing  --cmd. Exiting.")}
+if (!$cmd)               {u("missing  --cmd.")}
 if ($cmd eq "help")      {u()}
 if ($cmd !~ /^($cmds)$/) {u("valid --cmd [$cmds]")}
 
@@ -99,18 +106,18 @@ my $jsonDB;
 if (defined $json) {
     $jsonDB = readJson($json);
 
-    if (!defined $jsonDB) {u("Error reading json db. Exiting")}
+    if (!defined $jsonDB) {u("Error reading json db.")}
 }
 
 if ($cmd eq "xplanet") {
     if (!defined $jsonDB) {
-	u("missing --json [file], eg.: iso-3166-1.json. Exiting.");
+	u("missing --json [file], eg.: iso-3166-1.json.");
     }
 
-    if (!$out)   {u("missing --out [dir], eg.: build. Exiting.")}
-    if (!-d $out){u("--out dir \"".$out."\" does not exist. Exiting.")}
+    if (!$out)   {u("missing --out [dir], eg.: build.")}
+    if (!-d $out){u("--out dir \"".$out."\" does not exist.")}
 
-    if (!$res) { u("missing --res [DxD], eg.: 16x16. Exiting.")}
+    if (!$res) { u("missing --res [DxD], eg.: 16x16.")}
     my ($resX,$resY) = $res =~ m#(\d+)x(\d+)#;
 
     if (!defined $resX or $resX eq 0){
@@ -135,7 +142,7 @@ if ($cmd eq "xplanet") {
     }
 
     if (!scalar @langs) {
-	u("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\". Exiting.",1);
+	u("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\".");
     }
 
     print STDERR " generating:\n";
@@ -189,25 +196,20 @@ sub add_png_file {
     }
 }
 
-if ($cmd eq "template") {
-    if (!$imgSvg) {u("missing --svg [image], e.g.: ad.svg. Exiting.") }
+if ($cmd eq "svg2svg") {
+    if (!$imgSvg) {u("missing --svg [image], eg.: ad.svg.")}
+    if (!$dirSvg) {u("missing --svgs [rel path], eg.: ../../svg/country-4x3.")}
+    if (!$imgBack){u("missing --back [image], eg.: 4x3-back-shadow.png.")}
+    if (!$imgFlag){u("missing --flag [image], eg.: ad.png.")}
+    if (!$imgFore){u("missing --fore [image], eg.: 4x3-fore-glossy.png.")}
 
-    if (!$dirSvg) {u("missing --svgdir [rel path], e.g.: ../../svg/country-4x3. Exiting.") }
-
-    if (!$imgBack) {u("missing --back [image], e.g.: 4x3-back-shadow.png. Exiting.") }
-
-    if (!$imgFlag) {u("missing --flag [image], e.g.: ad.png. Exiting.") }
-
-    if (!$imgFore) {u("missing --fore [image], e.g.: 4x3-fore-glossy.png. Exiting.") }
-
-    if (!$res) { u("missing --res [DxD], e.g.: 1280x960. Exiting.") }
+    if (!$res) { u("missing --res [DxD], e.g.: 1280x960.")}
     my ($resX,$resY) = $res =~ m#(\d+)x(\d+)#;
-    if ($resX eq 0){u("invalid res: \"".$res."\", width  must be > 0.")}
-    if ($resY eq 0){u("invalid res: \"".$res."\", height must be > 0.")}
+    if ($resX eq 0){u("invalid --res: \"".$res."\", width  must be > 0.")}
+    if ($resY eq 0){u("invalid --res: \"".$res."\", height must be > 0.")}
 
     if (!$mask) {
-	u("missing --mask [DxD+DxD+DxD], ".
-	      "e.g.: 109x109+65x65+1065x742. Exiting.", 1);
+	u("missing --mask [DxD+DxD+DxD], eg.: 109x109+65x65+1065x742.");
     }
     my ($mX, $mY, $mrX, $mrY, $mW, $mH) =
 	$mask =~ m#(\d+)x(\d+)\+(\d+)x(\d+)\+(\d+)x(\d+)#;
@@ -221,8 +223,7 @@ if ($cmd eq "template") {
     if ($mX eq 0){u("invalid mask: \"".$mask."\", height must be > 0.")}
 
     if (!$geo) {
-	u("missing --geo [DxD+DxD], ".
-	      "e.g.: 77x77+1129x807. Exiting.", 1);
+	u("missing --geo [DxD+DxD], eg.: 77x77+1129x807.");
     }
 
     my ($geoX, $geoY, $geoW, $geoH) =
@@ -234,7 +235,7 @@ if ($cmd eq "template") {
     if ($geoW eq 0) {u("invalid geo: \"".$geo."\", width  must be >0.")}
     if ($geoH eq 0) {u("invalid geo: \"".$geo."\", height must be >0.")}
 
-    if (!$out) { u("missing --out [build dir], eg.: build/country-4x3-glossy. Exiting.")}
+    if (!$out) {u("missing --out [build dir], eg.: build/country-4x3-glossy")}
 
     my $doc = XML::LibXML::Document->new("1.0", "UTF-8");
 
@@ -342,19 +343,19 @@ if ($cmd eq "template") {
 }
 
 if ($cmd eq "png2png") {
-    if (!$pngDir){u("missing --pngs [dir], e.g.: build/png-country-squared/res-512x512")}
-    if (!-d $pngDir){u("--pngs \"".$pngDir."\" does not exist. Exiting.")}
+    if (!$pngDir){u("missing --pngs [dir], eg.: build/png-country-squared/res-512x512.")}
+    if (!-d $pngDir){u("--pngs \"".$pngDir."\" does not exist.")}
     
-    if (!$out)   {u("missing --out [dir], e.g.: build")}
-    if (!-d $out){u("--out dir \"".$out."\" does not exist. Exiting.")}
+    if (!$out)   {u("missing --out [dir], e.g.: build.")}
+    if (!-d $out){u("--out dir \"".$out."\" does not exist.")}
 
     find(\&add_png_file, split(",", $pngDir));
 
     if (0 eq length @pngs) {
-	u("no png files in ".$pngDir.". Exiting.");
+	u("no png files in ".$pngDir.".");
     }
 
-    if (!$res) { u("missing --res [DxD,..], eg.: 64x64,128x128. Exiting.")}
+    if (!$res) {u("missing --res [DxD,..], eg.: 64x64,128x128.")}
 
     my @rs = ();
     foreach my $r (split (",", $res)) {
@@ -363,8 +364,7 @@ if ($cmd eq "png2png") {
 	if ($w eq 0) {u("invalid res: \"".$r."\", width  must be > 0.")}
 	if ($h eq 0) {u("invalid res: \"".$r."\", height must be > 0.")}
 	if (!$w or !$h) {
-	    u("could not parse: res \"".$r.
-		  "\", must be [DxD,..]. Exiting.");
+	    u("could not parse: res \"".$r."\", must be [DxD,..]");
 	}
 
 	push @rs, {"w" => $w, "h" => $h};
@@ -406,20 +406,17 @@ if ($cmd eq "png2png") {
 }
 
 if ($cmd eq "svg2png") {
-    if (!$dirSvg){u("missing --svgdir [dir], e.g.: svg/country-squared")}
-    if (!-d $dirSvg){u("--svgdir \"".$dirSvg."\" does not exist. Exiting.")}
+    if (!$dirSvg){u("missing --svgs [dir], eg.: svg/country-squared.")}
+    if (!-d $dirSvg){u("--svgs \"".$dirSvg."\" does not exist.")}
     
-    if (!$out)   {u("missing --out [dir], e.g.: build")}
-    if (!-d $out){u("--out dir \"".$out."\" does not exist. Exiting.")}
+    if (!$out)   {u("missing --out [dir], eg.: build.")}
+    if (!-d $out){u("--out dir \"".$out."\" does not exist.")}
 
     find(\&add_svg_file, split(",", $dirSvg));
 
-    if (0 eq length @svgs) {
-	u("no svg files in ".$dirSvg.". Exiting.");
-    }
+    if (0 eq length @svgs) {u("no svg files in ".$dirSvg.".")}
 
-    if (!$res) { u("missing --res [DxD,..], eg.: 64x64,128x128. Exiting.")}
-
+    if (!$res) { u("missing --res [DxD,..], eg.: 64x64,128x128.")}
     my @rs = ();
     foreach my $r (split (",", $res)) {
 	my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
@@ -427,8 +424,7 @@ if ($cmd eq "svg2png") {
 	if ($w eq 0) {u("invalid res: \"".$r."\", width  must be > 0.")}
 	if ($h eq 0) {u("invalid res: \"".$r."\", height must be > 0.")}
 	if (!$w or !$h) {
-	    u("could not parse: res \"".$r.
-		  "\", must be [DxD,..]. Exiting.");
+	    u("could not parse: res \"".$r."\", must be [DxD,..].");
 	}
 
 	push @rs, {"w" => $w, "h" => $h};
@@ -468,19 +464,19 @@ if ($cmd eq "svg2png") {
 
 if ($cmd eq "montage") {
     if (!$res or !($res =~ m/^(\d+x\d+)(,(\d+x\d+))*/)) {
-	u("missing --res [DxD,..], e.g.: 8x8,16x16,64x64");
+	u("missing --res [DxD,..], eg.: 8x8,16x16,64x64");
     }
 
-    if (!$dirSvg) { u("missing --svg [dir], e.g.: svg/country-squared")}
-    if (!-d $dirSvg) { u("--svg dir \"".$dirSvg."\" does not exist. Exiting.")}
+    if (!$dirSvg) { u("missing --svg [dir], eg.: svg/country-squared.")}
+    if (!-d $dirSvg) { u("--svg dir \"".$dirSvg."\" does not exist.")}
 
-    if (!$geo) { u("missing --geo [D+D+DxD], e.g.: 54+54+403x403")}
+    if (!$geo) { u("missing --geo [D+D+DxD], eg.: 54+54+403x403.")}
 
-    if (!$out) { u("missing --out [dir], e.g.: build")}
-    if (!-d $out) { u("--out dir \"".$out."\" does not exist. Exiting.")}
+    if (!$out) { u("missing --out [dir], eg.: build.")}
+    if (!-d $out) { u("--out dir \"".$out."\" does not exist.")}
 
-    if (!$sty) { u("missing --sty [$stys], e.g.: simple")}
-    if ($sty !~ /^($stys)$/) { u("valid --sty [$stys]")}
+    if (!$sty) { u("missing --sty [$stys], e.g.: simple.")}
+    if ($sty !~ /^($stys)$/) { u("invalid --sty [$stys].")}
 
     my @rs = ();
     foreach my $r (split (",", $res)) {
@@ -489,7 +485,7 @@ if ($cmd eq "montage") {
 	if ($w eq 0) { u("invalid res: \"".$r."\". Width must be > 0.")}
 	if ($h eq 0) { u("invalid res: \"".$r."\". Height must be > 0.")}
 	if (!$w or !$h) {
-	    u("could not parse: res \"".$r."\". Must be [DxD,..]. Exiting.");
+	    u("could not parse: res \"".$r."\". Must be [DxD,..].");
 	}
 
 	push @rs, {"w" => $w, "h" => $h};
