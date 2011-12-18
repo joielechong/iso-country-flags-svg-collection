@@ -1,2 +1,2 @@
 local:
-	#@echo "Skipping Makefile.local target." # add your build stuff here
+	@#echo "Skipping Makefile.local target." # add your build stuff here
