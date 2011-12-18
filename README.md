@@ -96,9 +96,9 @@ Type "make sheet" to generate icon sheets for the icon sets created above.
 
 You can add your local build target commands to the Makefile.local, which gets invoked with the "all" target of the main Makefile.
 
-## Authors
+## Authors / TODO / License
 
-* Initial import of the iso-country-flags-collection to github - [Jakob Flierl](https://github.com/koppi).
+Initial import of the iso-country-flags-collection to github - [Jakob Flierl](https://github.com/koppi).
 
 ### TODO
 
