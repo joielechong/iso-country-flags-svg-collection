@@ -9,14 +9,14 @@ for s in $STYLE; do
 	--cmd svg2png \
 	--out build \
 	--res 1280x960 \
-        --svgs build/svg-country-4x3-$s
+        --svgs build/svg-country-4x2-$s
 
     echo "Processing style $s ..";
     scripts/build.pl \
 	--cmd png2png \
         --out build \
 	--res $RESOS \
-        --pngs build/png-country-4x3-$s/res-1280x960
+        --pngs build/png-country-4x2-$s/res-1280x960
 done
 
 echo " ok.";

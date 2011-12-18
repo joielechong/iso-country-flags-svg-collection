@@ -12,7 +12,7 @@ for f in $(cd svg/country-squared; ls -1 *.svg); do
 	    --fore fore.png \
 	    --svgs svg/country-squared \
 	    --svg $f \
-	    --mask 57x57+35x35+398x398 --geo 55x55+512x512 --geoscale 0.782
+	    --mask 57x57+35x35+398x398 --geo 57x57+512x512 --geoscale 0.7775
     done
 done
 echo " ok.";
