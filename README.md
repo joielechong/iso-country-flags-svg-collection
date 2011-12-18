@@ -45,7 +45,11 @@ Want to be featured in a gallery of apps using it? Then please send a screenshot
 
 * Xplanet - [howto generate xplanet marker config files](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet):
 
-  ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files.
+  ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xpanet marker config files:
+  
+   ```
+    $ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all
+   ```
 
 ## License / Info
 
@@ -57,11 +61,11 @@ Most of the country flag icons are licensed under the [Public Domain](http://en.
 
 If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under [svg/](https://github.com/koppi/iso-country-flags-svg-collection/tree/master/svg), and drop your .svg files in there. Run make to (re-)generate the output.
 
-Country flag examples use a surface area of 512x512, but this size is not a requirement, but be sure to keep the 1:1 ratio for best results.
+Country flag examples use a surface area of 512x512 (squared) and 640x480 (4x3), so be sure to keep the 1x1 or 4x3 ratios for best results.
 
 ### Building custom resolutions
 
-By default, the project Makefile generates icon sets with the following resolutions: "512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16". You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file "svg/country-squared.resolutions", which looks like follows:
+By default, the project Makefile generates icon sets with the following resolutions: "512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16". You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file "build/country-squared.res" or "build/country-4x3.res", which looks like follows:
 
 ```
 5x5 8x8
@@ -70,8 +74,6 @@ By default, the project Makefile generates icon sets with the following resoluti
 Typing "make" will then generate icon sets with the resolutions defined above for all country-squared icons.
 
 ## TODO
-
-Notice: the repository gets currently (as of 2012-12-17) lots of changes. If you want to change/add something, please first contact [Jakob Flierl](https://github.com/koppi).
 
 We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
 
