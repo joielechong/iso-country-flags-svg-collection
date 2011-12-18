@@ -90,7 +90,7 @@ Typing "make" will then generate icon sets with the resolutions defined above fo
 
 ### Generating the icon sheet files
 
-Type "make sheet" to generate icon sheets for the icon sets created above.
+Type "make sheets" to generate icon sheets for the icon sets created above.
 
 ### Adding local build targets
 
