@@ -59,13 +59,15 @@ Most of the country flag icons are licensed under the [Public Domain](http://en.
 
 ## Building the icon sets
 
-Simply type "make" to generate the icon sets. By default, the project Makefile generates icon sets with the following resolutions for the country-squared svg files:
+Simply type "make" to generate the icon sets. By default the Makefile generates icon sets with the following resolutions.
+
+For the country-squared svg files:
 
 ```
 512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16
 ```
 
-And for the country-4x3 svg files with the following resolutions:
+And for the country-4x3 svg files:
 
 ```
 1280x960 640x480 320x240 160x120 80x60 40x30 20x15
