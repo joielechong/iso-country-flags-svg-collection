@@ -15,11 +15,19 @@ For example the results with the template "flat" applied to the "United States" 
 
 ![resolutions.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/resolutions.png "Country flag icon resoultions")
  
-## Requirements
-For converting the SVG files to different formats using different templates, you need the following software:
+## Requirements / Build dependencies
 
+For converting the SVG files to different formats using different templates, you need to install the following software packages:
+
+* librsvg - an SVG rendering library associated with the Gnome Project.
 * Perl Modules: XML::LibXML, JSON.
 * ImageMagick [here](http://www.imagemagick.org/).
+
+On Debian/Ubuntu you can install these packages with the following command:
+
+```
+ $ sudo apt-get -y install imagemagick libxml-libxml-perl libjson-perl librsvg2-bin
+```
 
 ## Are you using this country flags collection?
 
