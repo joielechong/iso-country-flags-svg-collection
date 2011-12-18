@@ -51,12 +51,6 @@ Want to be featured in a gallery of apps using it? Then please send a screenshot
     $ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all
    ```
 
-## License / Info
-
-The country flag icons in this repository were collected from Wikipedia Commons project during the [EUHackathon 2011](http://www.euhackathon.eu/). We did not find an up to date free collection of SVG vector graphics icons during the hack marathon. So we decided to build up this collection and share it here with future EUHackathoners and the Internet.
-
-Most of the country flag icons are licensed under the [Public Domain](http://en.wikipedia.org/wiki/Public_domain).
-
 ## Building the icon sets
 
 Simply type "make" to generate the icon sets. By default the Makefile generates icon sets with the following resolutions.
@@ -94,18 +88,24 @@ which looks like follows:
 
 Typing "make" will then generate icon sets with the resolutions defined above for all country-squared/4x3 icons.
 
-## Generating the icon sheet files
+### Generating the icon sheet files
 
 Type "make sheet" to generate icon sheets for the icon sets created above.
 
-## Adding local build targets
+### Adding local build targets
 
 You can add your local build target commands to the Makefile.local, which gets invoked with the "all" target of the main Makefile.
-
-## TODO
-
-We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
 
 ## Authors
 
 * Initial import of the iso-country-flags-collection to github - [Jakob Flierl](https://github.com/koppi).
+
+### TODO
+
+We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
+
+### License / Info
+
+The country flag icons in this repository were collected from Wikipedia Commons project during the [EUHackathon 2011](http://www.euhackathon.eu/). We did not find an up to date free collection of SVG vector graphics icons during the hack marathon. So we decided to build up this collection and share it here with future EUHackathoners and the Internet.
+
+Most of the country flag icons are licensed under the [Public Domain](http://en.wikipedia.org/wiki/Public_domain).
