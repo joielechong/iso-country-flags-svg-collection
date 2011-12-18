@@ -212,11 +212,11 @@ sub add_png_file {
 }
 
 if ($cmd eq "svg2svg") {
-    if (!$imgSvg) {u("missing --svg [image], eg.: ad.svg.")}
+    if (!$imgSvg) {u("missing --svg [output image], eg.: ad.svg.")}
     if (!$dirSvg) {u("missing --svgs [rel path], eg.: ../../svg/country-4x3.")}
-    if (!$imgBack){u("missing --back [image], eg.: 4x3-back-shadow.png.")}
-    if (!$imgFlag){u("missing --flag [image], eg.: ad.png.")}
-    if (!$imgFore){u("missing --fore [image], eg.: 4x3-fore-glossy.png.")}
+    if (!$imgBack){u("missing --back [image], eg.: 4x2-back-shadow.png.")}
+    if (!$imgFlag){u("missing --flag [input image], eg.: ad.svg.")}
+    if (!$imgFore){u("missing --fore [image], eg.: 4x2-fore-glossy.png.")}
 
     if (!$res) { u("missing --res [DxD], e.g.: 1280x960.")}
     my ($resX,$resY) = $res =~ m#(\d+)x(\d+)#;
@@ -254,7 +254,7 @@ if ($cmd eq "svg2svg") {
 	u("missing --geoscale [float], eg.: 0.781.");
     }
 
-    if (!$out) {u("missing --out [build dir], eg.: build/country-4x3-glossy")}
+    if (!$out) {u("missing --out [build dir], eg.: build/country-4x2-glossy")}
 
     my $doc = XML::LibXML::Document->new("1.0", "UTF-8");
 
@@ -425,7 +425,7 @@ if ($cmd eq "png2png") {
 	    my ($name, $path, $suffix) = fileparse($o, (".png"));
 	    # keep things simple, make only 2 sub-dirs:
 	    # path style is => build/png-dir/res-DxD, eg.:
-	    #                  build/png-country-4x3/res-1280x960
+	    #                  build/png-country-4x2/res-1280x960
 	    $path =~ s#/#-#g; 
 	    $path =~ s#-$##g;
 	    $path =~ s#^svg#png#g;
@@ -483,7 +483,7 @@ if ($cmd eq "svg2png") {
 
 	    # keep things simple, make only 2 sub-dirs:
 	    # path style is => build/png-dir/res-DxD, eg.:
-	    #                  build/png-country-4x3/res-1280x960
+	    #                  build/png-country-4x2/res-1280x960
 	    $path =~ s#/#-#g; 
 	    $path =~ s#-$##g;
 	    $path =~ s#^svg#png#g;
