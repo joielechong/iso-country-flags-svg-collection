@@ -16,6 +16,7 @@ xplanet:
 	scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all
 
 clean:
-	/bin/rm -rf build/svg-*/*.svg
-	/bin/rm -rf build/png-*/*.png
+	/bin/rm -rvf build/svg-*/??.svg
+	/bin/rm -rvf build/png-*/res-*
+	/bin/rm -rvf build/xplanet
 
