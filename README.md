@@ -61,7 +61,7 @@ Most of the country flag icons are licensed under the [Public Domain](http://en.
 
 If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under [svg/](https://github.com/koppi/iso-country-flags-svg-collection/tree/master/svg), and drop your .svg files in there. Run make to (re-)generate the output.
 
-Country flag examples use a surface area of 512x512 (squared) and 640x480 (4x3), so be sure to keep the 1x1 or 4x3 ratios for best results.
+Country flag examples use a surface area of 512x512 (1:1) and 640x480 (4:3), so be sure to keep the 1:1 or 4:3 ratios for best results.
 
 ### Building custom resolutions
 
@@ -77,7 +77,12 @@ And the following resolutions for the country-4x3 svg files:
 1280x960 640x480 320x240 160x120 80x60 40x30 20x15
 ```
 
-You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file "build/country-squared.res" or "build/country-4x3.res", which looks like follows:
+You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file:
+
+ * "build/country-squared.res", or
+ * "build/country-4x3.res",
+ 
+which looks like follows:
 
 ```
 5x5 8x8
