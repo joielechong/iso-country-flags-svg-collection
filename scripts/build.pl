@@ -41,6 +41,7 @@ local $| = 1; # auto flush
 my $cmd; # cmd, see "cmds" above
 
 my $geo; # geometry, eg.: 77x77+1129x807
+my $geoScale; # geometry scale factor. eg.: 0.781
 my $dirSvg; # directory to svg images (for command svg2png)
 my $sty; # style, see "stys" above
 
@@ -57,7 +58,7 @@ my $zoom; # for svg2png
 my $png;
 my $pngDir; # rel. image path to png file
 
-# for xplanet
+# for example cmd xplanet
 my $json; my $lang;
 
 GetOptions(
@@ -65,6 +66,7 @@ GetOptions(
     "svg=s" => \$imgSvg,
     "svgs=s" => \$dirSvg,
     "geo=s" => \$geo,
+    "geoscale=s" => \$geoScale,
     "res=s" => \$res,
     "sty=s" => \$sty,
     "out=s" => \$out,
@@ -79,7 +81,7 @@ GetOptions(
     "pngs=s"  => \$pngDir,
     );
 
-my $cmds = "help|svg2png|png2png|svg2svg|xplanet";
+my $cmds = "help|svg2png|png2png|svg2svg|example";
 my $stys = "flat|simple|fancy|glossy";
 
 sub u {
@@ -109,7 +111,20 @@ if (defined $json) {
     if (!defined $jsonDB) {u("Error reading json db.")}
 }
 
-if ($cmd eq "xplanet") {
+if ($cmd eq "example") {
+    my $subcmd = shift || "list";
+
+    if ($subcmd eq "list" or $subcmd eq "help") {
+	print STDERR "Available --cmd example commands:\n\n";
+	print STDERR " kml     - generate kml geo files.\n";
+	print STDERR " xplanet - generate xplanet marker config files.\n";
+	print STDERR "\n";
+    } elsif ($subcmd eq "xplanet") {
+	example_xplanet();
+    }
+}
+
+sub example_xplanet {
     if (!defined $jsonDB) {
 	u("missing --json [file], eg.: iso-3166-1.json.");
     }
@@ -235,6 +250,10 @@ if ($cmd eq "svg2svg") {
     if ($geoW eq 0) {u("invalid geo: \"".$geo."\", width  must be >0.")}
     if ($geoH eq 0) {u("invalid geo: \"".$geo."\", height must be >0.")}
 
+    if (!defined $geoScale) {
+	u("missing --geoscale [float], eg.: 0.781.");
+    }
+
     if (!$out) {u("missing --out [build dir], eg.: build/country-4x3-glossy")}
 
     my $doc = XML::LibXML::Document->new("1.0", "UTF-8");
@@ -304,21 +323,46 @@ if ($cmd eq "svg2svg") {
     ## layer mask
     my $lm = XML::LibXML::Element->new("g");
     $lm->setAttribute("id", "layer_mask");
+    $lm->setAttribute("x", $mX);
+    $lm->setAttribute("y", $mY);
+    $lm->setAttribute("width", $mW);
+    $lm->setAttribute("height", $mH);
     $lm->setAttribute("inkscape:groupmode", "layer");
     $lm->setAttribute("inkscape:label", "mask");
     $lm->setAttribute("style", "display:inline");
-    
-    my $m = XML::LibXML::Element->new("image");
-    $m->setAttribute("id", "image_mask");
+    $lm->setAttribute("clip-path", "url(#clipPathFlag)");
+
+    my $m = XML::LibXML::Element->new("g");
+    $m->setAttribute("id", "flag_mask_group");
     $m->setAttribute("x", $geoX);
     $m->setAttribute("y", $geoY);
     $m->setAttribute("width", $geoW);
     $m->setAttribute("height", $geoH);
-    $m->setAttribute("xlink:href", $dirSvg."/".$imgFlag);
+    $m->setAttribute("transform",
+		     "translate(".$geoX.",".$geoY.") scale(".$geoScale.")");
+
+    my $fName = $dirSvg."/".$imgFlag; my $content = readFile($fName);
+    if (!defined $content) { u("Error reading file ".$fName."."); }
+
+    my $dom = XML::LibXML->load_xml(string => $content);
+    if (!defined $dom) { u("Error parsing file ".$fName."."); }
     
-#    print STDERR "SVG " . $imgFlag . "\n";
-    
-    $m->setAttribute("clip-path", "url(#clipPathFlag)");
+    my $xpc = XML::LibXML::XPathContext->new($dom);
+    my @nodes = $xpc->findnodes("./*");
+
+#    print STDERR "nodes: \n";
+    foreach my $n (@nodes) {
+#	print STDERR "node : " . $n->toString() . "\n";
+#	$n->setAttribute("x", $geoX);
+#	$n->setAttribute("y", $geoY);
+#	$n->setAttribute("width", $geoW);
+#	$n->setAttribute("height", $geoH);
+#	$n->setAttribute("transform", "scale(0.777)");
+	$m->appendChild($n);
+#	$dom->importNode($n);
+    }
+
+#    print STDERR Dumper(@nodes);
     
     $lm->appendChild($m); $svg->appendChild($lm);
     
@@ -530,13 +574,15 @@ sub writeFile {
     my $content = shift;
     my $binmode = shift;
 
+    print STDERR " writing ".$fName."\n";
+
     my($filename, $dirs, $suffix) = fileparse($fName);
 
     if (! -d $dirs ) {
         mkpath($dirs);
     }
 
-    open FILE, ">$fName" or die "Error writing file $fName: $!";
+    open FILE, ">$fName" or die " Error writing file $fName: $!. Exiting.";
     if (defined $binmode) {
 	binmode(FILE, $binmode);
     }
