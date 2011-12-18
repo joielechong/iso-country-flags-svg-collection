@@ -65,7 +65,13 @@ Country flag examples use a surface area of 512x512 (squared) and 640x480 (4x3),
 
 ### Building custom resolutions
 
-By default, the project Makefile generates icon sets with the following resolutions: "512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16". You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file "build/country-squared.res" or "build/country-4x3.res", which looks like follows:
+By default, the project Makefile generates icon sets with the following resolutions:
+
+```
+512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16
+```
+
+You can generate custom icon set resolutions (e.g. "5x5 8x8") by creating a file "build/country-squared.res" or "build/country-4x3.res", which looks like follows:
 
 ```
 5x5 8x8
