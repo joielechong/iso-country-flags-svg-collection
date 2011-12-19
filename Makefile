@@ -97,43 +97,43 @@ pngs: png-country-squared png-country-4x2
 	$(Q)echo "Finished building pngs."
 
 ## svg2svg squared
-build/svg-country-squared-fancy/%.svg: svg/country-squared/%.svg $(SVG2SVG_EXTRA)
+build/svg-country-squared-fancy/%.svg: svg/country-squared/%.svg
 	$(Q)$(SVG2SVG_11) --out $(dir $@) \
 			  --flag $(notdir ${<}) \
 			  --svg $(notdir ${<})
 
-build/svg-country-squared-simple/%.svg: svg/country-squared/%.svg $(SVG2SVG_EXTRA)
+build/svg-country-squared-simple/%.svg: svg/country-squared/%.svg
 	$(Q)$(SVG2SVG_11) --out $(dir $@) \
 			  --flag $(notdir ${<}) \
 			  --svg $(notdir ${<})
 
-build/svg-country-squared-flat/%.svg: svg/country-squared/%.svg $(SVG2SVG_EXTRA)
+build/svg-country-squared-flat/%.svg: svg/country-squared/%.svg
 	$(Q)$(SVG2SVG_11) --out $(dir $@) \
                           --flag $(notdir ${<}) \
                           --svg $(notdir ${<})
 
-build/svg-country-squared-glossy/%.svg: svg/country-squared/%.svg $(SVG2SVG_EXTRA)
+build/svg-country-squared-glossy/%.svg: svg/country-squared/%.svg
 	$(Q)$(SVG2SVG_11) --out $(dir $@) \
                           --flag $(notdir ${<}) \
                           --svg $(notdir ${<})
 
 ## svg2svg 4x2
-build/svg-country-4x2-fancy/%.svg: svg/country-4x3/%.svg $(SVG2SVG_EXTRA)
+build/svg-country-4x2-fancy/%.svg: svg/country-4x3/%.svg
 	$(Q)$(SVG2SVG_43) --out $(dir $@) \
 			  --flag $(notdir ${<}) \
 			  --svg $(notdir ${<})
 
-build/svg-country-4x2-simple/%.svg: svg/country-4x3/%.svg $(SVG2SVG_EXTRA)
+build/svg-country-4x2-simple/%.svg: svg/country-4x3/%.svg
 	$(Q)$(SVG2SVG_43) --out $(dir $@) \
 			  --flag $(notdir ${<}) \
 			  --svg $(notdir ${<})
 
-build/svg-country-4x2-flat/%.svg: svg/country-4x3/%.svg $(SVG2SVG_EXTRA)
+build/svg-country-4x2-flat/%.svg: svg/country-4x3/%.svg
 	$(Q)$(SVG2SVG_43) --out $(dir $@) \
                           --flag $(notdir ${<}) \
                           --svg $(notdir ${<})
 
-build/svg-country-4x2-glossy/%.svg: svg/country-4x3/%.svg $(SVG2SVG_EXTRA)
+build/svg-country-4x2-glossy/%.svg: svg/country-4x3/%.svg
 	$(Q)$(SVG2SVG_43) --out $(dir $@) \
                           --flag $(notdir ${<}) \
                           --svg $(notdir ${<})
