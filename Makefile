@@ -146,6 +146,8 @@ sheets:
 xplanet:
 	$(Q)scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all
 
+distclean: clean
+
 clean:
 	$(Q)/bin/rm -rvf build/svg-*/??.svg
 	$(Q)/bin/rm -rvf build/png-*/res-*
@@ -156,12 +158,17 @@ help:
 	@echo  '  clean              - Remove most generated files'
 	@echo  '  distclean          - Remove all generated files.'
 	@echo  ''
-	@echo  'Other generic targets:'
+	@echo  'Generic targets:'
 	@echo  '  all                - Build all targets marked with [*].'
 	@echo  '  svgs [*]           - Build the svg variants.'
 	@echo  '  pngs [*]           - Build the png variants.'
+	@echo  '  sheets             - Build sheets for the png variants.'
 	@echo  ''
-	@echo  '  dir/               - Build all files in dir/ and below.'
+	@echo  'Example targets:'
+	@echo  '  kml                - Build kml example file (wip).'
+	@echo  '  kmz                - Build kmz example file (wip).'
+	@echo  '  poster             - Build svg flags of the world poster (wip).'
+	@echo  '  xplanet            - Build xplanet marker files (working).'
 	@echo  ''
 	@echo  '  make V=0|1 [targets] 0 => quiet build (default), 1 => verbose build'
 	@echo  ''
