@@ -256,6 +256,8 @@ if ($cmd eq "svg2svg") {
 
     if (!$out) {u("missing --out [build dir], eg.: build/country-4x2-glossy")}
 
+    $out =~ s/\/$//;
+
     my $doc = XML::LibXML::Document->new("1.0", "UTF-8");
 
     my $svg = $doc->createElement("svg");
