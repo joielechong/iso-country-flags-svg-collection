@@ -15,10 +15,6 @@ For example the results with the template "flat" applied to the "United States" 
 
 ![resolutions.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/resolutions.png "Country flag icon resoultions")
  
-## Are you using this country flags collection?
-
-Want to be featured in a gallery of apps using it? Then please send a screenshot and details of your app to [Jakob Flierl](https://github.com/koppi).
-
 ### Usage examples
 
 * Google Earth - [G+ users of the world - KMZ file](http://goo.gl/YJjv3):
@@ -96,15 +92,13 @@ Type "make sheets" to generate icon sheets for the icon sets created above.
 
 You can add your local build target commands to the Makefile.local, which gets invoked with the "all" target of the main Makefile.
 
+### Are you using this country flags collection?
+
+Want to be featured in a gallery of apps using it? Then please send a screenshot and details of your app to [Jakob Flierl](https://github.com/koppi).
+
 ## Authors / TODO / License
 
-Initial import of the iso-country-flags-collection to github - [Jakob Flierl](https://github.com/koppi).
-
-### TODO
-
-We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
-
-### License / Info
+Initial import of the iso-country-flags-collection to github - [Jakob Flierl](https://github.com/koppi). We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
 
 The country flag icons in this repository were collected from Wikipedia Commons project during the [EUHackathon 2011](http://www.euhackathon.eu/). We did not find an up to date free collection of SVG vector graphics icons during the hack marathon. So we decided to build up this collection and share it here with future EUHackathoners and the Internet.
 
