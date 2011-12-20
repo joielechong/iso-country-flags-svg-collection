@@ -1,4 +1,4 @@
-build/*/*.svg
+build/*/??.svg
 build/*/??.png
 build/png-*
 build/xplanet
