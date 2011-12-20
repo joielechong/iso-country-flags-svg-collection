@@ -156,6 +156,7 @@ clean:
 	$(Q)/bin/rm -rvf build/svg-*/??.svg
 	$(Q)/bin/rm -rvf build/png-*/res-*
 	$(Q)/bin/rm -rvf build/xplanet
+	$(Q)echo "Finished cleaning up build."
 
 help:
 	@echo  'Cleaning targets:'
