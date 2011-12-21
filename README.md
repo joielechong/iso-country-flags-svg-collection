@@ -19,7 +19,11 @@ For example the results with the template "flat" applied to the "United States" 
 
 * Google Earth - [G+ users of the world - KMZ file](http://goo.gl/YJjv3):
 
-  ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-earth.png)
+  ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-earth.png). Run the following command to generate all the kml files with different country name translations:
+  
+  ```
+   $ scripts/build.pl --cmd example kml --json iso-3166-1.json --out build --res 16x16 --lang all
+  ```
 
 * Google Maps - [G+ users of the world - PicasaWeb album](http://goo.gl/mHyJb):
 
