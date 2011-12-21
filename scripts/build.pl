@@ -165,7 +165,7 @@ sub example_xplanet {
     print STDERR " generating:\n";
     foreach my $l (@langs) {
 
-	my $file = $out."/xplanet/markers/iso-countries-".$l;
+	my $file = $out."/xplanet/markers/iso-country-code-".$l;
 
 	print STDERR "  ".$file."\n";
 
