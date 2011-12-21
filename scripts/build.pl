@@ -121,6 +121,8 @@ if ($cmd eq "example") {
 	print STDERR "\n";
     } elsif ($subcmd eq "xplanet") {
 	example_xplanet();
+    } elsif ($subcmd eq "kml") {
+	example_kml();
     }
 }
 
@@ -163,7 +165,7 @@ sub example_xplanet {
     print STDERR " generating:\n";
     foreach my $l (@langs) {
 
-	my $file = $out."/xplanet/markers/iso-country-code-".$l; 
+	my $file = $out."/xplanet/markers/iso-countries-".$l;
 
 	print STDERR "  ".$file."\n";
 
@@ -185,6 +187,180 @@ sub example_xplanet {
 	}
 
 	writeFile($file, $content, ":utf8");
+    }
+    print STDERR " done.\n";
+}
+
+sub example_kml {
+    if (!defined $jsonDB) {
+	u("missing --json [file], eg.: iso-3166-1.json.");
+    }
+
+    if (!$out)   {u("missing --out [dir], eg.: build.")}
+    if (!-d $out){u("--out dir \"".$out."\" does not exist.")}
+
+    if (!$res) { u("missing --res [DxD], eg.: 16x16.")}
+    my ($resX,$resY) = $res =~ m#(\d+)x(\d+)#;
+
+    if (!defined $resX or $resX eq 0){
+	u("invalid res: \"".$res."\", width  must be > 0.")
+    }
+    if (!defined $resY or $resY eq 0){
+	u("invalid res: \"".$res."\", height must be > 0.")
+    }
+
+    my %d = %{$jsonDB->{Results}};
+
+    my @langs;
+
+    if (!defined $lang or $lang eq "all") {
+	foreach my $l (split(",", "af,sq,ar,be,bg,ca,zh,zh-TW,hr,cs,da,nl,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi")) {
+	    push @langs, $l;
+	}
+    } else {
+	foreach my $l (split(",", $lang)) {
+	    push @langs, $l;
+	}
+    }
+
+    if (!scalar @langs) {
+	u("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\".");
+    }
+
+    print STDERR " generating:\n";
+    foreach my $l (@langs) {
+
+	my $file = $out."/kml/iso-countries-".$l."/doc.kml"; 
+
+	print STDERR "  ".$file."\n";
+
+	my $dom = XML::LibXML::Document->new("1.0", "UTF-8");
+	
+	my $root = $dom->createElement("kml");
+	$dom->setDocumentElement($root);
+	
+	$root->setAttribute("xmlns:gx",   "http://www.opengis.net/kml/2.2");
+	$root->setAttribute("xmlns:kml",  "http://www.opengis.net/kml/2.2");
+	$root->setAttribute("xmlns:atom", "http://www.w3.org/2005/Atom");
+
+	my $kml = XML::LibXML::Element->new("Document");
+	$root->appendChild($kml);
+
+	my $name = XML::LibXML::Element->new("name"); $kml->appendChild($name);
+	$name->appendText("iso-country-code-".$l);
+
+	my $open = XML::LibXML::Element->new("open"); $kml->appendChild($open);
+	$open->appendText("1");
+
+	my $desc = XML::LibXML::Element->new("description");
+	$desc->appendText("iso-countries-".$l);
+	$kml->appendChild($desc);
+
+	my $doc = $kml;
+
+#	my @cos = ("DE");
+	my @cos = sort keys %d;
+	foreach my $co (@cos) {
+#	    print STDERR " $co \n";
+	    my $img = lc($co);
+	    
+	    my $x = $d{$co}{GeoPt}[0];
+	    my $y = $d{$co}{GeoPt}[1];
+	    
+	    my $name = $d{$co}{Name};
+
+	    if (defined $d{$co}{Names}{$l}) {
+		$name = $d{$co}{Names}{$l}; # get translated country name
+#		print STDERR "  ".$img." ".$name."\n";
+	    }
+
+	    my $stylemap =  XML::LibXML::Element->new("StyleMap");
+	    $stylemap->setAttribute("id", "style_map_".$img);
+
+	    my $pair1 = XML::LibXML::Element->new("Pair");
+	    $stylemap->appendChild($pair1);
+
+	    my $key1 = XML::LibXML::Element->new("key");
+	    $key1->appendText("normal");
+	    $pair1->appendChild($key1);
+
+	    my $styleurl1 = XML::LibXML::Element->new("styleUrl");
+	    $styleurl1->appendText("#style_".$img);
+	    $pair1->appendChild($styleurl1);
+
+	    my $pair2 = XML::LibXML::Element->new("Pair");
+	    my $key2 = XML::LibXML::Element->new("key");
+	    $key2->appendText("highlight");
+
+	    my $styleurl2 = XML::LibXML::Element->new("styleUrl");
+	    $styleurl2->appendText("#style_".$img);
+	    $pair2->appendChild($styleurl2);
+
+	    $doc->appendChild($stylemap);
+   
+	    my $style = XML::LibXML::Element->new("Style");
+	    $style->setAttribute("id", "style_".$img);
+
+	    my $iconstyle = XML::LibXML::Element->new("IconStyle");
+
+	    my $scale =  XML::LibXML::Element->new("scale");
+	    $scale->appendText("1.1");
+	    $iconstyle->appendChild($scale);
+
+	    my $icon =  XML::LibXML::Element->new("Icon");
+	    $iconstyle->appendChild($icon);
+
+	    my $href =  XML::LibXML::Element->new("href");
+	    $href->appendText($img.".png");
+	    $icon->appendChild($href);
+
+	    $style->appendChild($iconstyle);
+
+	    $doc->appendChild($style);
+    	}
+
+	foreach my $co (@cos) {
+	    my $img = lc($co);
+	    
+	    my $x = $d{$co}{GeoPt}[0];
+	    my $y = $d{$co}{GeoPt}[1];
+	    
+	    my $cname = $d{$co}{Name};
+
+	    if (defined $d{$co}{Names}{$l}) {
+		$cname = $d{$co}{Names}{$l}; # get translated country name
+#		print STDERR "  ".$img." ".$cname."\n";
+	    }
+
+	    my $placemark = XML::LibXML::Element->new("Placemark");
+	    
+	    my $name = XML::LibXML::Element->new("name");
+	    $placemark->appendChild($name);
+	    $name->appendText($cname);
+
+#	    my $snippet = XML::LibXML::Element->new("Snippet");
+#	    $placemark->appendChild($snippet);
+
+#	    my $desc = XML::LibXML::Element->new("description");
+#	    $placemark->appendChild($desc);
+#	    $desc->appendText($img . " - " . $cname);
+
+	    my $styleUrl = XML::LibXML::Element->new("styleUrl");
+	    $placemark->appendChild($styleUrl);
+	    $styleUrl->appendText("#style_map_".$img);
+
+	    my $point = XML::LibXML::Element->new("Point");
+	    $placemark->appendChild($point);
+
+	    my $coords = XML::LibXML::Element->new("coordinates");
+	    $point->appendChild($coords);
+	    $coords->appendText($y.",".$x);
+
+	    $doc->appendChild($placemark);
+	}
+
+	$root->appendChild($doc);
+	writeFile($file, $dom->toString(), ":utf8");
     }
     print STDERR " done.\n";
 }

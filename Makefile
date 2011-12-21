@@ -150,6 +150,9 @@ sheets:
 xplanet:
 	$(Q)scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all
 
+kml:
+	$(Q)scripts/build.pl --cmd example kml --json iso-3166-1.json --out build --res 16x16 --lang all
+
 distclean: clean
 
 clean:
