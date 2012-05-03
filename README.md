@@ -23,13 +23,19 @@ For example the results with the template "flat" applied to the "United States" 
  
 ### Usage examples
 
+Type
+
+```
+$ make help
+```
+
+to see all build targets.
+
+* Country flags icon sheets - type ```$ make -j4 sheets```.
+
 * Google Earth - [G+ users of the world - KMZ file](http://goo.gl/YJjv3):
 
-  ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-earth.png). Run the following command to generate all the kml files with different country name translations:
-  
-  ```
-   $ scripts/build.pl --cmd example kml --json iso-3166-1.json --out build --res 16x16 --lang all
-  ```
+  ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-earth.png). Run the following command to generate all the kml files with different country name translations: ```$ make kml```, a shortcut for the command: ```$ scripts/build.pl --cmd example kml --json iso-3166-1.json --out build --res 16x16 --lang all```.
 
 * Google Maps - [G+ users of the world - PicasaWeb album](http://goo.gl/mHyJb):
 
@@ -37,11 +43,7 @@ For example the results with the template "flat" applied to the "United States" 
 
 * Xplanet - [howto generate xplanet marker config files](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet):
 
-  ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xplanet marker config files:
-  
-   ```
-    $ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all
-   ```
+  ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xplanet marker config files: ```$ make -j4 xplanet```, a shortcut for the command: ```$ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all```.
 
 ## Building the icon sets
 
