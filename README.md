@@ -39,7 +39,7 @@ to see all build targets.
 
 * [WebGL Earth - ISO country flags](http://tinyurl.com/webgl-earth-iso-country-flags).
 
-  ![WebGL Earth - ISO country flags](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-webgl-earth.png). Open the [live demo](http://tinyurl.com/webgl-earth-iso-country-flags) in your web browser. This demo uses a slightly modified iso-3166-1.json file an the [WebGL Earth API](http://www.webglearth.org/).
+  ![WebGL Earth - ISO country flags](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-webgl-earth.png). Open the [live demo](http://tinyurl.com/webgl-earth-iso-country-flags) in your web browser. This demo uses a slightly modified [iso-3166-1.json file](http://dl.dropbox.com/u/3139257/iso-country-flags-svg-collection/examples/iso-3166-1.json) (with an added "var data = " string) an the [WebGL Earth API](http://www.webglearth.org/).
 
 * Google Maps - [G+ users of the world - PicasaWeb album](http://goo.gl/mHyJb):
 
