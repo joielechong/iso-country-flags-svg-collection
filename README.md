@@ -37,7 +37,7 @@ to see all build targets.
 
   ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-earth.png). Run the following command to generate all the kml files with different country name translations: ```$ make kml```, a shortcut for the command: ```$ scripts/build.pl --cmd example kml --json iso-3166-1.json --out build --res 16x16 --lang all```.
 
-* WebGL Earth - [ISO country flags].
+* [WebGL Earth - ISO country flags](http://tinyurl.com/webgl-earth-iso-country-flags).
 
   ![WebGL Earth - ISO country flags](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-webgl-earth.png). Open the [live demo](http://tinyurl.com/webgl-earth-iso-country-flags) in your web browser. This demo uses a slightly modified iso-3166-1.json file an the [WebGL Earth API](http://www.webglearth.org/).
 
