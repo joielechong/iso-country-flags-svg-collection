@@ -51,7 +51,7 @@ to see all build targets.
   
 ## Download iso country flags PNG icons
 
-You can download pre built png based icon sets in different resolutions from my [dropbox iso-country-flags-svg-collection/build/zip folder](https://dl.dropbox.com/u/3139257/iso-country-flags-svg-collection/build//zip/index.html).
+You can download pre built png icon sets from my [dropbox folder](https://dl.dropbox.com/u/3139257/iso-country-flags-svg-collection/build/zip/index.html).
 
 ## Building the icon sets
 
