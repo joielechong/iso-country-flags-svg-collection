@@ -48,6 +48,10 @@ to see all build targets.
 * Xplanet - [howto generate xplanet marker config files](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet):
 
   ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xplanet marker config files: ```$ make -j4 xplanet```, a shortcut for the command: ```$ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all```.
+  
+## Download iso country flags PNG icons
+
+You can download pre built png based icon sets in different resolutions from my [dropbox iso-country-flags-svg-collection/build/zip folder](https://dl.dropbox.com/u/3139257/iso-country-flags-svg-collection/build//zip/index.html).
 
 ## Building the icon sets
 
