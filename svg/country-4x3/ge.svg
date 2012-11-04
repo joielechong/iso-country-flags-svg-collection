@@ -39,9 +39,9 @@
      inkscape:window-height="776"
      id="namedview25"
      showgrid="false"
-     inkscape:zoom="0.39590181"
+     inkscape:zoom="1.24375"
      inkscape:cx="320"
-     inkscape:cy="-244.25688"
+     inkscape:cy="239.19598"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -85,55 +85,64 @@
   </defs>
   <g
      id="flag"
-     clip-path="url(#clipPath3028)"
-     inkscape:label="#g3018">
+     inkscape:label="#g3011">
     <rect
-       y="13.192315"
-       x="6.3846216"
-       id="rect13"
-       style="fill:#ffffff"
-       height="133.7094"
-       width="200.56409" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path15"
-       style="fill:#ff0000"
-       d="m 93.295725,13.192315 0,53.483756 -86.9111033,0 0,26.741878 86.9111033,0 0,53.483751 26.741875,0 0,-53.483751 86.91111,0 0,-26.741878 -86.91111,0 0,-53.483756 -26.741875,0 z" />
-    <use
-       height="200"
-       width="300"
-       y="0"
-       x="0"
-       style="fill:#ff0000"
-       id="use17"
-       transform="matrix(0.66854695,0,0,0.66854695,49.472473,39.566492)"
-       xlink:href="#smallcross" />
-    <use
-       height="200"
-       width="300"
-       y="0"
-       x="0"
-       style="fill:#ff0000"
-       id="use19"
-       transform="matrix(0.66854695,0,0,0.66854695,163.86086,120.52753)"
-       xlink:href="#smallcross" />
-    <use
-       height="200"
-       width="300"
-       y="0"
-       x="0"
-       style="fill:#ff0000"
-       id="use21"
-       transform="matrix(0.66854695,0,0,0.66854695,163.86086,39.566492)"
-       xlink:href="#smallcross" />
-    <use
-       height="200"
-       width="300"
-       y="0"
-       x="0"
-       style="fill:#ff0000"
-       id="use23"
-       transform="matrix(0.66854695,0,0,0.66854695,49.472473,120.52753)"
-       xlink:href="#smallcross" />
+       y="1.4210855e-14"
+       x="-1.6666667e-06"
+       height="160"
+       width="213.33333"
+       id="rect3009"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <g
+       id="g3001">
+      <rect
+         width="200.56409"
+         height="133.7094"
+         style="fill:#ffffff"
+         id="rect13"
+         x="6.3846216"
+         y="13.192315" />
+      <path
+         d="m 93.295725,13.192315 0,53.483756 -86.9111033,0 0,26.741878 86.9111033,0 0,53.483751 26.741875,0 0,-53.483751 86.91111,0 0,-26.741878 -86.91111,0 0,-53.483756 -26.741875,0 z"
+         style="fill:#ff0000"
+         id="path15"
+         inkscape:connector-curvature="0" />
+      <use
+         xlink:href="#smallcross"
+         transform="matrix(0.66854695,0,0,0.66854695,49.472473,39.566492)"
+         id="use17"
+         style="fill:#ff0000"
+         x="0"
+         y="0"
+         width="300"
+         height="200" />
+      <use
+         xlink:href="#smallcross"
+         transform="matrix(0.66854695,0,0,0.66854695,163.86086,120.52753)"
+         id="use19"
+         style="fill:#ff0000"
+         x="0"
+         y="0"
+         width="300"
+         height="200" />
+      <use
+         xlink:href="#smallcross"
+         transform="matrix(0.66854695,0,0,0.66854695,163.86086,39.566492)"
+         id="use21"
+         style="fill:#ff0000"
+         x="0"
+         y="0"
+         width="300"
+         height="200" />
+      <use
+         xlink:href="#smallcross"
+         transform="matrix(0.66854695,0,0,0.66854695,49.472473,120.52753)"
+         id="use23"
+         style="fill:#ff0000"
+         x="0"
+         y="0"
+         width="300"
+         height="200" />
+    </g>
   </g>
 </svg>

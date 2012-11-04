@@ -74,55 +74,66 @@
   </defs>
   <g
      id="flag"
-     transform="matrix(0.53483757,0,0,0.53483757,5.1076988,47.575751)"
-     inkscape:label="#g3004">
+     inkscape:label="#g2995">
     <rect
-       y="-29.333334"
+       y="1.7529297e-06"
        x="0"
-       id="rect13"
-       style="fill:#ffffff"
-       height="200"
-       width="300" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path15"
-       style="fill:#ff0000"
-       d="m 130,-29.333334 0,80 -130,0 0,40 130,0 0,80.000004 40,0 0,-80.000004 130,0 0,-40 -130,0 0,-80 -40,0 z" />
-    <use
-       height="200"
-       width="300"
-       y="0"
-       x="0"
-       style="fill:#ff0000"
-       id="use17"
-       transform="translate(64.45,10.116666)"
-       xlink:href="#smallcross" />
-    <use
-       height="200"
-       width="300"
-       y="0"
-       x="0"
-       style="fill:#ff0000"
-       id="use19"
-       transform="translate(235.55,131.21667)"
-       xlink:href="#smallcross" />
-    <use
-       height="200"
-       width="300"
-       y="0"
-       x="0"
-       style="fill:#ff0000"
-       id="use21"
-       transform="translate(235.55,10.116666)"
-       xlink:href="#smallcross" />
-    <use
-       height="200"
-       width="300"
-       y="0"
-       x="0"
-       style="fill:#ff0000"
-       id="use23"
-       transform="translate(64.45,131.21667)"
-       xlink:href="#smallcross" />
+       height="170.66667"
+       width="170.66667"
+       id="rect2993"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <g
+       inkscape:label="#g3004"
+       transform="matrix(0.53483757,0,0,0.53483757,5.1076988,47.575751)"
+       id="sdsds">
+      <rect
+         width="300"
+         height="200"
+         style="fill:#ffffff"
+         id="rect13"
+         x="0"
+         y="-29.333334" />
+      <path
+         d="m 130,-29.333334 0,80 -130,0 0,40 130,0 0,80.000004 40,0 0,-80.000004 130,0 0,-40 -130,0 0,-80 -40,0 z"
+         style="fill:#ff0000"
+         id="path15"
+         inkscape:connector-curvature="0" />
+      <use
+         xlink:href="#smallcross"
+         transform="translate(64.45,10.116666)"
+         id="use17"
+         style="fill:#ff0000"
+         x="0"
+         y="0"
+         width="300"
+         height="200" />
+      <use
+         xlink:href="#smallcross"
+         transform="translate(235.55,131.21667)"
+         id="use19"
+         style="fill:#ff0000"
+         x="0"
+         y="0"
+         width="300"
+         height="200" />
+      <use
+         xlink:href="#smallcross"
+         transform="translate(235.55,10.116666)"
+         id="use21"
+         style="fill:#ff0000"
+         x="0"
+         y="0"
+         width="300"
+         height="200" />
+      <use
+         xlink:href="#smallcross"
+         transform="translate(64.45,131.21667)"
+         id="use23"
+         style="fill:#ff0000"
+         x="0"
+         y="0"
+         width="300"
+         height="200" />
+    </g>
   </g>
 </svg>
