@@ -57,7 +57,7 @@
             "zh" : "格陵兰",
             "ca" : "Groenlàndia",
             "fa" : "گرینلند",
-            "pl" : "Grenlandii",
+            "pl" : "Grenlandia",
             "sq" : "Grenlandë",
             "nl" : "Groenland",
             "ar" : "غرينلاند",
@@ -16881,7 +16881,7 @@
             "zh" : "荷兰",
             "ca" : "Països Baixos",
             "fa" : "هلند",
-            "pl" : "Niderlandy",
+            "pl" : "Holandia",
             "sq" : "Holandë",
             "nl" : "Nederland",
             "ar" : "هولندا",
@@ -18095,7 +18095,7 @@
             "zh" : "巴哈马",
             "ca" : "Bahames",
             "fa" : "باهاما",
-            "pl" : "Bahamas",
+            "pl" : "Bahamy",
             "sq" : "Bahamas",
             "nl" : "Bahamas",
             "ar" : "جزر البهاما",
@@ -19239,7 +19239,7 @@
             "zh" : "马恩岛",
             "ca" : "Illa de Man",
             "fa" : "جزیره من",
-            "pl" : "Isle of Man",
+            "pl" : "Wyspa Man",
             "sq" : "Ishulli i Njeriut",
             "nl" : "Isle of Man",
             "ar" : "جزيرة مان",
@@ -21718,3 +21718,4 @@
       }
    }
 }
+
