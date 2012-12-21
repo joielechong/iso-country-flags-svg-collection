@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,27 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg548"
-   sodipodi:version="0.33pre"
+   version="1.1"
    width="512"
    height="512"
-   sodipodi:docname="cd.svg"
-   version="1.1"
-   inkscape:version="0.48.1 r9760">
-  <sodipodi:namedview
-     id="base"
-     showgrid="false"
-     inkscape:zoom="0.44080424"
-     inkscape:cx="372.04724"
-     inkscape:cy="248.03149"
-     inkscape:window-width="1280"
-     inkscape:window-height="723"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg548" />
+   id="svg2"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="cd.svg">
   <metadata
-     id="metadata13">
+     id="metadata14">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -40,144 +25,60 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs550" />
+     id="defs12">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3008">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3010"
+         width="600"
+         height="600"
+         x="0"
+         y="-88" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="776"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="0.39333333"
+     inkscape:cx="400"
+     inkscape:cy="300"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
   <g
      id="flag"
-     inkscape:label="#g2989">
+     transform="matrix(0.85333333,0,0,0.85333333,0,75.093335)"
+     clip-path="url(#clipPath3008)"
+     inkscape:label="#g2997">
     <rect
-       inkscape:label="#rect551"
-       style="font-size:12px;fill:#0033ff;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="rect551"
-       width="512"
-       height="512"
+       id="rect4"
+       style="fill:#007fff"
+       y="-88"
        x="0"
-       y="1.4202521e-05"
-       sodipodi:fill-cmyk="(1 0.8 0 0)" />
-    <polygon
-       d="m 192.26143,142.48953 -29.10156,-21.17346 -29.16367,21.08783 11.14428,-34.22019 -29.06779,-21.219794 35.98911,0.02422 11.19878,-34.202391 11.09821,34.235161 35.98902,0.08156 -29.13003,21.134274 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="false"
-       sodipodi:type="star"
-       style="font-size:12px;fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="polygon556"
-       sodipodi:sides="5"
-       sodipodi:cx="163.18774"
-       sodipodi:cy="102.34911"
-       sodipodi:r1="49.563419"
-       sodipodi:r2="18.966976"
-       sodipodi:arg1="0.94394743"
-       sodipodi:arg2="1.572266"
-       points="192.261,142.49 163.16,121.316 133.996,142.404 145.14,108.184 116.073,86.9639 152.062,86.9881 163.261,52.7857 174.359,87.0209 210.348,87.1025 181.218,108.237 192.261,142.49 "
-       transform="matrix(0.72457682,0,0,0.72569049,-55.769677,390.17138)"
-       sodipodi:fill-cmyk="(0 0.13 1 0)" />
-    <polygon
-       d="m 192.26143,142.48953 -29.10156,-21.17346 -29.16367,21.08783 11.14428,-34.22019 -29.06779,-21.219794 35.98911,0.02422 11.19878,-34.202391 11.09821,34.235161 35.98902,0.08156 -29.13003,21.134274 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="false"
-       sodipodi:type="star"
-       style="font-size:12px;fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="polygon557"
-       sodipodi:sides="5"
-       sodipodi:cx="163.18774"
-       sodipodi:cy="102.34911"
-       sodipodi:r1="49.563419"
-       sodipodi:r2="18.966976"
-       sodipodi:arg1="0.94394743"
-       sodipodi:arg2="1.572266"
-       points="192.261,142.49 163.16,121.316 133.996,142.404 145.14,108.184 116.073,86.9639 152.062,86.9881 163.261,52.7857 174.359,87.0209 210.348,87.1025 181.218,108.237 192.261,142.49 "
-       transform="matrix(0.72457682,0,0,0.72569049,-55.769677,308.005)"
-       sodipodi:fill-cmyk="(0 0.13 1 0)" />
-    <polygon
-       d="m 192.26143,142.48953 -29.10156,-21.17346 -29.16367,21.08783 11.14428,-34.22019 -29.06779,-21.219794 35.98911,0.02422 11.19878,-34.202391 11.09821,34.235161 35.98902,0.08156 -29.13003,21.134274 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="false"
-       sodipodi:type="star"
-       style="font-size:12px;fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="polygon558"
-       sodipodi:sides="5"
-       sodipodi:cx="163.18774"
-       sodipodi:cy="102.34911"
-       sodipodi:r1="49.563419"
-       sodipodi:r2="18.966976"
-       sodipodi:arg1="0.94394743"
-       sodipodi:arg2="1.572266"
-       points="192.261,142.49 163.16,121.316 133.996,142.404 145.14,108.184 116.073,86.9639 152.062,86.9881 163.261,52.7857 174.359,87.0209 210.348,87.1025 181.218,108.237 192.261,142.49 "
-       transform="matrix(0.72457682,0,0,0.72569049,-55.769677,227.37731)"
-       sodipodi:fill-cmyk="(0 0.13 1 0)" />
-    <polygon
-       d="m 192.26143,142.48953 -29.10156,-21.17346 -29.16367,21.08783 11.14428,-34.22019 -29.06779,-21.219794 35.98911,0.02422 11.19878,-34.202391 11.09821,34.235161 35.98902,0.08156 -29.13003,21.134274 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="false"
-       sodipodi:type="star"
-       style="font-size:12px;fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="polygon559"
-       sodipodi:sides="5"
-       sodipodi:cx="163.18774"
-       sodipodi:cy="102.34911"
-       sodipodi:r1="49.563419"
-       sodipodi:r2="18.966976"
-       sodipodi:arg1="0.94394743"
-       sodipodi:arg2="1.572266"
-       points="192.261,142.49 163.16,121.316 133.996,142.404 145.14,108.184 116.073,86.9639 152.062,86.9881 163.261,52.7857 174.359,87.0209 210.348,87.1025 181.218,108.237 192.261,142.49 "
-       transform="matrix(0.72457682,0,0,0.72569049,-55.769677,145.21092)"
-       sodipodi:fill-cmyk="(0 0.13 1 0)" />
-    <polygon
-       d="m 192.26143,142.48953 -29.10156,-21.17346 -29.16367,21.08783 11.14428,-34.22019 -29.06779,-21.219794 35.98911,0.02422 11.19878,-34.202391 11.09821,34.235161 35.98902,0.08156 -29.13003,21.134274 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="false"
-       sodipodi:type="star"
-       style="font-size:12px;fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="polygon560"
-       sodipodi:sides="5"
-       sodipodi:cx="163.18774"
-       sodipodi:cy="102.34911"
-       sodipodi:r1="49.563419"
-       sodipodi:r2="18.966976"
-       sodipodi:arg1="0.94394743"
-       sodipodi:arg2="1.572266"
-       points="192.261,142.49 163.16,121.316 133.996,142.404 145.14,108.184 116.073,86.9639 152.062,86.9881 163.261,52.7857 174.359,87.0209 210.348,87.1025 181.218,108.237 192.261,142.49 "
-       transform="matrix(0.72457682,0,0,0.72569049,-55.769677,62.429288)"
-       sodipodi:fill-cmyk="(0 0.13 1 0)" />
-    <polygon
-       d="m 192.26143,142.48953 -29.10156,-21.17346 -29.16367,21.08783 11.14428,-34.22019 -29.06779,-21.219794 35.98911,0.02422 11.19878,-34.202391 11.09821,34.235161 35.98902,0.08156 -29.13003,21.134274 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="false"
-       sodipodi:type="star"
-       style="font-size:12px;fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="polygon561"
-       sodipodi:sides="5"
-       sodipodi:cx="163.18774"
-       sodipodi:cy="102.34911"
-       sodipodi:r1="49.563419"
-       sodipodi:r2="18.966976"
-       sodipodi:arg1="0.94394743"
-       sodipodi:arg2="1.572266"
-       points="192.261,142.49 163.16,121.316 133.996,142.404 145.14,108.184 116.073,86.9639 152.062,86.9881 163.261,52.7857 174.359,87.0209 210.348,87.1025 181.218,108.237 192.261,142.49 "
-       transform="matrix(0.72457682,0,0,0.72569049,-55.769677,-20.352801)"
-       sodipodi:fill-cmyk="(0 0.13 1 0)" />
-    <polygon
-       d="m 192.26143,142.48953 -29.10156,-21.17346 -29.16367,21.08783 11.14428,-34.22019 -29.06779,-21.219794 35.98911,0.02422 11.19878,-34.202391 11.09821,34.235161 35.98902,0.08156 -29.13003,21.134274 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="false"
-       sodipodi:type="star"
-       style="font-size:12px;fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="polygon555"
-       sodipodi:sides="5"
-       sodipodi:cx="163.18774"
-       sodipodi:cy="102.34911"
-       sodipodi:r1="49.563419"
-       sodipodi:r2="18.966976"
-       sodipodi:arg1="0.94394743"
-       sodipodi:arg2="1.572266"
-       points="192.261,142.49 163.16,121.316 133.996,142.404 145.14,108.184 116.073,86.9639 152.062,86.9881 163.261,52.7857 174.359,87.0209 210.348,87.1025 181.218,108.237 192.261,142.49 "
-       transform="matrix(2.3994442,0,0,2.40313,-66.83051,-1.820241)"
-       sodipodi:fill-cmyk="(0 0.13 1 0)" />
+       height="600"
+       width="800" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6"
+       style="fill:#f7d618"
+       d="m 36,32 84,0 26,-84 26,84 84,0 -68,52 26,84 L 146,116 78,168 104,84 36,32 z M 750,-88 0,362 l 0,150 0,0 50,0 750,-450 0,-150 -50,0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path8"
+       style="fill:#ce1021"
+       d="M 800,-88 0,392 l 0,120 0,0 0,0 800,-480 0,-120" />
   </g>
 </svg>
