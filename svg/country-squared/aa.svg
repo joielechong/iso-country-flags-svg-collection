@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
 <!-- /Creative Commons Public Domain -->
-
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -22,96 +20,19 @@
 </License>
 </rdf:RDF>
 -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.0"
-   x="0"
-   y="0"
-   width="512"
-   height="512"
-   id="svg378"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="aa.svg">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="746"
-     id="namedview3072"
-     showgrid="false"
-     inkscape:zoom="1.0273438"
-     inkscape:cx="256"
-     inkscape:cy="256"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg378" />
-  <metadata
-     id="metadata3074">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs380" />
-  <rect
-     id="rect171"
-     style="font-size:12px;fill:#000000;fill-rule:evenodd;stroke-width:1pt"
-     y="255"
-     x="0"
-     height="2"
-     width="512" />
-  <rect
-     id="rect256"
-     style="font-size:12px;fill:#000000;fill-rule:evenodd;stroke-width:1pt"
-     y="510"
-     x="0"
-     height="2"
-     width="512" />
-  <rect
-     id="rect255"
-     style="font-size:12px;fill:#000000;fill-rule:evenodd;stroke-width:1pt"
-     y="0"
-     x="0"
-     height="2"
-     width="512" />
-  <rect
-     width="2"
-     height="512"
-     x="255"
-     y="0"
-     style="font-size:12px;fill:#000000;fill-rule:evenodd;stroke-width:1pt"
-     id="rect2988" />
-  <rect
-     id="rect2990"
-     style="font-size:12px;fill:#000000;fill-rule:evenodd;stroke-width:1pt"
-     y="0"
-     x="0"
-     height="512"
-     width="2" />
-  <rect
-     width="2"
-     height="512"
-     x="510"
-     y="0"
-     style="font-size:12px;fill:#000000;fill-rule:evenodd;stroke-width:1pt"
-     id="rect2992" />
+<svg id="svg378" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="512" width="512" version="1.0" y="0" x="0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata3074">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <rect id="rect171" fill-rule="evenodd" height="2" width="512" y="255" x="0" stroke-width="1pt"/>
+ <rect id="rect256" fill-rule="evenodd" height="2" width="512" y="510" x="0" stroke-width="1pt"/>
+ <rect id="rect255" fill-rule="evenodd" height="2" width="512" y="0" x="0" stroke-width="1pt"/>
+ <rect id="rect2988" fill-rule="evenodd" height="512" width="2" y="0" x="255" stroke-width="1pt"/>
+ <rect id="rect2990" fill-rule="evenodd" height="512" width="2" y="0" x="0" stroke-width="1pt"/>
+ <rect id="rect2992" fill-rule="evenodd" height="512" width="2" y="0" x="510" stroke-width="1pt"/>
 </svg>

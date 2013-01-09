@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
 <!-- /Creative Commons Public Domain -->
-
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -25,75 +23,20 @@ Guinea, Honduras, Israel, Jamaica, Jordan, and Romania Flags</dc:title>
 </License>
 </rdf:RDF>
 -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg548"
-   sodipodi:version="0.31.1win"
-   width="640"
-   height="480"
-   sodipodi:docname="ro.svg"
-   version="1.1"
-   inkscape:version="0.48.1 r9760">
-  <sodipodi:namedview
-     id="base"
-     showgrid="false"
-     inkscape:zoom="0.32832833"
-     inkscape:cx="499.5"
-     inkscape:cy="333"
-     inkscape:window-width="1280"
-     inkscape:window-height="746"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg548" />
-  <metadata
-     id="metadata4337">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs550" />
-  <g
-     inkscape:label="#g4413"
-     id="flag"
-     transform="scale(0.64064064,0.72072072)">
-    <g
-       transform="scale(8.325,8.325)"
-       id="g555">
-      <rect
-         y="0"
-         x="0"
-         height="80"
-         width="40"
-         id="rect551"
-         style="font-size:12px;fill:#00319c;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt" />
-      <rect
-         y="0"
-         x="40"
-         height="80"
-         width="40"
-         id="rect552"
-         style="font-size:12px;fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt" />
-      <rect
-         y="0"
-         x="80"
-         height="80"
-         width="40"
-         id="rect553"
-         style="font-size:12px;fill:#de2110;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt" />
-    </g>
+<svg id="svg548" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="480" width="640" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata4337">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="flag" transform="scale(.64064 .72072)">
+  <g id="g555" fill-rule="evenodd" stroke-width="1pt" transform="scale(8.325)">
+   <rect id="rect551" height="80" width="40" y="0" x="0" fill="#00319c"/>
+   <rect id="rect552" height="80" width="40" y="0" x="40" fill="#ffde00"/>
+   <rect id="rect553" height="80" width="40" y="0" x="80" fill="#de2110"/>
   </g>
+ </g>
 </svg>

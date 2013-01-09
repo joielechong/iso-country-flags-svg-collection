@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
 <!-- Creative Commons Public Domain -->
-
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/"
 xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -32,126 +30,29 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   </License>
 </rdf:RDF>
 -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1"
-   x="0.00000000"
-   y="0.00000000"
-   width="640"
-   height="480"
-   id="svg548"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="za.svg">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="1"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="746"
-     id="namedview3792"
-     showgrid="false"
-     inkscape:zoom="0.98242188"
-     inkscape:cx="126.72763"
-     inkscape:cy="256"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg548"
-     showguides="false"
-     inkscape:snap-from-guide="false" />
-  <metadata
-     id="metadata3794">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs550">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath4085">
-      <rect
-         id="rect4087"
-         height="499.60632"
-         x="70.133392"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         width="499.60632"
-         y="-1.2807692e-05" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3532">
-      <rect
-         id="rect3534"
-         height="512.01233"
-         x="-71.873177"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         width="682.68311"
-         y="-0.012254236" />
-    </clipPath>
-  </defs>
-  <g
-     transform="matrix(0.93747745,0,0,0.93747745,67.379485,0.01148807)"
-     id="flag"
-     clip-path="url(#clipPath3532)"
-     inkscape:label="#g3460">
-    <g
-       transform="matrix(2.0478368,0,0,2.0483851,-148.56692,-1592.2445)"
-       style="font-size:12px"
-       id="g603">
-      <path
-         inkscape:connector-curvature="0"
-         d="m 37.4511,976.386 0,-148.125 110.2779,74.022 -110.2779,74.103 z"
-         style="fill-rule:evenodd;stroke-width:1pt"
-         id="path581" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 112.695,1027.27 123.808,-83.306 175.978,0 0,83.306 -299.786,0 z"
-         style="fill:#0000cc;fill-rule:evenodd;stroke-width:1pt"
-         id="path597" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 104.74208,777.317 307.73892,0.006 0,83.32 -175.978,0 c 0,0 -130.11092,-84.15 -131.76092,-83.326 z"
-         style="fill:#ff0000;fill-rule:evenodd;stroke-width:1pt"
-         id="path598"
-         sodipodi:nodetypes="ccccc" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 37.4511,808.573 c 0,0 0,19.688 0,19.688 l 110.2779,74.022 -110.2779,74.103 0,19.687 138.8989,-93.79 -138.8989,-93.71 z"
-         style="fill:#ffcc00;fill-rule:evenodd;stroke-width:1pt"
-         id="path599" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 37.4511,808.573 0,-31.25 46.338,0 147.1389,99.531 181.553,0 0,50.899 -181.553,0 -147.1389,99.517 -46.338,0 0,-31.197 138.8989,-93.79 -138.8989,-93.71 z"
-         style="fill:#009933;fill-rule:evenodd;stroke-width:1pt"
-         id="path600" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 83.7891,777.323 28.9059,0 123.808,83.32 175.978,0 0,16.211 -181.553,0 -147.1389,-99.531 z"
-         style="fill:#ffffff;fill-rule:evenodd;stroke-width:1pt"
-         id="path601" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 83.7891,1027.27 28.9059,0 123.808,-83.306 175.978,0 0,-16.211 -181.553,0 -147.1389,99.517 z"
-         style="fill:#ffffff;fill-rule:evenodd;stroke-width:1pt"
-         id="path602" />
-    </g>
+<svg id="svg548" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="480" width="640" version="1" y="0" x="0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata3794">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs550">
+  <clipPath id="clipPath3532" clipPathUnits="userSpaceOnUse">
+   <rect id="rect3534" fill-opacity="0.67" height="512.01" width="682.68" y="-.012254" x="-71.873"/>
+  </clipPath>
+ </defs>
+ <g id="flag" clip-path="url(#clipPath3532)" transform="matrix(.93748 0 0 .93748 67.379 .011488)">
+  <g id="g603" fill-rule="evenodd" stroke-width="1pt" transform="matrix(2.0478 0 0 2.0484 -148.57 -1592.2)">
+   <path id="path581" d="m37.451 976.39v-148.12l110.28 74.022-110.28 74.103z"/>
+   <path id="path597" d="m112.7 1027.3 123.81-83.306h175.98v83.306h-299.79z" fill="#00c"/>
+   <path id="path598" d="m104.74 777.32 307.74 0.006v83.32h-175.98s-130.11-84.15-131.76-83.326z" fill="#f00"/>
+   <path id="path599" d="m37.451 808.57v19.688l110.28 74.022-110.28 74.103v19.687l138.9-93.79-138.9-93.71z" fill="#fc0"/>
+   <path id="path600" d="m37.451 808.57v-31.25h46.338l147.14 99.531h181.55v50.899h-181.55l-147.14 99.517h-46.338v-31.197l138.9-93.79-138.9-93.71z" fill="#093"/>
+   <path id="path601" d="m83.789 777.32h28.906l123.81 83.32h175.98v16.211h-181.55l-147.14-99.531z" fill="#fff"/>
+   <path id="path602" d="m83.789 1027.3h28.906l123.81-83.306h175.98v-16.211h-181.55l-147.14 99.517z" fill="#fff"/>
   </g>
+ </g>
 </svg>
