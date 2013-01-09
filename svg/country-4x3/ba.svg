@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
 <!-- /Creative Commons Public Domain -->
-
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -25,141 +23,31 @@ Guinea, Honduras, Israel, Jamaica, Jordan, and Romania Flags</dc:title>
 </License>
 </rdf:RDF>
 -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.0"
-   x="0"
-   y="0"
-   width="640"
-   height="480"
-   id="svg609"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="ba.svg"
-   viewBox="0 0 512 512">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="746"
-     id="namedview3229"
-     showgrid="false"
-     inkscape:zoom="0.98242188"
-     inkscape:cx="256"
-     inkscape:cy="256"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg609" />
-  <metadata
-     id="metadata3231">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs611">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3684">
-      <rect
-         style="fill:#808080;fill-opacity:1;stroke:none"
-         id="rect3686"
-         width="512"
-         height="512"
-         x="0"
-         y="0" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3133">
-      <rect
-         id="rect3135"
-         height="512"
-         x="-85.333336"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         width="682.66669"
-         y="7.1054274e-15" />
-    </clipPath>
-  </defs>
-  <g
-     id="flag"
-     clip-path="url(#clipPath3133)"
-     inkscape:label="#g3083">
-    <rect
-       inkscape:label="#rect614"
-       id="rect614"
-       style="font-size:12px;fill:#000099;fill-rule:evenodd;stroke:none"
-       y="0"
-       x="-85.333336"
-       height="512"
-       width="682.66669" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path615"
-       style="font-size:12px;fill:#ffcc00;fill-rule:evenodd;stroke:none"
-       d="m -85.333333,0 682.666663,512 0,-512 -682.666663,0 z" />
-    <polygon
-       id="polygon621"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       points="381.84,62.8566 326,22.2868 270.16,62.8566 291.489,-2.78677 235.65,-43.3566 304.671,-43.3566 326,-109 326,-109 347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 "
-       transform="matrix(0.43691353,0,0,0.43691353,-188.29201,47.623571)" />
-    <polygon
-       id="polygon622"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="matrix(0.43691353,0,0,0.43691353,-112.34449,102.23776)"
-       points="326,22.2868 270.16,62.8566 291.489,-2.78677 235.65,-43.3566 304.671,-43.3566 326,-109 326,-109 347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 381.84,62.8566 " />
-    <polygon
-       id="polygon616"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="matrix(0.43691353,0,0,0.43691353,-36.396962,156.85195)"
-       points="270.16,62.8566 291.489,-2.78677 235.65,-43.3566 304.671,-43.3566 326,-109 326,-109 347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 381.84,62.8566 326,22.2868 " />
-    <polygon
-       id="polygon623"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="matrix(0.43691353,0,0,0.43691353,39.550564,211.46614)"
-       points="291.489,-2.78677 235.65,-43.3566 304.671,-43.3566 326,-109 326,-109 347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 381.84,62.8566 326,22.2868 270.16,62.8566 " />
-    <polygon
-       id="polygon624"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="matrix(0.43691353,0,0,0.43691353,115.49809,266.08034)"
-       points="235.65,-43.3566 304.671,-43.3566 326,-109 326,-109 347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 381.84,62.8566 326,22.2868 270.16,62.8566 291.489,-2.78677 " />
-    <polygon
-       id="polygon625"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="matrix(0.43691353,0,0,0.43691353,191.4456,320.69453)"
-       points="304.671,-43.3566 326,-109 326,-109 347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 381.84,62.8566 326,22.2868 270.16,62.8566 291.489,-2.78677 235.65,-43.3566 " />
-    <polygon
-       id="polygon626"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="matrix(0.43691353,0,0,0.43691353,267.39312,375.30872)"
-       points="326,-109 326,-109 347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 381.84,62.8566 326,22.2868 270.16,62.8566 291.489,-2.78677 235.65,-43.3566 304.671,-43.3566 " />
-    <polygon
-       id="polygon627"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="matrix(0.43691353,0,0,0.43691353,343.34064,429.92291)"
-       points="326,-109 347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 381.84,62.8566 326,22.2868 270.16,62.8566 291.489,-2.78677 235.65,-43.3566 304.671,-43.3566 326,-109 " />
-    <polygon
-       id="polygon628"
-       style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="matrix(0.43691353,0,0,0.43691353,419.28816,484.5371)"
-       points="347.329,-43.3566 416.35,-43.3566 360.511,-2.78677 381.84,62.8566 326,22.2868 270.16,62.8566 291.489,-2.78677 235.65,-43.3566 304.671,-43.3566 326,-109 326,-109 " />
-  </g>
+<svg id="svg609" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="480" viewBox="0 0 512 512" width="640" version="1.0" y="0" x="0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata3231">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs611">
+  <clipPath id="clipPath3133" clipPathUnits="userSpaceOnUse">
+   <rect id="rect3135" fill-opacity="0.67" height="512" width="682.67" y="7.1054e-15" x="-85.333"/>
+  </clipPath>
+ </defs>
+ <g id="flag" fill-rule="evenodd" clip-path="url(#clipPath3133)">
+  <rect id="rect614" height="512" width="682.67" y="0" x="-85.333" fill="#009"/>
+  <path id="path615" d="m-85.333 0 682.67 512v-512h-682.67z" fill="#fc0"/>
+  <polygon id="polygon621" transform="matrix(.43691 0 0 .43691 -188.29 47.624)" points="381.84 62.857 326 22.287 270.16 62.857 291.49 -2.7868 235.65 -43.357 304.67 -43.357 326 -109 326 -109 347.33 -43.357 416.35 -43.357 360.51 -2.7868" fill="#fff"/>
+  <polygon id="polygon622" transform="matrix(.43691 0 0 .43691 -112.34 102.24)" points="326 22.287 270.16 62.857 291.49 -2.7868 235.65 -43.357 304.67 -43.357 326 -109 326 -109 347.33 -43.357 416.35 -43.357 360.51 -2.7868 381.84 62.857" fill="#fff"/>
+  <polygon id="polygon616" transform="matrix(.43691 0 0 .43691 -36.397 156.85)" points="270.16 62.857 291.49 -2.7868 235.65 -43.357 304.67 -43.357 326 -109 326 -109 347.33 -43.357 416.35 -43.357 360.51 -2.7868 381.84 62.857 326 22.287" fill="#fff"/>
+  <polygon id="polygon623" transform="matrix(.43691 0 0 .43691 39.551 211.47)" points="291.49 -2.7868 235.65 -43.357 304.67 -43.357 326 -109 326 -109 347.33 -43.357 416.35 -43.357 360.51 -2.7868 381.84 62.857 326 22.287 270.16 62.857" fill="#fff"/>
+  <polygon id="polygon624" transform="matrix(.43691 0 0 .43691 115.5 266.08)" points="235.65 -43.357 304.67 -43.357 326 -109 326 -109 347.33 -43.357 416.35 -43.357 360.51 -2.7868 381.84 62.857 326 22.287 270.16 62.857 291.49 -2.7868" fill="#fff"/>
+  <polygon id="polygon625" transform="matrix(.43691 0 0 .43691 191.45 320.69)" points="304.67 -43.357 326 -109 326 -109 347.33 -43.357 416.35 -43.357 360.51 -2.7868 381.84 62.857 326 22.287 270.16 62.857 291.49 -2.7868 235.65 -43.357" fill="#fff"/>
+  <polygon id="polygon626" transform="matrix(.43691 0 0 .43691 267.39 375.31)" points="326 -109 326 -109 347.33 -43.357 416.35 -43.357 360.51 -2.7868 381.84 62.857 326 22.287 270.16 62.857 291.49 -2.7868 235.65 -43.357 304.67 -43.357" fill="#fff"/>
+  <polygon id="polygon627" transform="matrix(.43691 0 0 .43691 343.34 429.92)" points="326 -109 347.33 -43.357 416.35 -43.357 360.51 -2.7868 381.84 62.857 326 22.287 270.16 62.857 291.49 -2.7868 235.65 -43.357 304.67 -43.357" fill="#fff"/>
+  <polygon id="polygon628" transform="matrix(.43691 0 0 .43691 419.29 484.54)" points="347.33 -43.357 416.35 -43.357 360.51 -2.7868 381.84 62.857 326 22.287 270.16 62.857 291.49 -2.7868 235.65 -43.357 304.67 -43.357 326 -109 326 -109" fill="#fff"/>
+ </g>
 </svg>
