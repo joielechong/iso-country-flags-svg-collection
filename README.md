@@ -112,11 +112,12 @@ Type "make sheets" to generate icon sheets for the icon sets created above.
 
 #### Adding local build targets
 
-You can add your local build target commands to the Makefile.local, which gets invoked with the "all" target of the main Makefile.
+You can add your local build target commands to the Makefile.local,
+which gets invoked with the "all" target of the main Makefile.
 
-### Are you using this country flags collection?
+#### Need more flags?
 
-Want to be featured in a gallery of apps using it? Then please send a screenshot and details of your app to [Jakob Flierl](https://github.com/koppi).
+Go to http://flagspot.net
 
 ## Authors / TODO / License
 
