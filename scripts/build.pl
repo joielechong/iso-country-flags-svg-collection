@@ -92,10 +92,10 @@ sub u {
 
 USAGE
     if (defined $err) {
-	print STDERR " ".RED."error:".RESET." ".$err." Exiting.\n\n";
-	exit 1;
+        print STDERR " ".RED."error:".RESET." ".$err." Exiting.\n\n";
+        exit 1;
     } else {
-	exit 0;
+        exit 0;
     }
 }
 
@@ -115,20 +115,20 @@ if ($cmd eq "example") {
     my $subcmd = shift || "list";
 
     if ($subcmd eq "list" or $subcmd eq "help") {
-	print STDERR "Available --cmd example commands:\n\n";
-	print STDERR " kml     - generate kml geo files.\n";
-	print STDERR " xplanet - generate xplanet marker config files.\n";
-	print STDERR "\n";
+        print STDERR "Available --cmd example commands:\n\n";
+        print STDERR " kml     - generate kml geo files.\n";
+        print STDERR " xplanet - generate xplanet marker config files.\n";
+        print STDERR "\n";
     } elsif ($subcmd eq "xplanet") {
-	example_xplanet();
+        example_xplanet();
     } elsif ($subcmd eq "kml") {
-	example_kml();
+        example_kml();
     }
 }
 
 sub example_xplanet {
     if (!defined $jsonDB) {
-	u("missing --json [file], eg.: iso-3166-1.json.");
+        u("missing --json [file], eg.: iso-3166-1.json.");
     }
 
     if (!$out)   {u("missing --out [dir], eg.: build.")}
@@ -138,10 +138,10 @@ sub example_xplanet {
     my ($resX,$resY) = $res =~ m#(\d+)x(\d+)#;
 
     if (!defined $resX or $resX eq 0){
-	u("invalid res: \"".$res."\", width  must be > 0.")
+        u("invalid res: \"".$res."\", width  must be > 0.")
     }
     if (!defined $resY or $resY eq 0){
-	u("invalid res: \"".$res."\", height must be > 0.")
+        u("invalid res: \"".$res."\", height must be > 0.")
     }
 
     my %d = %{$jsonDB->{Results}};
@@ -153,47 +153,48 @@ sub example_xplanet {
 	    push @langs, $l;
 	}
     } else {
-	foreach my $l (split(",", $lang)) {
-	    push @langs, $l;
-	}
+        foreach my $l (split(",", $lang)) {
+            push @langs, $l;
+        }
     }
-
+    
     if (!scalar @langs) {
-	u("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\".");
+        u("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\".");
     }
-
+    
     print STDERR " generating:\n";
     foreach my $l (@langs) {
-
-	my $file = $out."/xplanet/markers/iso-country-code-".$l;
-
-	print STDERR "  ".$file."\n";
-
-	my $content = "";
-	foreach my $co (sort keys %d) {
-	    my $img = lc($co);
-	    
-	    my $x = $d{$co}{GeoPt}[0];
-	    my $y = $d{$co}{GeoPt}[1];
-	    
-	    my $name = $d{$co}{Name};
-
-	    if (defined $d{$co}{Names}{$l}) {
-		$name = $d{$co}{Names}{$l}; # get translated country name
-		print STDERR "  ".$img." ".$name."\n";
-	    }
-	    
-	    $content .= sprintf "%05.2f %05.2f\t\"%s\"\t\timage=res-%sx%s/%s.png\n", $x, $y, $name, $resX, $resY, $img;
-	}
-
-	writeFile($file, $content, ":utf8");
+        
+        my $file = $out."/xplanet/markers/iso-country-code-".$l;
+        
+        print STDERR "  ".$file."\n";
+        
+        my $content = "";
+        foreach my $co (sort keys %d) {
+            my $img = lc($co);
+            
+            my $x = $d{$co}{GeoPt}[0];
+            my $y = $d{$co}{GeoPt}[1];
+            
+            my $name = $d{$co}{Name};
+            
+            if (defined $d{$co}{Names}{$l}) {
+                $name = $d{$co}{Names}{$l}; # get translated country name
+                print STDERR "  ".$img." ".$name."\n";
+            }
+            
+            $content .= sprintf "%05.2f %05.2f\t\"%s\"\t\timage=res-%sx%s/%s.png\n", $x, $y, $name, $resX, $resY, $img;
+        }
+        
+        writeFile($file, $content, ":utf8");
     }
+    
     print STDERR " done.\n";
 }
 
 sub example_kml {
     if (!defined $jsonDB) {
-	u("missing --json [file], eg.: iso-3166-1.json.");
+        u("missing --json [file], eg.: iso-3166-1.json.");
     }
 
     if (!$out)   {u("missing --out [dir], eg.: build.")}
@@ -203,10 +204,10 @@ sub example_kml {
     my ($resX,$resY) = $res =~ m#(\d+)x(\d+)#;
 
     if (!defined $resX or $resX eq 0){
-	u("invalid res: \"".$res."\", width  must be > 0.")
+        u("invalid res: \"".$res."\", width  must be > 0.")
     }
     if (!defined $resY or $resY eq 0){
-	u("invalid res: \"".$res."\", height must be > 0.")
+        u("invalid res: \"".$res."\", height must be > 0.")
     }
 
     my %d = %{$jsonDB->{Results}};
@@ -214,130 +215,130 @@ sub example_kml {
     my @langs;
 
     if (!defined $lang or $lang eq "all") {
-	foreach my $l (split(",", "af,sq,ar,be,bg,ca,zh,zh-TW,hr,cs,da,nl,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi")) {
-	    push @langs, $l;
-	}
+        foreach my $l (split(",", "af,sq,ar,be,bg,ca,zh,zh-TW,hr,cs,da,nl,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi")) {
+            push @langs, $l;
+        }
     } else {
-	foreach my $l (split(",", $lang)) {
-	    push @langs, $l;
-	}
+        foreach my $l (split(",", $lang)) {
+            push @langs, $l;
+        }
     }
-
+    
     if (!scalar @langs) {
-	u("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\".");
+        u("Error parsing --lang \"".$lang."\", eg.: \"all\" or \"en,..\".");
     }
-
+    
     print STDERR " generating:\n";
     foreach my $l (@langs) {
-
-	my $file = $out."/kml/iso-countries-".$l."/doc.kml"; 
-
-	print STDERR "  ".$file."\n";
-
-	my $dom = XML::LibXML::Document->new("1.0", "UTF-8");
-	
-	my $root = $dom->createElement("kml");
-	$dom->setDocumentElement($root);
-	
-	$root->setAttribute("xmlns:gx",   "http://www.opengis.net/kml/2.2");
-	$root->setAttribute("xmlns:kml",  "http://www.opengis.net/kml/2.2");
-	$root->setAttribute("xmlns:atom", "http://www.w3.org/2005/Atom");
-
-	my $kml = XML::LibXML::Element->new("Document");
-	$root->appendChild($kml);
-
-	my $name = XML::LibXML::Element->new("name"); $kml->appendChild($name);
-	$name->appendText("iso-country-code-".$l);
-
-	my $open = XML::LibXML::Element->new("open"); $kml->appendChild($open);
-	$open->appendText("1");
-
-	my $desc = XML::LibXML::Element->new("description");
-	$desc->appendText("iso-countries-".$l);
-	$kml->appendChild($desc);
-
-	my $doc = $kml;
-
+        
+        my $file = $out."/kml/iso-countries-".$l."/doc.kml"; 
+        
+        print STDERR "  ".$file."\n";
+        
+        my $dom = XML::LibXML::Document->new("1.0", "UTF-8");
+        
+        my $root = $dom->createElement("kml");
+        $dom->setDocumentElement($root);
+        
+        $root->setAttribute("xmlns:gx",   "http://www.opengis.net/kml/2.2");
+        $root->setAttribute("xmlns:kml",  "http://www.opengis.net/kml/2.2");
+        $root->setAttribute("xmlns:atom", "http://www.w3.org/2005/Atom");
+        
+        my $kml = XML::LibXML::Element->new("Document");
+        $root->appendChild($kml);
+        
+        my $name = XML::LibXML::Element->new("name"); $kml->appendChild($name);
+        $name->appendText("iso-country-code-".$l);
+        
+        my $open = XML::LibXML::Element->new("open"); $kml->appendChild($open);
+        $open->appendText("1");
+        
+        my $desc = XML::LibXML::Element->new("description");
+        $desc->appendText("iso-countries-".$l);
+        $kml->appendChild($desc);
+        
+        my $doc = $kml;
+        
 #	my @cos = ("DE");
-	my @cos = sort keys %d;
-	foreach my $co (@cos) {
+        my @cos = sort keys %d;
+        foreach my $co (@cos) {
 #	    print STDERR " $co \n";
-	    my $img = lc($co);
-	    
-	    my $x = $d{$co}{GeoPt}[0];
-	    my $y = $d{$co}{GeoPt}[1];
-	    
-	    my $name = $d{$co}{Name};
-
-	    if (defined $d{$co}{Names}{$l}) {
-		$name = $d{$co}{Names}{$l}; # get translated country name
+            my $img = lc($co);
+            
+            my $x = $d{$co}{GeoPt}[0];
+            my $y = $d{$co}{GeoPt}[1];
+            
+            my $name = $d{$co}{Name};
+            
+            if (defined $d{$co}{Names}{$l}) {
+                $name = $d{$co}{Names}{$l}; # get translated country name
 #		print STDERR "  ".$img." ".$name."\n";
-	    }
-
-	    my $stylemap =  XML::LibXML::Element->new("StyleMap");
-	    $stylemap->setAttribute("id", "style_map_".$img);
-
-	    my $pair1 = XML::LibXML::Element->new("Pair");
-	    $stylemap->appendChild($pair1);
-
-	    my $key1 = XML::LibXML::Element->new("key");
-	    $key1->appendText("normal");
-	    $pair1->appendChild($key1);
-
-	    my $styleurl1 = XML::LibXML::Element->new("styleUrl");
-	    $styleurl1->appendText("#style_".$img);
-	    $pair1->appendChild($styleurl1);
-
-	    my $pair2 = XML::LibXML::Element->new("Pair");
-	    my $key2 = XML::LibXML::Element->new("key");
-	    $key2->appendText("highlight");
-
-	    my $styleurl2 = XML::LibXML::Element->new("styleUrl");
-	    $styleurl2->appendText("#style_".$img);
-	    $pair2->appendChild($styleurl2);
-
-	    $doc->appendChild($stylemap);
-   
-	    my $style = XML::LibXML::Element->new("Style");
-	    $style->setAttribute("id", "style_".$img);
-
-	    my $iconstyle = XML::LibXML::Element->new("IconStyle");
-
-	    my $scale =  XML::LibXML::Element->new("scale");
-	    $scale->appendText("1.1");
-	    $iconstyle->appendChild($scale);
-
-	    my $icon =  XML::LibXML::Element->new("Icon");
-	    $iconstyle->appendChild($icon);
-
-	    my $href =  XML::LibXML::Element->new("href");
-	    $href->appendText($img.".png");
-	    $icon->appendChild($href);
-
-	    $style->appendChild($iconstyle);
-
-	    $doc->appendChild($style);
-    	}
-
-	foreach my $co (@cos) {
-	    my $img = lc($co);
-	    
-	    my $x = $d{$co}{GeoPt}[0];
-	    my $y = $d{$co}{GeoPt}[1];
-	    
-	    my $cname = $d{$co}{Name};
-
-	    if (defined $d{$co}{Names}{$l}) {
-		$cname = $d{$co}{Names}{$l}; # get translated country name
+            }
+            
+            my $stylemap =  XML::LibXML::Element->new("StyleMap");
+            $stylemap->setAttribute("id", "style_map_".$img);
+            
+            my $pair1 = XML::LibXML::Element->new("Pair");
+            $stylemap->appendChild($pair1);
+            
+            my $key1 = XML::LibXML::Element->new("key");
+            $key1->appendText("normal");
+            $pair1->appendChild($key1);
+            
+            my $styleurl1 = XML::LibXML::Element->new("styleUrl");
+            $styleurl1->appendText("#style_".$img);
+            $pair1->appendChild($styleurl1);
+            
+            my $pair2 = XML::LibXML::Element->new("Pair");
+            my $key2 = XML::LibXML::Element->new("key");
+            $key2->appendText("highlight");
+            
+            my $styleurl2 = XML::LibXML::Element->new("styleUrl");
+            $styleurl2->appendText("#style_".$img);
+            $pair2->appendChild($styleurl2);
+            
+            $doc->appendChild($stylemap);
+            
+            my $style = XML::LibXML::Element->new("Style");
+            $style->setAttribute("id", "style_".$img);
+            
+            my $iconstyle = XML::LibXML::Element->new("IconStyle");
+            
+            my $scale =  XML::LibXML::Element->new("scale");
+            $scale->appendText("1.1");
+            $iconstyle->appendChild($scale);
+            
+            my $icon =  XML::LibXML::Element->new("Icon");
+            $iconstyle->appendChild($icon);
+            
+            my $href =  XML::LibXML::Element->new("href");
+            $href->appendText($img.".png");
+            $icon->appendChild($href);
+            
+            $style->appendChild($iconstyle);
+            
+            $doc->appendChild($style);
+        }
+        
+        foreach my $co (@cos) {
+            my $img = lc($co);
+            
+            my $x = $d{$co}{GeoPt}[0];
+            my $y = $d{$co}{GeoPt}[1];
+            
+            my $cname = $d{$co}{Name};
+            
+            if (defined $d{$co}{Names}{$l}) {
+                $cname = $d{$co}{Names}{$l}; # get translated country name
 #		print STDERR "  ".$img." ".$cname."\n";
-	    }
-
-	    my $placemark = XML::LibXML::Element->new("Placemark");
-	    
-	    my $name = XML::LibXML::Element->new("name");
-	    $placemark->appendChild($name);
-	    $name->appendText($cname);
-
+            }
+            
+            my $placemark = XML::LibXML::Element->new("Placemark");
+            
+            my $name = XML::LibXML::Element->new("name");
+            $placemark->appendChild($name);
+            $name->appendText($cname);
+            
 #	    my $snippet = XML::LibXML::Element->new("Snippet");
 #	    $placemark->appendChild($snippet);
 
@@ -345,22 +346,22 @@ sub example_kml {
 #	    $placemark->appendChild($desc);
 #	    $desc->appendText($img . " - " . $cname);
 
-	    my $styleUrl = XML::LibXML::Element->new("styleUrl");
-	    $placemark->appendChild($styleUrl);
-	    $styleUrl->appendText("#style_map_".$img);
-
-	    my $point = XML::LibXML::Element->new("Point");
-	    $placemark->appendChild($point);
-
-	    my $coords = XML::LibXML::Element->new("coordinates");
-	    $point->appendChild($coords);
-	    $coords->appendText($y.",".$x);
-
-	    $doc->appendChild($placemark);
-	}
-
-	$root->appendChild($doc);
-	writeFile($file, $dom->toString(), ":utf8");
+            my $styleUrl = XML::LibXML::Element->new("styleUrl");
+            $placemark->appendChild($styleUrl);
+            $styleUrl->appendText("#style_map_".$img);
+            
+            my $point = XML::LibXML::Element->new("Point");
+            $placemark->appendChild($point);
+            
+            my $coords = XML::LibXML::Element->new("coordinates");
+            $point->appendChild($coords);
+            $coords->appendText($y.",".$x);
+            
+            $doc->appendChild($placemark);
+        }
+        
+        $root->appendChild($doc);
+        writeFile($file, $dom->toString(), ":utf8");
     }
     print STDERR " done.\n";
 }
@@ -369,7 +370,7 @@ my @svgs = ();
 sub add_svg_file {
     my $file = $File::Find::name;
     if ($file =~ m/.svg$/) {
-	push @svgs, $file;
+        push @svgs, $file;
 #	print STDERR " adding   " . $file . "\n";
     } else {
 #	print STDERR " skipping " . $file . "\n";
@@ -380,7 +381,7 @@ my @pngs = ();
 sub add_png_file {
     my $file = $File::Find::name;
     if ($file =~ m/.png$/) {
-	push @pngs, $file;
+        push @pngs, $file;
 #	print STDERR " adding   " . $file . "\n";
     } else {
 #	print STDERR " skipping " . $file . "\n";
@@ -400,11 +401,11 @@ if ($cmd eq "svg2svg") {
     if ($resY eq 0){u("invalid --res: \"".$res."\", height must be > 0.")}
 
     if (!$mask) {
-	u("missing --mask [DxD+DxD+DxD], eg.: 109x109+65x65+1065x742.");
+        u("missing --mask [DxD+DxD+DxD], eg.: 109x109+65x65+1065x742.");
     }
     my ($mX, $mY, $mrX, $mrY, $mW, $mH) =
-	$mask =~ m#(\d+)x(\d+)\+(\d+)x(\d+)\+(\d+)x(\d+)#;
-
+        $mask =~ m#(\d+)x(\d+)\+(\d+)x(\d+)\+(\d+)x(\d+)#;
+    
 #    print STDERR "mask: ".$mX."x".$mY."+".$mrX."x".$mrY."+".$mW."x".$mH."\n";
     if ($mX eq 0) {u("invalid mask: \"".$mask."\", x must be > 0.")}
     if ($mY eq 0) {u("invalid mask: \"".$mask."\", y must be > 0.")}
@@ -414,12 +415,12 @@ if ($cmd eq "svg2svg") {
     if ($mX eq 0){u("invalid mask: \"".$mask."\", height must be > 0.")}
 
     if (!$geo) {
-	u("missing --geo [DxD+DxD], eg.: 77x77+1129x807.");
+        u("missing --geo [DxD+DxD], eg.: 77x77+1129x807.");
     }
 
     my ($geoX, $geoY, $geoW, $geoH) =
-	$geo =~ m#(\d+)x(\d+)\+(\d+)x(\d+)#;
-
+        $geo =~ m#(\d+)x(\d+)\+(\d+)x(\d+)#;
+    
     if ($geoX eq 0) {u("invalid geo: \"".$geo."\", x must be >0.")}
     if ($geoY eq 0) {u("invalid geo: \"".$geo."\", y must be >0.")}
 
@@ -427,7 +428,7 @@ if ($cmd eq "svg2svg") {
     if ($geoH eq 0) {u("invalid geo: \"".$geo."\", height must be >0.")}
 
     if (!defined $geoScale) {
-	u("missing --geoscale [float], eg.: 0.781.");
+        u("missing --geoscale [float], eg.: 0.781.");
     }
 
     if (!$out) {u("missing --out [build dir], eg.: build/country-4x2-glossy")}
@@ -446,20 +447,20 @@ if ($cmd eq "svg2svg") {
     $svg->setAttribute("height", $resY);
     
     $svg->setAttribute(
-	"xmlns:inkscape",
-	"http://www.inkscape.org/namespaces/inkscape");
+        "xmlns:inkscape",
+        "http://www.inkscape.org/namespaces/inkscape");
     
     $svg->setAttribute(
-	"xmlns:svg",
-	"http://www.w3.org/2000/svg");
+        "xmlns:svg",
+        "http://www.w3.org/2000/svg");
     
     $svg->setAttribute(
-	"xmlns:sodipodi",
-	"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd");
+        "xmlns:sodipodi",
+        "http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd");
     
     $svg->setAttribute(
-	"xmlns:xlink",
-	"http://www.w3.org/1999/xlink");
+        "xmlns:xlink",
+        "http://www.w3.org/1999/xlink");
     
     ## defs
     my $defs = XML::LibXML::Element->new("defs");
@@ -536,7 +537,7 @@ if ($cmd eq "svg2svg") {
 #	$n->setAttribute("width", $geoW);
 #	$n->setAttribute("height", $geoH);
 #	$n->setAttribute("transform", "scale(0.777)");
-	$m->appendChild($n);
+        $m->appendChild($n);
 #	$dom->importNode($n);
     }
 
@@ -574,56 +575,57 @@ if ($cmd eq "png2png") {
     find(\&add_png_file, split(",", $pngDir));
 
     if (0 eq length @pngs) {
-	u("no png files in ".$pngDir.".");
+        u("no png files in ".$pngDir.".");
     }
 
     if (!$res) {u("missing --res [DxD,..], eg.: 64x64,128x128.")}
 
     my @rs = ();
     foreach my $r (split (",", $res)) {
-	my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
-
-	if ($w eq 0) {u("invalid res: \"".$r."\", width  must be > 0.")}
-	if ($h eq 0) {u("invalid res: \"".$r."\", height must be > 0.")}
-	if (!$w or !$h) {
-	    u("could not parse: res \"".$r."\", must be [DxD,..]");
-	}
-
-	push @rs, {"w" => $w, "h" => $h};
+        my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
+        
+        if ($w eq 0) {u("invalid res: \"".$r."\", width  must be > 0.")}
+        if ($h eq 0) {u("invalid res: \"".$r."\", height must be > 0.")}
+        if (!$w or !$h) {
+            u("could not parse: res \"".$r."\", must be [DxD,..]");
+        }
+        
+        push @rs, {"w" => $w, "h" => $h};
     }
 
     foreach my $p (@pngs) {
 
-	print STDERR " processing ".$p."\n";
+        print STDERR " processing ".$p."\n";
 
-	foreach my $r (@rs) {
-	    my %dim = %{$r}; my $rx = $dim{w}; my $ry = $dim{h};
-	    my $o = $p;
-	    
-	    my ($name, $path, $suffix) = fileparse($o, (".png"));
-	    # keep things simple, make only 2 sub-dirs:
-	    # path style is => build/png-dir/res-DxD, eg.:
-	    #                  build/png-country-4x2/res-1280x960
-	    $path =~ s#/#-#g; 
-	    $path =~ s#-$##g;
-	    $path =~ s#^svg#png#g;
-
-	    # case for path starting with "build-png-" => "png-"
-	    $path =~ s#^build-png-#png-#g;
-	    $path =~ s#-res-.*##g;
-
-	    my $png_out = $out."/".$path."/res-".$rx."x".$ry."/".$name.$suffix;
-	    my $cmd = png2png($p, $png_out, $rx, $ry);
-
-	    my ($n, $pa, $s) = fileparse($png_out, (".png"));
-	    if (! -d $pa) {
-		print STDERR " mkdir " . $pa . "\n";
-		mkpath($pa);
-	    }
+        foreach my $r (@rs) {
+            my %dim = %{$r}; my $rx = $dim{w}; my $ry = $dim{h};
+            my $o = $p;
+            
+            my ($name, $path, $suffix) = fileparse($o, (".png"));
+            
+            # keep things simple, make only 2 sub-dirs:
+            # path style is => build/png-dir/res-DxD, eg.:
+            #                  build/png-country-4x2/res-1280x960
+            $path =~ s#/#-#g; 
+            $path =~ s#-$##g;
+            $path =~ s#^svg#png#g;
+            
+            # case for path starting with "build-png-" => "png-"
+            $path =~ s#^build-png-#png-#g;
+            $path =~ s#-res-.*##g;
+            
+            my $png_out = $out."/".$path."/res-".$rx."x".$ry."/".$name.$suffix;
+            my $cmd = png2png($p, $png_out, $rx, $ry);
+            
+            my ($n, $pa, $s) = fileparse($png_out, (".png"));
+            if (! -d $pa) {
+                print STDERR " mkdir " . $pa . "\n";
+                mkpath($pa);
+            }
 
 #	    print STDERR " " . $cmd . "\n";
-	    cmd_exec($cmd);
-	}
+            cmd_exec($cmd);
+        }
     }
 }
 
@@ -641,59 +643,59 @@ if ($cmd eq "svg2png") {
     if (!$res) { u("missing --res [DxD,..], eg.: 64x64,128x128.")}
     my @rs = ();
     foreach my $r (split (",", $res)) {
-	my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
+        my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
+        
+        if ($w eq 0) {u("invalid res: \"".$r."\", width  must be > 0.")}
+        if ($h eq 0) {u("invalid res: \"".$r."\", height must be > 0.")}
+        if (!$w or !$h) {
+            u("could not parse: res \"".$r."\", must be [DxD,..].");
+        }
 
-	if ($w eq 0) {u("invalid res: \"".$r."\", width  must be > 0.")}
-	if ($h eq 0) {u("invalid res: \"".$r."\", height must be > 0.")}
-	if (!$w or !$h) {
-	    u("could not parse: res \"".$r."\", must be [DxD,..].");
-	}
-
-	push @rs, {"w" => $w, "h" => $h};
+        push @rs, {"w" => $w, "h" => $h};
     }
 
     foreach my $s (@svgs) {
-	foreach my $r (@rs) {
-	    my %dim = %{$r}; my $rx = $dim{w}; my $ry = $dim{h};
-	    my $o = $s; $o =~ s/.svg$/.png/;
-
-	    my ($name, $path, $suffix) = fileparse($o, (".png"));
-
-	    # keep things simple, make only 2 sub-dirs:
-	    # path style is => build/png-dir/res-DxD, eg.:
-	    #                  build/png-country-4x2/res-1280x960
-	    $path =~ s#/#-#g; 
-	    $path =~ s#-$##g;
-	    $path =~ s#^svg#png#g;
-
-	    # case for path starting with "build-svg-" => "png-"
-	    $path =~ s#^build-svg-#png-#g;
-
-	    my $png_out = $out."/".$path."/res-".$rx."x".$ry."/".$name.$suffix;
-	    my $cmd = svg2png($s, $png_out, $rx, $ry, $zoom);
-
-	    my ($n, $p, $s) = fileparse($png_out, (".png"));
-	    if (! -d $p) {
-		print STDERR " mkdir " . $p . "\n";
-		mkpath($p);
-	    }
-
+        foreach my $r (@rs) {
+            my %dim = %{$r}; my $rx = $dim{w}; my $ry = $dim{h};
+            my $o = $s; $o =~ s/.svg$/.png/;
+            
+            my ($name, $path, $suffix) = fileparse($o, (".png"));
+            
+            # keep things simple, make only 2 sub-dirs:
+            # path style is => build/png-dir/res-DxD, eg.:
+            #                  build/png-country-4x2/res-1280x960
+            $path =~ s#/#-#g; 
+            $path =~ s#-$##g;
+            $path =~ s#^svg#png#g;
+            
+            # case for path starting with "build-svg-" => "png-"
+            $path =~ s#^build-svg-#png-#g;
+            
+            my $png_out = $out."/".$path."/res-".$rx."x".$ry."/".$name.$suffix;
+            my $cmd = svg2png($s, $png_out, $rx, $ry, $zoom);
+            
+            my ($n, $p, $s) = fileparse($png_out, (".png"));
+            if (! -d $p) {
+                print STDERR " mkdir " . $p . "\n";
+                mkpath($p);
+            }
+            
 #	    print STDERR " " . $cmd . "\n";
-	    cmd_exec($cmd);
-	}
+            cmd_exec($cmd);
+        }
     }
 }
 
 if ($cmd eq "montage") {
     if (!$res or !($res =~ m/^(\d+x\d+)(,(\d+x\d+))*/)) {
-	u("missing --res [DxD,..], eg.: 8x8,16x16,64x64");
+        u("missing --res [DxD,..], eg.: 8x8,16x16,64x64");
     }
-
+    
     if (!$dirSvg) { u("missing --svg [dir], eg.: svg/country-squared.")}
     if (!-d $dirSvg) { u("--svg dir \"".$dirSvg."\" does not exist.")}
-
+    
     if (!$geo) { u("missing --geo [D+D+DxD], eg.: 54+54+403x403.")}
-
+    
     if (!$out) { u("missing --out [dir], eg.: build.")}
     if (!-d $out) { u("--out dir \"".$out."\" does not exist.")}
 
@@ -702,31 +704,31 @@ if ($cmd eq "montage") {
 
     my @rs = ();
     foreach my $r (split (",", $res)) {
-	my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
-
-	if ($w eq 0) { u("invalid res: \"".$r."\". Width must be > 0.")}
-	if ($h eq 0) { u("invalid res: \"".$r."\". Height must be > 0.")}
-	if (!$w or !$h) {
-	    u("could not parse: res \"".$r."\". Must be [DxD,..].");
-	}
-
-	push @rs, {"w" => $w, "h" => $h};
+        my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
+        
+        if ($w eq 0) { u("invalid res: \"".$r."\". Width must be > 0.")}
+        if ($h eq 0) { u("invalid res: \"".$r."\". Height must be > 0.")}
+        if (!$w or !$h) {
+            u("could not parse: res \"".$r."\". Must be [DxD,..].");
+        }
+        
+        push @rs, {"w" => $w, "h" => $h};
     }
-
+    
     print STDERR "resolutions: ";
     foreach my $r (@rs) {
-	my %dim = %{$r}; print STDERR $dim{w} . "x" . $dim{h} . " ";
+        my %dim = %{$r}; print STDERR $dim{w} . "x" . $dim{h} . " ";
     }
     print STDERR "\n";
-
+    
     my @ss = ();
     print STDERR "styles     : ";
     foreach my $s (split (",", $sty)) {
-	print STDERR $s." ";
-	push @ss, $s;
+        print STDERR $s." ";
+        push @ss, $s;
     }
     print STDERR "\n";
-
+    
 }
 
 sub sec2human {
@@ -762,7 +764,7 @@ sub writeFile {
 
     open FILE, ">$fName" or die " Error writing file $fName: $!. Exiting.";
     if (defined $binmode) {
-	binmode(FILE, $binmode);
+        binmode(FILE, $binmode);
     }
     print FILE $content;
     close FILE;
@@ -787,41 +789,55 @@ sub readJson {
 
     my $content = readFile($file);
     if (defined $content) {
-	my $json = JSON->new->allow_nonref->utf8->relaxed->escape_slash->loose->allow_singlequote->allow_barekey->decode($content);
-	if ($@){ u("Error reading json: $@", 1) }
-	return $json;
+        my $json = JSON->new->allow_nonref->utf8->relaxed->escape_slash->loose->allow_singlequote->allow_barekey->decode($content);
+        if ($@){ u("Error reading json: $@", 1) }
+        return $json;
     } else {
-	u("Error reading ".$file.". Exiting.", 1);
+        u("Error reading ".$file.". Exiting.", 1);
     }
 }
 
 sub svg2png {
-    my ($in, $o, $w, $h, $zoom) = @_;
+    my ($in, $out, $w, $h, $zoom) = @_;
 
-    if (defined $zoom) {
-	return "rsvg-convert -o ".$o." -w ".$w." -h ".$h." -z ".$zoom." ".$in;
+    # is $out older than $in?
+
+    if (!-e $out || -M $out > -M $in) {
+        if (defined $zoom) {
+            return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." -z ".$zoom." ".$in;
 #       return "inkscape -w ".$w." -h ".$h." --export-png=".$out. " ".$in;
+        } else {
+            return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." ".$in;
+        }
     } else {
-	return "rsvg-convert -o ".$o." -w ".$w." -h ".$h." ".$in;
+        return undef;
     }
 }
 
 sub png2png {
-    my ($in, $o, $w, $h) = @_;
+    my ($in, $out, $w, $h) = @_;
 
-    return "convert ".$in." -resize ".$w."x".$h." ".$o;
+    # is $out older than $in?
+    
+    if (!-e $out || -M $out > -M $in) {
+        return "convert ".$in." -resize ".$w."x".$h." ".$out;
+    } else {
+        return undef;
+    }
 }
 
 sub cmd_exec {
     my $cmd = shift;
 
-    my $out = `$cmd`; my $ret = ${^CHILD_ERROR_NATIVE};
-
-    if ($ret eq 0) {
-	print STDERR " ".$cmd." # ".GREEN."ok".RESET."\n";
-    } else {
-	print STDERR " ".$cmd." # ".RED."fail".RESET.": ".$out."\n";
-	exit 1;
+    if (defined $cmd) {
+        my $out = `$cmd`; my $ret = ${^CHILD_ERROR_NATIVE};
+        
+        if ($ret eq 0) {
+            print STDERR " ".$cmd." # ".GREEN."ok".RESET."\n";
+        } else {
+            print STDERR " ".$cmd." # ".RED."fail".RESET.": ".$out."\n";
+            exit 1;
+        }
     }
 }
 
