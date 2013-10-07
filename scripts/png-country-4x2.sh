@@ -1,7 +1,7 @@
 #!/bin/sh
 
 RESOS="640x480,320x240,160x120,80x60,40x30,20x15"
-STYLE="simple flat fancy glossy"
+STYLE="none simple flat fancy glossy"
 
 for s in $STYLE; do 
     echo "Processing style $s ..";

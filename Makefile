@@ -61,7 +61,12 @@ PHONY += $(SVG2SVG_EXTRA)
 
 SVG2SVG_11 = scripts/build.pl --cmd svg2svg --res 512x512 --back back.png --fore fore.png --svgs svg/country-squared --mask 57x57+35x35+398x398 --geo 57x57+512x512 --geoscale 0.7775
 
+SVG2SVG_110 = scripts/build.pl --cmd svg2svg --res 512x512 --back back.png --fore fore.png --svgs svg/country-squared --mask 0x0+0x0+512x512 --geo 0x0+512x512 --geoscale 1
+
+
 SVG2SVG_43 = scripts/build.pl --cmd svg2svg --res 1280x960 --back back.png --fore fore.png --svgs svg/country-4x3 --mask 107x107+67x67+1065x745 --geo 106x75+1280x960 --geoscale 1.667
+
+SVG2SVG_430 = scripts/build.pl --cmd svg2svg --res 1280x960 --back back.png --fore fore.png --svgs svg/country-4x3 --mask 0x0+0x0+1280x960 --geo 0x0+1280x960 --geoscale 2
 
 SVGS_11 = $(shell cd svg/country-squared; ls -1 ??.svg)
 
@@ -69,11 +74,13 @@ SVGS_11_FANCY  = ${SVGS_11:%.svg=build/svg-country-squared-fancy/%.svg}
 SVGS_11_SIMPLE = ${SVGS_11:%.svg=build/svg-country-squared-simple/%.svg}
 SVGS_11_FLAT   = ${SVGS_11:%.svg=build/svg-country-squared-flat/%.svg}
 SVGS_11_GLOSSY = ${SVGS_11:%.svg=build/svg-country-squared-glossy/%.svg}
+SVGS_11_NONE = ${SVGS_11:%.svg=build/svg-country-squared-none/%.svg}
 
 PNGS_11_FANCY  = ${SVGS_11:%.svg=build/png-country-squared-fancy/%.png}
 PNGS_11_SIMPLE = ${SVGS_11:%.svg=build/png-country-squared-simple/%.png}
 PNGS_11_FLAT   = ${SVGS_11:%.svg=build/png-country-squared-flat/%.png}
 PNGS_11_GLOSSY = ${SVGS_11:%.svg=build/png-country-squared-glossy/%.png}
+PNGS_11_NONE = ${SVGS_11:%.svg=build/png-country-squared-none/%.png}
 
 SVGS_43 = $(shell cd svg/country-4x3; ls -1 ??.svg)
 
@@ -81,14 +88,16 @@ SVGS_42_FANCY  = ${SVGS_43:%.svg=build/svg-country-4x2-fancy/%.svg}
 SVGS_42_SIMPLE = ${SVGS_43:%.svg=build/svg-country-4x2-simple/%.svg}
 SVGS_42_FLAT   = ${SVGS_43:%.svg=build/svg-country-4x2-flat/%.svg}
 SVGS_42_GLOSSY = ${SVGS_43:%.svg=build/svg-country-4x2-glossy/%.svg}
+SVGS_42_NONE = ${SVGS_43:%.svg=build/svg-country-4x2-none/%.svg}
 
 PNGS_42_FANCY  = ${SVGS_43:%.svg=build/png-country-4x2-fancy/%.png}
 PNGS_42_SIMPLE = ${SVGS_43:%.svg=build/png-country-4x2-simple/%.png}
 PNGS_42_FLAT   = ${SVGS_43:%.svg=build/png-country-4x2-flat/%.png}
 PNGS_42_GLOSSY = ${SVGS_43:%.svg=build/png-country-4x2-glossy/%.png}
+PNGS_42_NONE = ${SVGS_43:%.svg=build/png-country-4x2-none/%.png}
 
-SVGS_11ALL=$(SVGS_11_FANCY) $(SVGS_11_SIMPLE) $(SVGS_11_FLAT) $(SVGS_11_GLOSSY)
-SVGS_42ALL=$(SVGS_42_FANCY) $(SVGS_42_SIMPLE) $(SVGS_42_FLAT) $(SVGS_42_GLOSSY)
+SVGS_11ALL=$(SVGS_11_FANCY) $(SVGS_11_SIMPLE) $(SVGS_11_FLAT) $(SVGS_11_GLOSSY) $(SVGS_11_NONE)
+SVGS_42ALL=$(SVGS_42_FANCY) $(SVGS_42_SIMPLE) $(SVGS_42_FLAT) $(SVGS_42_GLOSSY) $(SVGS_42_NONE) 
 
 svgs: $(SVGS_11ALL) $(SVGS_42ALL)
 	$(Q)echo "Finished building svgs."
@@ -117,6 +126,11 @@ build/svg-country-squared-glossy/%.svg: svg/country-squared/%.svg
                           --flag $(notdir ${<}) \
                           --svg $(notdir ${<})
 
+build/svg-country-squared-none/%.svg: svg/country-squared/%.svg
+	$(Q)$(SVG2SVG_110) --out $(dir $@) \
+                          --flag $(notdir ${<}) \
+                          --svg $(notdir ${<})
+
 ## svg2svg 4x2
 build/svg-country-4x2-fancy/%.svg: svg/country-4x3/%.svg
 	$(Q)$(SVG2SVG_43) --out $(dir $@) \
@@ -135,6 +149,11 @@ build/svg-country-4x2-flat/%.svg: svg/country-4x3/%.svg
 
 build/svg-country-4x2-glossy/%.svg: svg/country-4x3/%.svg
 	$(Q)$(SVG2SVG_43) --out $(dir $@) \
+                          --flag $(notdir ${<}) \
+                          --svg $(notdir ${<})
+
+build/svg-country-4x2-none/%.svg: svg/country-4x3/%.svg
+	$(Q)$(SVG2SVG_430) --out $(dir $@) \
                           --flag $(notdir ${<}) \
                           --svg $(notdir ${<})
 
