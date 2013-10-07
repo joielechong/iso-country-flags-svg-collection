@@ -82,7 +82,7 @@ GetOptions(
     );
 
 my $cmds = "help|svg2png|png2png|svg2svg|example";
-my $stys = "flat|simple|fancy|glossy";
+my $stys = "none|flat|simple|fancy|glossy";
 
 sub u {
     my $app = $0; my $err = shift;
@@ -406,13 +406,13 @@ if ($cmd eq "svg2svg") {
     my ($mX, $mY, $mrX, $mrY, $mW, $mH) =
         $mask =~ m#(\d+)x(\d+)\+(\d+)x(\d+)\+(\d+)x(\d+)#;
     
-#    print STDERR "mask: ".$mX."x".$mY."+".$mrX."x".$mrY."+".$mW."x".$mH."\n";
-    if ($mX eq 0) {u("invalid mask: \"".$mask."\", x must be > 0.")}
-    if ($mY eq 0) {u("invalid mask: \"".$mask."\", y must be > 0.")}
-    if ($mrX eq 0){u("invalid mask: \"".$mask."\", rx must be > 0.")}
-    if ($mrX eq 0){u("invalid mask: \"".$mask."\", ry must be > 0.")}
-    if ($mX eq 0) {u("invalid mask: \"".$mask."\", width must be > 0.")}
-    if ($mX eq 0){u("invalid mask: \"".$mask."\", height must be > 0.")}
+    print STDERR "mask: ".$mX."x".$mY."+".$mrX."x".$mrY."+".$mW."x".$mH."\n";
+    if ($mX lt 0) {u("invalid mask: \"".$mask."\", x must be >= 0.")}
+    if ($mY lt 0) {u("invalid mask: \"".$mask."\", y must be >= 0.")}
+    if ($mrX lt 0){u("invalid mask: \"".$mask."\", rx must be >= 0.")}
+    if ($mrX lt 0){u("invalid mask: \"".$mask."\", ry must be >= 0.")}
+    if ($mX lt 0) {u("invalid mask: \"".$mask."\", width must be >= 0.")}
+    if ($mX lt 0){u("invalid mask: \"".$mask."\", height must be >= 0.")}
 
     if (!$geo) {
         u("missing --geo [DxD+DxD], eg.: 77x77+1129x807.");
@@ -421,11 +421,11 @@ if ($cmd eq "svg2svg") {
     my ($geoX, $geoY, $geoW, $geoH) =
         $geo =~ m#(\d+)x(\d+)\+(\d+)x(\d+)#;
     
-    if ($geoX eq 0) {u("invalid geo: \"".$geo."\", x must be >0.")}
-    if ($geoY eq 0) {u("invalid geo: \"".$geo."\", y must be >0.")}
+    if ($geoX lt 0) {u("invalid geo: \"".$geo."\", x must be >= 0.")}
+    if ($geoY lt 0) {u("invalid geo: \"".$geo."\", y must be >= 0.")}
 
-    if ($geoW eq 0) {u("invalid geo: \"".$geo."\", width  must be >0.")}
-    if ($geoH eq 0) {u("invalid geo: \"".$geo."\", height must be >0.")}
+    if ($geoW eq 0) {u("invalid geo: \"".$geo."\", width  must be > 0.")}
+    if ($geoH eq 0) {u("invalid geo: \"".$geo."\", height must be > 0.")}
 
     if (!defined $geoScale) {
         u("missing --geoscale [float], eg.: 0.781.");
