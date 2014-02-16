@@ -39,7 +39,7 @@ if options.cmd == "css":
 
         i = i+1
 
-    print '''.flag {
+    print ('''.flag {
     height: %(height)dpx;
     width: %(width)dpx;
     background-image: url("%(image)s");
@@ -54,17 +54,17 @@ if options.cmd == "css":
         'width': options.resx, 
         'image': options.image,
         'background-position': default_background_position
-        }
+        })
 
     for (name, x, y) in flag_styles:
-        print ".flag-%s { background-position: -%dpx -%dpx; }" % (name, x, y)
+        print (".flag-%s { background-position: -%dpx -%dpx; }" % (name, x, y))
 
 elif options.cmd == "html":
-    print '<link rel="stylesheet" type="text/css" href="%s">' % options.css
+    print ('<link rel="stylesheet" type="text/css" href="%s">' % options.css)
     for f in args:
         name, _ = splitext(basename(f))
-        print '<p>%(name)s <span class="flag flag-%(name)s"></span></p>' % {'name': name}
-    print '<p>empty <span class="flag"></span></p>'
+        print ('<p>%(name)s <span class="flag flag-%(name)s"></span></p>' % {'name': name})
+    print ('<p>empty <span class="flag"></span></p>')
 
 else:
-    print "unknown command"
+    print ("unknown command")
