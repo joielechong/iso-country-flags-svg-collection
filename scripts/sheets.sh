@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 BGS="lightgrey white black transparent"
 
