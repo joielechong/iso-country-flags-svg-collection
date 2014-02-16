@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/env python
 
 from os.path import basename, splitext
 from optparse import OptionParser
