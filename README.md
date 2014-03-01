@@ -5,7 +5,7 @@ This repository contains 248 country flag SVG icons as shown in the following sh
 
 ![iso-country-flags-sheet-flat.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/iso-country-flags-sheet-flat.png "ISO country flags svg collection")
 
-You can build the above icon sheet with different icon styles using the templates in the build directory: flat, simple, fancy, glossy:
+You can build the above icon sheet with different icon styles using the templates in the build directory: none, flat, simple, fancy, glossy:
 
 ![templates.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/templates.png "Country flag icons templates")
 
@@ -15,7 +15,7 @@ Simply type
 $ make -j4
 ```
 
-to build PNG versions of the country flags contained in this collection. This will create about 320MB of data: flat, simple, fancy, glossy template based PNG files with the following resolutions: "512x512 (web), 256x256, 128x128, 96x96, 72x72, 64x64, 48x48, 36x36, 32x32, 24x24, 16x16".
+to build PNG versions of the country flags contained in this collection. This will create about 320MB of data: none, flat, simple, fancy, glossy template based PNG files with the following resolutions: "512x512 (web), 256x256, 128x128, 96x96, 72x72, 64x64, 48x48, 36x36, 32x32, 24x24, 16x16".
 
 For example the results with the template "flat" applied to the "United States" country flag icon looks like follows:
 
@@ -32,10 +32,6 @@ $ make help
 to see all build targets.
 
 * Country flags icon sheets - type ```$ make -j4 sheets```.
-
-* Google Earth - [G+ users of the world - KMZ file](http://goo.gl/YJjv3):
-
-  ![G+ users of the world KMZ file](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-earth.png). Run the following command to generate all the kml files with different country name translations: ```$ make kml```, a shortcut for the command: ```$ scripts/build.pl --cmd example kml --json iso-3166-1.json --out build --res 16x16 --lang all```.
 
 * [WebGL Earth - ISO country flags](http://tinyurl.com/webgl-earth-iso-country-flags).
 
