@@ -1,6 +1,9 @@
-# ISO country flags SVG collection - high quality vector graphics country flag icons
+# collection of high quality svg country flag icons
 
 ## Description
+
+[ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) defines two-letter country codes which are used most prominently for the Internet's country code top-level domains (with a few exceptions).
+
 This repository contains 248 country flag SVG icons as shown in the following sheet:
 
 ![iso-country-flags-sheet-flat.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/iso-country-flags-sheet-flat.png "ISO country flags svg collection")
