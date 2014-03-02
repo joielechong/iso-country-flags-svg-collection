@@ -574,7 +574,7 @@ if ($cmd eq "png2png") {
 
     find(\&add_png_file, split(",", $pngDir));
 
-    if (0 eq length @pngs) {
+    if (0 eq scalar(@pngs)) {
         u("no png files in ".$pngDir.".");
     }
 
@@ -638,7 +638,7 @@ if ($cmd eq "svg2png") {
 
     find(\&add_svg_file, split(",", $dirSvg));
 
-    if (0 eq length @svgs) {u("no svg files in ".$dirSvg.".")}
+    if (0 eq scalar(@svgs)) {u("no svg files in ".$dirSvg.".")}
 
     if (!$res) { u("missing --res [DxD,..], eg.: 64x64,128x128.")}
     my @rs = ();

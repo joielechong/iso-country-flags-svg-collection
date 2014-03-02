@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 BGS="lightgrey white black transparent"
 
@@ -18,7 +19,7 @@ for f in $(cd build; ls -d1 png-*); do
 	RESX=`echo $RES | sed s/x.*$//g`
 	RESY=`echo $RES | sed s/^.*x//g`
 
-	if [ "$RESX" = "1280" ]; then
+	if [ "$RESX" -gt 300 -o "$RESY" -gt 300 ]; then
 	    echo "  skipping big resolution $RES.";
 	else
 	    for bg in $BGS; do
