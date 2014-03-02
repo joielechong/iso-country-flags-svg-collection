@@ -406,7 +406,7 @@ if ($cmd eq "svg2svg") {
     my ($mX, $mY, $mrX, $mrY, $mW, $mH) =
         $mask =~ m#(\d+)x(\d+)\+(\d+)x(\d+)\+(\d+)x(\d+)#;
     
-    print STDERR "mask: ".$mX."x".$mY."+".$mrX."x".$mrY."+".$mW."x".$mH."\n";
+#    print STDERR "mask: ".$mX."x".$mY."+".$mrX."x".$mrY."+".$mW."x".$mH."\n";
     if ($mX lt 0) {u("invalid mask: \"".$mask."\", x must be >= 0.")}
     if ($mY lt 0) {u("invalid mask: \"".$mask."\", y must be >= 0.")}
     if ($mrX lt 0){u("invalid mask: \"".$mask."\", rx must be >= 0.")}
