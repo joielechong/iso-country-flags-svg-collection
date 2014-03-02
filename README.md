@@ -88,10 +88,6 @@ If you want to build your own icon sets with the same templates used for the fla
 
 Country flag examples use a surface area of 512x512 (1:1) and 640x480 (4:3), so be sure to keep the 1:1 or 4:3 ratios for best results.
 
-#### Generating the icon sheet files
-
-Type "make sheets" to generate icon sheets for the icon sets created above.
-
 #### Related projects
 
 See https://github.com/koppi/iso-country-flags-svg-collection/wiki/Related
