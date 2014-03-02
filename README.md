@@ -46,7 +46,7 @@ to see all build targets.
 
   ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xplanet marker config files: ```$ make -j4 xplanet```, a shortcut for the command: ```$ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all```.
   
-## Download the icon sets
+## Download
 
 You can download pre built png icon sets from my [dropbox folder](http://goo.gl/oaoEl).
 
@@ -54,7 +54,7 @@ You can download pre built png icon sets from my [dropbox folder](http://goo.gl/
 
 ## Building the icon sets
 
-### Requirements / Dependencies
+### Tools required
 
 For converting the SVG files to different formats using different templates, you need to install the following software packages:
 
