@@ -88,14 +88,14 @@ If you want to build your own icon sets with the same templates used for the fla
 
 Country flag examples use a surface area of 512x512 (1:1) and 640x480 (4:3), so be sure to keep the 1:1 or 4:3 ratios for best results.
 
-#### Related projects
+## Related projects
 
 See https://github.com/koppi/iso-country-flags-svg-collection/wiki/Related
 
 ## Authors / TODO / License
 
-The country flag icons in this repository were collected from Wikipedia Commons project during the [EUHackathon 2011](http://www.euhackathon.eu/). We did not find an up to date free collection of SVG vector graphics icons during the hack marathon. So we decided to build up this collection and share it here with future EUHackathoners and the Internet.
+* [Jakob Flierl](https://github.com/koppi): initial import of the iso-country-flags-collection to github.
 
-Initial import of the iso-country-flags-collection to github - [Jakob Flierl](https://github.com/koppi). We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
+* We try to keep the TODO list short. You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
 
-Most of the country flag icons are licensed under the [Public Domain](http://en.wikipedia.org/wiki/Public_domain).
+* Most of the country flag icons are licensed under the [Public Domain](http://en.wikipedia.org/wiki/Public_domain).
