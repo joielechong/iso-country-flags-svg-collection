@@ -1,5 +1,3 @@
-# collection of high quality svg country flag icons
-
 ## Description
 
 [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) defines two-letter country codes which are used most prominently for the Internet's country code top-level domains (with a few exceptions).
