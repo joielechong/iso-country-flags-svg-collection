@@ -398,7 +398,7 @@ if ($cmd eq "db") {
     if ($subcmd eq "list" or $subcmd eq "help") {
         print STDERR "Available --cmd db commands:\n\n";
         print STDERR " wp_en      - list links to en.wikipedia.org.\n";
-        print STDERR " wp_commons - list links to commons.wikipedia.org.\n";
+        print STDERR " wm_commons - list links to commons.wikipedia.org.\n";
         print STDERR "\n";
     } elsif ($subcmd eq "wp_en") {
 		my %d = %{$jsonDB->{Results}};
@@ -410,13 +410,13 @@ if ($cmd eq "db") {
 			
 			print STDOUT $img." ".$url."\n";
 		}
-	} elsif ($subcmd eq "wp_commons") {
+	} elsif ($subcmd eq "wm_commons") {
 		my %d = %{$jsonDB->{Results}};
 		
 		my @cos = sort keys %d;
 		foreach my $co (@cos) {
 			my $img = lc($co);
-			my $url = $d{$co}{wp_commons};
+			my $url = $d{$co}{wm_commons};
 			
 			print STDOUT $img." ".$url."\n";
 		}
@@ -426,7 +426,7 @@ if ($cmd eq "db") {
 #		my $co = shift;
 #		my $url = shift;
 #		print STDERR $co." ".$url."\n";
-#		$jsonDB->{Results}{uc($co)}{wp_commons} = $url;
+#		$jsonDB->{Results}{uc($co)}{wm_commons} = $url;
 #		writeJson($json, $jsonDB);
 #	}
 }
