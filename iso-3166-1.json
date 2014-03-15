@@ -87,6 +87,7 @@
          "SeqID" : 0,
          "TelPref" : "376",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Andorra.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Andorra"
       },
       "AE" : {
@@ -176,6 +177,7 @@
          "SeqID" : 1,
          "TelPref" : "971",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Arab_Emirates.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates"
       },
       "AF" : {
@@ -265,6 +267,7 @@
          "SeqID" : 2,
          "TelPref" : "93",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Afghanistan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Afghanistan"
       },
       "AG" : {
@@ -354,6 +357,7 @@
          "SeqID" : 3,
          "TelPref" : "1 268",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda"
       },
       "AI" : {
@@ -443,6 +447,7 @@
          "SeqID" : 4,
          "TelPref" : "1 264",
          "Year" : "1983",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Anguilla.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Anguilla"
       },
       "AL" : {
@@ -532,6 +537,7 @@
          "SeqID" : 5,
          "TelPref" : "355",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Albania.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Albania"
       },
       "AM" : {
@@ -621,6 +627,7 @@
          "SeqID" : 6,
          "TelPref" : "374",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Armenia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Armenia"
       },
       "AO" : {
@@ -710,6 +717,7 @@
          "SeqID" : 8,
          "TelPref" : "244",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Angola.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Angola"
       },
       "AQ" : {
@@ -790,6 +798,7 @@
          "SeqID" : 10,
          "TelPref" : "672",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Antarctica.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flags_of_Antarctica"
       },
       "AR" : {
@@ -879,6 +888,7 @@
          "SeqID" : 11,
          "TelPref" : "54",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Argentina.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Argentina"
       },
       "AS" : {
@@ -968,6 +978,7 @@
          "SeqID" : 12,
          "TelPref" : "1 684",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_American_Samoa.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
       },
       "AT" : {
@@ -1057,6 +1068,7 @@
          "SeqID" : 13,
          "TelPref" : "43",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Austria.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Austria"
       },
       "AU" : {
@@ -1146,6 +1158,7 @@
          "SeqID" : 14,
          "TelPref" : "61",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Australia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Australia"
       },
       "AW" : {
@@ -1235,6 +1248,7 @@
          "SeqID" : 15,
          "TelPref" : "297",
          "Year" : "1986",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Aruba.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Aruba"
       },
       "AX" : {
@@ -1324,6 +1338,7 @@
          "SeqID" : 0,
          "TelPref" : "358",
          "Year" : "2004",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_%C3%85land.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_%C3%85land"
       },
       "AZ" : {
@@ -1413,6 +1428,7 @@
          "SeqID" : 16,
          "TelPref" : "994",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Azerbaijan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan"
       },
       "BA" : {
@@ -1502,6 +1518,7 @@
          "SeqID" : 17,
          "TelPref" : "387",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Bosnia_and_Herzegovina.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina"
       },
       "BB" : {
@@ -1591,6 +1608,7 @@
          "SeqID" : 18,
          "TelPref" : "1 246",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Barbados.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Barbados"
       },
       "BD" : {
@@ -1680,6 +1698,7 @@
          "SeqID" : 19,
          "TelPref" : "880",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Bangladesh.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Bangladesh"
       },
       "BE" : {
@@ -1769,6 +1788,7 @@
          "SeqID" : 20,
          "TelPref" : "32",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Belgium.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Belgium"
       },
       "BF" : {
@@ -1858,6 +1878,7 @@
          "SeqID" : 21,
          "TelPref" : "226",
          "Year" : "1984",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Burkina_Faso.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso"
       },
       "BG" : {
@@ -1947,6 +1968,7 @@
          "SeqID" : 22,
          "TelPref" : "359",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Bulgaria.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Bulgaria"
       },
       "BH" : {
@@ -2036,6 +2058,7 @@
          "SeqID" : 23,
          "TelPref" : "973",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Bahrain.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
       },
       "BI" : {
@@ -2125,6 +2148,7 @@
          "SeqID" : 24,
          "TelPref" : "257",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Burundi.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Burundi"
       },
       "BJ" : {
@@ -2214,6 +2238,7 @@
          "SeqID" : 25,
          "TelPref" : "229",
          "Year" : "1977",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Benin.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Benin"
       },
       "BL" : {
@@ -2303,6 +2328,7 @@
          "SeqID" : 26,
          "TelPref" : "590",
          "Year" : "2007",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Saint_Barth%C3%A9lemy"
       },
       "BM" : {
@@ -2392,6 +2418,7 @@
          "SeqID" : 27,
          "TelPref" : "1 441",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Bermuda.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Bermuda"
       },
       "BN" : {
@@ -2481,6 +2508,7 @@
          "SeqID" : 28,
          "TelPref" : "673",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Brunei.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Brunei"
       },
       "BO" : {
@@ -2570,6 +2598,7 @@
          "SeqID" : 29,
          "TelPref" : "591",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Bolivia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Bolivia"
       },
       "BQ" : {
@@ -2659,6 +2688,7 @@
          "SeqID" : 0,
          "TelPref" : "599",
          "Year" : "2010",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Netherlands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Caribbean_Netherlands"
       },
       "BR" : {
@@ -2748,6 +2778,7 @@
          "SeqID" : 30,
          "TelPref" : "55",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Brazil.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Brazil"
       },
       "BS" : {
@@ -2837,6 +2868,7 @@
          "SeqID" : 31,
          "TelPref" : "1 242",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Bahamas.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Bahamas"
       },
       "BT" : {
@@ -2926,6 +2958,7 @@
          "SeqID" : 32,
          "TelPref" : "975",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Bhutan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
       },
       "BV" : {
@@ -3006,6 +3039,7 @@
          "SeqID" : 33,
          "TelPref" : "47",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Bouvet_Island"
       },
       "BW" : {
@@ -3095,6 +3129,7 @@
          "SeqID" : 34,
          "TelPref" : "267",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Botswana.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Botswana"
       },
       "BY" : {
@@ -3184,6 +3219,7 @@
          "SeqID" : 35,
          "TelPref" : "375",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Belarus.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Belarus"
       },
       "BZ" : {
@@ -3273,6 +3309,7 @@
          "SeqID" : 36,
          "TelPref" : "501",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Belize.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Belize"
       },
       "CA" : {
@@ -3362,6 +3399,7 @@
          "SeqID" : 37,
          "TelPref" : "1",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Canada.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Canada"
       },
       "CC" : {
@@ -3451,6 +3489,7 @@
          "SeqID" : 38,
          "TelPref" : "61",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Cocos_(Keeling)_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Cocos_(Keeling)_Islands"
       },
       "CD" : {
@@ -3540,6 +3579,7 @@
          "SeqID" : 39,
          "TelPref" : "243",
          "Year" : "1997",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Republic_of_the_Congo.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo"
       },
       "CF" : {
@@ -3629,6 +3669,7 @@
          "SeqID" : 40,
          "TelPref" : "236",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Central_African_Republic.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic"
       },
       "CG" : {
@@ -3718,6 +3759,7 @@
          "SeqID" : 41,
          "TelPref" : "242",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Republic_of_the_Congo.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo"
       },
       "CH" : {
@@ -3807,6 +3849,7 @@
          "SeqID" : 42,
          "TelPref" : "41",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Switzerland_(Pantone).svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
       },
       "CI" : {
@@ -3896,6 +3939,7 @@
          "SeqID" : 43,
          "TelPref" : "225",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_C%C3%B4te_d%27Ivoire.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast"
       },
       "CK" : {
@@ -3985,6 +4029,7 @@
          "SeqID" : 44,
          "TelPref" : "682",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Cook_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands"
       },
       "CL" : {
@@ -4074,6 +4119,7 @@
          "SeqID" : 45,
          "TelPref" : "56",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Chile.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Chile"
       },
       "CM" : {
@@ -4163,6 +4209,7 @@
          "SeqID" : 46,
          "TelPref" : "237",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Cameroon.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Cameroon"
       },
       "CN" : {
@@ -4252,6 +4299,7 @@
          "SeqID" : 47,
          "TelPref" : "86",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_People%27s_Republic_of_China.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_China"
       },
       "CO" : {
@@ -4341,6 +4389,7 @@
          "SeqID" : 48,
          "TelPref" : "57",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Colombia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Colombia"
       },
       "CR" : {
@@ -4430,6 +4479,7 @@
          "SeqID" : 49,
          "TelPref" : "506",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Costa_Rica_(state).svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica"
       },
       "CU" : {
@@ -4519,6 +4569,7 @@
          "SeqID" : 50,
          "TelPref" : "53",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Cuba.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Cuba"
       },
       "CV" : {
@@ -4608,6 +4659,7 @@
          "SeqID" : 51,
          "TelPref" : "238",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Cape_Verde.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde"
       },
       "CW" : {
@@ -4697,6 +4749,7 @@
          "SeqID" : 0,
          "TelPref" : "599-9",
          "Year" : "2010",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Cura%C3%A7ao.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
       },
       "CX" : {
@@ -4786,6 +4839,7 @@
          "SeqID" : 52,
          "TelPref" : "61",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Christmas_Island.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Christmas_Island"
       },
       "CY" : {
@@ -4875,6 +4929,7 @@
          "SeqID" : 53,
          "TelPref" : "357",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Cyprus.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Cyprus"
       },
       "CZ" : {
@@ -4964,6 +5019,7 @@
          "SeqID" : 54,
          "TelPref" : "420",
          "Year" : "1993",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Czech_Republic.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Czech_Republic"
       },
       "DE" : {
@@ -5053,6 +5109,7 @@
          "SeqID" : 55,
          "TelPref" : "49",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Germany"
       },
       "DJ" : {
@@ -5142,6 +5199,7 @@
          "SeqID" : 56,
          "TelPref" : "253",
          "Year" : "1977",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Djibouti.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Djibouti"
       },
       "DK" : {
@@ -5231,6 +5289,7 @@
          "SeqID" : 57,
          "TelPref" : "45",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Denmark.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Denmark"
       },
       "DM" : {
@@ -5320,6 +5379,7 @@
          "SeqID" : 58,
          "TelPref" : "1 767",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Dominica.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Dominica"
       },
       "DO" : {
@@ -5409,6 +5469,7 @@
          "SeqID" : 59,
          "TelPref" : "1 809",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Dominican_Republic.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic"
       },
       "DZ" : {
@@ -5498,6 +5559,7 @@
          "SeqID" : 60,
          "TelPref" : "213",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Algeria.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Algeria"
       },
       "EC" : {
@@ -5587,6 +5649,7 @@
          "SeqID" : 61,
          "TelPref" : "593",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Ecuador.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Ecuador"
       },
       "EE" : {
@@ -5676,6 +5739,7 @@
          "SeqID" : 62,
          "TelPref" : "372",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Estonia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Estonia"
       },
       "EG" : {
@@ -5765,6 +5829,7 @@
          "SeqID" : 63,
          "TelPref" : "20",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Egypt.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Egypt"
       },
       "EH" : {
@@ -5845,6 +5910,7 @@
          "SeqID" : 64,
          "TelPref" : "",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Sahrawi_Arab_Democratic_Republic_(obverse).svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Western_Sahara"
       },
       "ER" : {
@@ -5934,6 +6000,7 @@
          "SeqID" : 65,
          "TelPref" : "291",
          "Year" : "1993",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Eritrea.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Eritrea"
       },
       "ES" : {
@@ -6023,6 +6090,7 @@
          "SeqID" : 66,
          "TelPref" : "34",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Spain.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Spain"
       },
       "ET" : {
@@ -6112,6 +6180,7 @@
          "SeqID" : 67,
          "TelPref" : "251",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Ethiopia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
       },
       "FI" : {
@@ -6201,6 +6270,7 @@
          "SeqID" : 69,
          "TelPref" : "358",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Finland.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Finland"
       },
       "FJ" : {
@@ -6290,6 +6360,7 @@
          "SeqID" : 70,
          "TelPref" : "679",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Fiji.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Fiji"
       },
       "FK" : {
@@ -6379,6 +6450,7 @@
          "SeqID" : 71,
          "TelPref" : "500",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Falkland_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Falkland_Islands"
       },
       "FM" : {
@@ -6468,6 +6540,7 @@
          "SeqID" : 72,
          "TelPref" : "691",
          "Year" : "1986",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Federated_States_of_Micronesia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia"
       },
       "FO" : {
@@ -6557,6 +6630,7 @@
          "SeqID" : 73,
          "TelPref" : "298",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Faroe_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Faroe_Islands"
       },
       "FR" : {
@@ -6646,6 +6720,7 @@
          "SeqID" : 74,
          "TelPref" : "33",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_France"
       },
       "GA" : {
@@ -6735,6 +6810,7 @@
          "SeqID" : 75,
          "TelPref" : "241",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Gabon.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Gabon"
       },
       "GB" : {
@@ -6824,6 +6900,7 @@
          "SeqID" : 76,
          "TelPref" : "44",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Union_flag_1606_(Kings_Colors).svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Great_Britain"
       },
       "GD" : {
@@ -6913,6 +6990,7 @@
          "SeqID" : 77,
          "TelPref" : "1 473",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Grenada.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Grenada"
       },
       "GE" : {
@@ -7002,6 +7080,7 @@
          "SeqID" : 78,
          "TelPref" : "995",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Georgia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Georgia_(country)"
       },
       "GF" : {
@@ -7091,6 +7170,7 @@
          "SeqID" : 0,
          "TelPref" : "",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_French_Guiana"
       },
       "GG" : {
@@ -7180,6 +7260,7 @@
          "SeqID" : 79,
          "TelPref" : "44",
          "Year" : "2006",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Guernsey.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Guernsey"
       },
       "GH" : {
@@ -7269,6 +7350,7 @@
          "SeqID" : 80,
          "TelPref" : "233",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Ghana.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Ghana"
       },
       "GI" : {
@@ -7358,6 +7440,7 @@
          "SeqID" : 81,
          "TelPref" : "350",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Gibraltar.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Gibraltar"
       },
       "GL" : {
@@ -7447,6 +7530,7 @@
          "SeqID" : 82,
          "TelPref" : "299",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Greenland.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Greenland"
       },
       "GM" : {
@@ -7536,6 +7620,7 @@
          "SeqID" : 83,
          "TelPref" : "220",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_The_Gambia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Gambia"
       },
       "GN" : {
@@ -7625,6 +7710,7 @@
          "SeqID" : 84,
          "TelPref" : "224",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Guinea.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Guinea"
       },
       "GP" : {
@@ -7714,6 +7800,7 @@
          "SeqID" : 0,
          "TelPref" : "",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Guadeloupe"
       },
       "GQ" : {
@@ -7803,6 +7890,7 @@
          "SeqID" : 85,
          "TelPref" : "240",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Equatorial_Guinea.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea"
       },
       "GR" : {
@@ -7892,6 +7980,7 @@
          "SeqID" : 86,
          "TelPref" : "30",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Greece.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Greece"
       },
       "GS" : {
@@ -7981,6 +8070,7 @@
          "SeqID" : 0,
          "TelPref" : "",
          "Year" : "1993",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands"
       },
       "GT" : {
@@ -8070,6 +8160,7 @@
          "SeqID" : 87,
          "TelPref" : "502",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Guatemala.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Guatemala"
       },
       "GU" : {
@@ -8159,6 +8250,7 @@
          "SeqID" : 88,
          "TelPref" : "1 671",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Guam.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Guam"
       },
       "GW" : {
@@ -8248,6 +8340,7 @@
          "SeqID" : 89,
          "TelPref" : "245",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Guinea-Bissau.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau"
       },
       "GY" : {
@@ -8337,6 +8430,7 @@
          "SeqID" : 90,
          "TelPref" : "592",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Guyana.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Guyana"
       },
       "HK" : {
@@ -8417,6 +8511,7 @@
          "SeqID" : 91,
          "TelPref" : "852",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Hong_Kong.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
       },
       "HM" : {
@@ -8497,6 +8592,7 @@
          "SeqID" : 92,
          "TelPref" : null,
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Australia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Heard_Island_and_McDonald_Islands"
       },
       "HN" : {
@@ -8586,6 +8682,7 @@
          "SeqID" : 93,
          "TelPref" : "504",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Honduras.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Honduras"
       },
       "HR" : {
@@ -8675,6 +8772,7 @@
          "SeqID" : 94,
          "TelPref" : "385",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Croatia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Croatia"
       },
       "HT" : {
@@ -8764,6 +8862,7 @@
          "SeqID" : 95,
          "TelPref" : "509",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Haiti.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Haiti"
       },
       "HU" : {
@@ -8853,6 +8952,7 @@
          "SeqID" : 96,
          "TelPref" : "36",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Hungary.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Hungary"
       },
       "ID" : {
@@ -8942,6 +9042,7 @@
          "SeqID" : 97,
          "TelPref" : "62",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Indonesia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Indonesia"
       },
       "IE" : {
@@ -9031,6 +9132,7 @@
          "SeqID" : 98,
          "TelPref" : "353",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Ireland.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Ireland"
       },
       "IL" : {
@@ -9120,6 +9222,7 @@
          "SeqID" : 99,
          "TelPref" : "972",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Israel.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Israel"
       },
       "IM" : {
@@ -9209,6 +9312,7 @@
          "SeqID" : 100,
          "TelPref" : "44",
          "Year" : "2006",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Isle_of_Man.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man"
       },
       "IN" : {
@@ -9298,6 +9402,7 @@
          "SeqID" : 101,
          "TelPref" : "91",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_India.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_India"
       },
       "IO" : {
@@ -9378,6 +9483,7 @@
          "SeqID" : 102,
          "TelPref" : "",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_British_Indian_Ocean_Territory.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory"
       },
       "IQ" : {
@@ -9467,6 +9573,7 @@
          "SeqID" : 103,
          "TelPref" : "964",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Iraq.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Iraq"
       },
       "IR" : {
@@ -9556,6 +9663,7 @@
          "SeqID" : 104,
          "TelPref" : "98",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Iran.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Iran"
       },
       "IS" : {
@@ -9645,6 +9753,7 @@
          "SeqID" : 105,
          "TelPref" : "354",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Iceland.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Iceland"
       },
       "IT" : {
@@ -9734,6 +9843,7 @@
          "SeqID" : 106,
          "TelPref" : "39",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Italy.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Italy"
       },
       "JE" : {
@@ -9823,6 +9933,7 @@
          "SeqID" : 107,
          "TelPref" : "",
          "Year" : "2006",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Jersey.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Jersey"
       },
       "JM" : {
@@ -9912,6 +10023,7 @@
          "SeqID" : 108,
          "TelPref" : "1 876",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Jamaica.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Jamaica"
       },
       "JO" : {
@@ -10001,6 +10113,7 @@
          "SeqID" : 109,
          "TelPref" : "962",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Jordan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Jordan"
       },
       "JP" : {
@@ -10090,6 +10203,7 @@
          "SeqID" : 110,
          "TelPref" : "81",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Japan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Japan"
       },
       "KE" : {
@@ -10179,6 +10293,7 @@
          "SeqID" : 111,
          "TelPref" : "254",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Kenya.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Kenya"
       },
       "KG" : {
@@ -10268,6 +10383,7 @@
          "SeqID" : 112,
          "TelPref" : "996",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Kyrgyzstan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan"
       },
       "KH" : {
@@ -10357,6 +10473,7 @@
          "SeqID" : 113,
          "TelPref" : "855",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Cambodia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Cambodia"
       },
       "KI" : {
@@ -10446,6 +10563,7 @@
          "SeqID" : 114,
          "TelPref" : "686",
          "Year" : "1979",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Kiribati.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Kiribati"
       },
       "KM" : {
@@ -10535,6 +10653,7 @@
          "SeqID" : 115,
          "TelPref" : "269",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Comoros.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Comoros"
       },
       "KN" : {
@@ -10624,6 +10743,7 @@
          "SeqID" : 116,
          "TelPref" : "1 869",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Kitts_and_Nevis.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis"
       },
       "KP" : {
@@ -10713,6 +10833,7 @@
          "SeqID" : 117,
          "TelPref" : "850",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_North_Korea.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_North_Korea"
       },
       "KR" : {
@@ -10802,6 +10923,7 @@
          "SeqID" : 118,
          "TelPref" : "82",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_South_Korea"
       },
       "KW" : {
@@ -10891,6 +11013,7 @@
          "SeqID" : 119,
          "TelPref" : "965",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Kuwait.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Kuwait"
       },
       "KY" : {
@@ -10980,6 +11103,7 @@
          "SeqID" : 120,
          "TelPref" : "1 345",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Cayman_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Cayman_Islands"
       },
       "KZ" : {
@@ -11069,6 +11193,7 @@
          "SeqID" : 121,
          "TelPref" : "7",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Kazakhstan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan"
       },
       "LA" : {
@@ -11158,6 +11283,7 @@
          "SeqID" : 122,
          "TelPref" : "856",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Laos.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Laos"
       },
       "LB" : {
@@ -11247,6 +11373,7 @@
          "SeqID" : 123,
          "TelPref" : "961",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Lebanon.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Lebanon"
       },
       "LC" : {
@@ -11336,6 +11463,7 @@
          "SeqID" : 124,
          "TelPref" : "1 758",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Lucia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia"
       },
       "LI" : {
@@ -11425,6 +11553,7 @@
          "SeqID" : 125,
          "TelPref" : "423",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Liechtenstein.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein"
       },
       "LK" : {
@@ -11514,6 +11643,7 @@
          "SeqID" : 126,
          "TelPref" : "94",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Sri_Lanka.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka"
       },
       "LR" : {
@@ -11603,6 +11733,7 @@
          "SeqID" : 127,
          "TelPref" : "231",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Liberia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Liberia"
       },
       "LS" : {
@@ -11692,6 +11823,7 @@
          "SeqID" : 128,
          "TelPref" : "266",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Lesotho.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Lesotho"
       },
       "LT" : {
@@ -11781,6 +11913,7 @@
          "SeqID" : 129,
          "TelPref" : "370",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Lithuania.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Lithuania"
       },
       "LU" : {
@@ -11870,6 +12003,7 @@
          "SeqID" : 130,
          "TelPref" : "352",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Luxembourg.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Luxembourg"
       },
       "LV" : {
@@ -11959,6 +12093,7 @@
          "SeqID" : 131,
          "TelPref" : "371",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Latvia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Latvia"
       },
       "LY" : {
@@ -12048,6 +12183,7 @@
          "SeqID" : 132,
          "TelPref" : "218",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Libya.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Libya"
       },
       "MA" : {
@@ -12137,6 +12273,7 @@
          "SeqID" : 133,
          "TelPref" : "212",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Morocco.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Morocco"
       },
       "MC" : {
@@ -12226,6 +12363,7 @@
          "SeqID" : 134,
          "TelPref" : "377",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Monaco.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Monaco"
       },
       "MD" : {
@@ -12315,6 +12453,7 @@
          "SeqID" : 135,
          "TelPref" : "373",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Moldova.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Moldova"
       },
       "ME" : {
@@ -12404,6 +12543,7 @@
          "SeqID" : 136,
          "TelPref" : "382",
          "Year" : "2006",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Montenegro.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Montenegro"
       },
       "MF" : {
@@ -12493,6 +12633,7 @@
          "SeqID" : 137,
          "TelPref" : "1 599",
          "Year" : "2007",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Collectivity_of_Saint_Martin"
       },
       "MG" : {
@@ -12582,6 +12723,7 @@
          "SeqID" : 138,
          "TelPref" : "261",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Madagascar.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Madagascar"
       },
       "MH" : {
@@ -12671,6 +12813,7 @@
          "SeqID" : 139,
          "TelPref" : "692",
          "Year" : "1986",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Marshall_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands"
       },
       "MK" : {
@@ -12760,6 +12903,7 @@
          "SeqID" : 140,
          "TelPref" : "389",
          "Year" : "1993",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Macedonia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_Macedonia"
       },
       "ML" : {
@@ -12849,6 +12993,7 @@
          "SeqID" : 141,
          "TelPref" : "223",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Mali.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Mali"
       },
       "MM" : {
@@ -12938,6 +13083,7 @@
          "SeqID" : 142,
          "TelPref" : "95",
          "Year" : "1989",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Myanmar.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Burma"
       },
       "MN" : {
@@ -13027,6 +13173,7 @@
          "SeqID" : 143,
          "TelPref" : "976",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Mongolia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Mongolia"
       },
       "MO" : {
@@ -13107,6 +13254,7 @@
          "SeqID" : 144,
          "TelPref" : "853",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Macau.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Macau"
       },
       "MP" : {
@@ -13196,6 +13344,7 @@
          "SeqID" : 145,
          "TelPref" : "1 670",
          "Year" : "1986",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Northern_Mariana_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
       },
       "MQ" : {
@@ -13285,6 +13434,7 @@
          "SeqID" : 0,
          "TelPref" : "",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Martinique"
       },
       "MR" : {
@@ -13374,6 +13524,7 @@
          "SeqID" : 146,
          "TelPref" : "222",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Mauritania.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Mauritania"
       },
       "MS" : {
@@ -13463,6 +13614,7 @@
          "SeqID" : 147,
          "TelPref" : "1 664",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Montserrat.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Montserrat"
       },
       "MT" : {
@@ -13552,6 +13704,7 @@
          "SeqID" : 148,
          "TelPref" : "356",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Malta.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Malta"
       },
       "MU" : {
@@ -13641,6 +13794,7 @@
          "SeqID" : 149,
          "TelPref" : "230",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Mauritius.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Mauritius"
       },
       "MV" : {
@@ -13730,6 +13884,7 @@
          "SeqID" : 150,
          "TelPref" : "960",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Maldives.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Maldives"
       },
       "MW" : {
@@ -13819,6 +13974,7 @@
          "SeqID" : 151,
          "TelPref" : "265",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Malawi.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Malawi"
       },
       "MX" : {
@@ -13908,6 +14064,7 @@
          "SeqID" : 152,
          "TelPref" : "52",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Mexico.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Mexico"
       },
       "MY" : {
@@ -13997,6 +14154,7 @@
          "SeqID" : 153,
          "TelPref" : "60",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Malaysia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
       },
       "MZ" : {
@@ -14086,6 +14244,7 @@
          "SeqID" : 154,
          "TelPref" : "258",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Mozambique.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Mozambique"
       },
       "NA" : {
@@ -14175,6 +14334,7 @@
          "SeqID" : 155,
          "TelPref" : "264",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Namibia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Namibia"
       },
       "NC" : {
@@ -14264,6 +14424,7 @@
          "SeqID" : 156,
          "TelPref" : "687",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_New_Caledonia"
       },
       "NE" : {
@@ -14353,6 +14514,7 @@
          "SeqID" : 157,
          "TelPref" : "227",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Niger.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Niger"
       },
       "NF" : {
@@ -14442,6 +14604,7 @@
          "SeqID" : 158,
          "TelPref" : "672",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Norfolk_Island.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Norfolk_Island"
       },
       "NG" : {
@@ -14531,6 +14694,7 @@
          "SeqID" : 159,
          "TelPref" : "234",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Nigeria.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Nigeria"
       },
       "NI" : {
@@ -14620,6 +14784,7 @@
          "SeqID" : 160,
          "TelPref" : "505",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Nicaragua.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Nicaragua"
       },
       "NL" : {
@@ -14709,6 +14874,7 @@
          "SeqID" : 161,
          "TelPref" : "31",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Netherlands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Kingdom_of_the_Netherlands"
       },
       "NO" : {
@@ -14798,6 +14964,7 @@
          "SeqID" : 162,
          "TelPref" : "47",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Norway"
       },
       "NP" : {
@@ -14887,6 +15054,7 @@
          "SeqID" : 163,
          "TelPref" : "977",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Nepal.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Nepal"
       },
       "NR" : {
@@ -14967,6 +15135,7 @@
          "SeqID" : 164,
          "TelPref" : "674",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Nauru.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Nauru"
       },
       "NU" : {
@@ -15056,6 +15225,7 @@
          "SeqID" : 165,
          "TelPref" : "683",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Niue.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Niue"
       },
       "NZ" : {
@@ -15145,6 +15315,7 @@
          "SeqID" : 166,
          "TelPref" : "64",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_New_Zealand.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_New_Zealand"
       },
       "OM" : {
@@ -15234,6 +15405,7 @@
          "SeqID" : 167,
          "TelPref" : "968",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Oman.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Oman"
       },
       "PA" : {
@@ -15323,6 +15495,7 @@
          "SeqID" : 168,
          "TelPref" : "507",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Panama.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Panama"
       },
       "PE" : {
@@ -15412,6 +15585,7 @@
          "SeqID" : 169,
          "TelPref" : "51",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Peru.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Peru"
       },
       "PF" : {
@@ -15501,6 +15675,7 @@
          "SeqID" : 170,
          "TelPref" : "689",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia"
       },
       "PG" : {
@@ -15590,6 +15765,7 @@
          "SeqID" : 171,
          "TelPref" : "675",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Papua_New_Guinea.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
       },
       "PH" : {
@@ -15679,6 +15855,7 @@
          "SeqID" : 172,
          "TelPref" : "63",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Philippines.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Philippines"
       },
       "PK" : {
@@ -15768,6 +15945,7 @@
          "SeqID" : 173,
          "TelPref" : "92",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Pakistan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
       },
       "PL" : {
@@ -15857,6 +16035,7 @@
          "SeqID" : 174,
          "TelPref" : "48",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Poland.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Poland"
       },
       "PM" : {
@@ -15946,6 +16125,7 @@
          "SeqID" : 175,
          "TelPref" : "508",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Saint_Pierre_and_Miquelon"
       },
       "PN" : {
@@ -16035,6 +16215,7 @@
          "SeqID" : 176,
          "TelPref" : "870",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Pitcairn_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_the_Pitcairn_Islands"
       },
       "PR" : {
@@ -16124,6 +16305,7 @@
          "SeqID" : 177,
          "TelPref" : "1",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Puerto_Rico.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flags_of_Puerto_Rico"
       },
       "PS" : {
@@ -16204,6 +16386,7 @@
          "SeqID" : 178,
          "TelPref" : "970",
          "Year" : "1999",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Palestine.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Palestinian_flag"
       },
       "PT" : {
@@ -16293,6 +16476,7 @@
          "SeqID" : 179,
          "TelPref" : "351",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Portugal.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Portugal"
       },
       "PW" : {
@@ -16382,6 +16566,7 @@
          "SeqID" : 180,
          "TelPref" : "680",
          "Year" : "1986",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Palau.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Palau"
       },
       "PY" : {
@@ -16471,6 +16656,7 @@
          "SeqID" : 181,
          "TelPref" : "595",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Paraguay.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Paraguay"
       },
       "QA" : {
@@ -16560,6 +16746,7 @@
          "SeqID" : 182,
          "TelPref" : "974",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Qatar.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Qatar"
       },
       "RE" : {
@@ -16649,6 +16836,7 @@
          "SeqID" : 0,
          "TelPref" : "",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_R%C3%A9union"
       },
       "RO" : {
@@ -16738,6 +16926,7 @@
          "SeqID" : 183,
          "TelPref" : "40",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Romania.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Romania"
       },
       "RS" : {
@@ -16827,6 +17016,7 @@
          "SeqID" : 184,
          "TelPref" : "381",
          "Year" : "2006",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Serbia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Serbia"
       },
       "RU" : {
@@ -16916,6 +17106,7 @@
          "SeqID" : 185,
          "TelPref" : "7",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Russia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Russia"
       },
       "RW" : {
@@ -17005,6 +17196,7 @@
          "SeqID" : 186,
          "TelPref" : "250",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Rwanda.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Rwanda"
       },
       "SA" : {
@@ -17094,6 +17286,7 @@
          "SeqID" : 187,
          "TelPref" : "966",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia"
       },
       "SB" : {
@@ -17183,6 +17376,7 @@
          "SeqID" : 188,
          "TelPref" : "677",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Solomon_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands"
       },
       "SC" : {
@@ -17272,6 +17466,7 @@
          "SeqID" : 189,
          "TelPref" : "248",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Seychelles.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Seychelles"
       },
       "SD" : {
@@ -17361,6 +17556,7 @@
          "SeqID" : 190,
          "TelPref" : "249",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Sudan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Sudan"
       },
       "SE" : {
@@ -17450,6 +17646,7 @@
          "SeqID" : 191,
          "TelPref" : "46",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Sweden.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Sweden"
       },
       "SG" : {
@@ -17539,6 +17736,7 @@
          "SeqID" : 192,
          "TelPref" : "65",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Singapore.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Singapore"
       },
       "SH" : {
@@ -17628,6 +17826,7 @@
          "SeqID" : 193,
          "TelPref" : "290",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Saint_Helena,_Ascension_and_Tristan_da_Cunha"
       },
       "SI" : {
@@ -17717,6 +17916,7 @@
          "SeqID" : 194,
          "TelPref" : "386",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Slovenia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Slovenia"
       },
       "SJ" : {
@@ -17806,6 +18006,7 @@
          "SeqID" : 195,
          "TelPref" : "",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Svalbard"
       },
       "SK" : {
@@ -17895,6 +18096,7 @@
          "SeqID" : 196,
          "TelPref" : "421",
          "Year" : "1993",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Slovakia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Slovakia"
       },
       "SL" : {
@@ -17984,6 +18186,7 @@
          "SeqID" : 197,
          "TelPref" : "232",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Sierra_Leone.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone"
       },
       "SM" : {
@@ -18073,6 +18276,7 @@
          "SeqID" : 198,
          "TelPref" : "378",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_San_Marino.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_San_Marino"
       },
       "SN" : {
@@ -18162,6 +18366,7 @@
          "SeqID" : 199,
          "TelPref" : "221",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Senegal.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Senegal"
       },
       "SO" : {
@@ -18251,6 +18456,7 @@
          "SeqID" : 200,
          "TelPref" : "252",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Somalia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Somalia"
       },
       "SR" : {
@@ -18340,6 +18546,7 @@
          "SeqID" : 201,
          "TelPref" : "597",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Suriname.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Suriname"
       },
       "ST" : {
@@ -18429,6 +18636,7 @@
          "SeqID" : 202,
          "TelPref" : "239",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Sao_Tome_and_Principe.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
       },
       "SV" : {
@@ -18518,6 +18726,7 @@
          "SeqID" : 203,
          "TelPref" : "503",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_El_Salvador.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_El_Salvador"
       },
       "SX" : {
@@ -18607,6 +18816,7 @@
          "SeqID" : 0,
          "TelPref" : "",
          "Year" : "2010",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Sint_Maarten.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten"
       },
       "SY" : {
@@ -18696,6 +18906,7 @@
          "SeqID" : 204,
          "TelPref" : "963",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Syria.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Syria"
       },
       "SZ" : {
@@ -18785,6 +18996,7 @@
          "SeqID" : 205,
          "TelPref" : "268",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Swaziland.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Swaziland"
       },
       "TC" : {
@@ -18874,6 +19086,7 @@
          "SeqID" : 206,
          "TelPref" : "1 649",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Turks_and_Caicos_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands"
       },
       "TD" : {
@@ -18963,6 +19176,7 @@
          "SeqID" : 207,
          "TelPref" : "235",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Chad.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Chad"
       },
       "TF" : {
@@ -19043,6 +19257,7 @@
          "SeqID" : 208,
          "TelPref" : "569",
          "Year" : "1979",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_French_Southern_and_Antarctic_Lands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_French_Southern_and_Antarctic_Lands"
       },
       "TG" : {
@@ -19132,6 +19347,7 @@
          "SeqID" : 209,
          "TelPref" : "228",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Togo.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Togo"
       },
       "TH" : {
@@ -19221,6 +19437,7 @@
          "SeqID" : 210,
          "TelPref" : "66",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Thailand.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Thailand"
       },
       "TJ" : {
@@ -19310,6 +19527,7 @@
          "SeqID" : 211,
          "TelPref" : "992",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Tajikistan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Tajikistan"
       },
       "TK" : {
@@ -19390,6 +19608,7 @@
          "SeqID" : 212,
          "TelPref" : "690",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Tokelau.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Tokelau"
       },
       "TL" : {
@@ -19479,6 +19698,7 @@
          "SeqID" : 213,
          "TelPref" : "670",
          "Year" : "2002",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_East_Timor.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_East_Timor"
       },
       "TM" : {
@@ -19568,6 +19788,7 @@
          "SeqID" : 214,
          "TelPref" : "993",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Turkmenistan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan"
       },
       "TN" : {
@@ -19657,6 +19878,7 @@
          "SeqID" : 215,
          "TelPref" : "216",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Tunisia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Tunisia"
       },
       "TO" : {
@@ -19746,6 +19968,7 @@
          "SeqID" : 216,
          "TelPref" : "676",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Tonga.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Tonga"
       },
       "TR" : {
@@ -19835,6 +20058,7 @@
          "SeqID" : 217,
          "TelPref" : "90",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Turkey.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Turkey"
       },
       "TT" : {
@@ -19924,6 +20148,7 @@
          "SeqID" : 218,
          "TelPref" : "1 868",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Trinidad_and_Tobago.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago"
       },
       "TV" : {
@@ -20013,6 +20238,7 @@
          "SeqID" : 219,
          "TelPref" : "688",
          "Year" : "1979",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Tuvalu.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Tuvalu"
       },
       "TW" : {
@@ -20102,6 +20328,7 @@
          "SeqID" : 220,
          "TelPref" : "886",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Republic_of_China.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/List_of_Taiwanese_flags"
       },
       "TZ" : {
@@ -20191,6 +20418,7 @@
          "SeqID" : 221,
          "TelPref" : "255",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Tanzania.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Tanzania"
       },
       "UA" : {
@@ -20271,6 +20499,7 @@
          "SeqID" : 222,
          "TelPref" : "380",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Ukraine"
       },
       "UG" : {
@@ -20360,6 +20589,7 @@
          "SeqID" : 223,
          "TelPref" : "256",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Uganda.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Uganda"
       },
       "UM" : {
@@ -20449,6 +20679,7 @@
          "SeqID" : 0,
          "TelPref" : "",
          "Year" : "1986",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/United_States_Minor_Outlying_Islands"
       },
       "US" : {
@@ -20538,6 +20769,7 @@
          "SeqID" : 224,
          "TelPref" : "1",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
       },
       "UY" : {
@@ -20627,6 +20859,7 @@
          "SeqID" : 225,
          "TelPref" : "598",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Uruguay.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Uruguay"
       },
       "UZ" : {
@@ -20716,6 +20949,7 @@
          "SeqID" : 226,
          "TelPref" : "998",
          "Year" : "1992",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Uzbekistan.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan"
       },
       "VA" : {
@@ -20805,6 +21039,7 @@
          "SeqID" : 227,
          "TelPref" : "39",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_Vatican_City.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Vatican_City"
       },
       "VC" : {
@@ -20894,6 +21129,7 @@
          "SeqID" : 228,
          "TelPref" : "1 784",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Vincent_and_the_Grenadines.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
       },
       "VE" : {
@@ -20983,6 +21219,7 @@
          "SeqID" : 229,
          "TelPref" : "58",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Venezuela.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Venezuela"
       },
       "VG" : {
@@ -21072,6 +21309,7 @@
          "SeqID" : 230,
          "TelPref" : "1 284",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_British_Virgin_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_British_Virgin_Islands"
       },
       "VI" : {
@@ -21161,6 +21399,7 @@
          "SeqID" : 231,
          "TelPref" : "1 340",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States_Virgin_Islands.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
       },
       "VN" : {
@@ -21250,6 +21489,7 @@
          "SeqID" : 232,
          "TelPref" : "84",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Vietnam.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Vietnam"
       },
       "VU" : {
@@ -21339,6 +21579,7 @@
          "SeqID" : 233,
          "TelPref" : "678",
          "Year" : "1980",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Vanuatu.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Vanuatu"
       },
       "WF" : {
@@ -21428,6 +21669,7 @@
          "SeqID" : 234,
          "TelPref" : "681",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Wallis_and_Futuna"
       },
       "WS" : {
@@ -21517,6 +21759,7 @@
          "SeqID" : 235,
          "TelPref" : "685",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Samoa.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Samoa"
       },
       "YE" : {
@@ -21606,6 +21849,7 @@
          "SeqID" : 236,
          "TelPref" : "967",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Yemen.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Yemen"
       },
       "YT" : {
@@ -21695,6 +21939,7 @@
          "SeqID" : 237,
          "TelPref" : "262",
          "Year" : "1993",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_Mayotte"
       },
       "ZA" : {
@@ -21784,6 +22029,7 @@
          "SeqID" : 238,
          "TelPref" : "27",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_South_Africa.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
       },
       "ZM" : {
@@ -21873,6 +22119,7 @@
          "SeqID" : 239,
          "TelPref" : "260",
          "Year" : "1974",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Zambia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Zambia"
       },
       "ZW" : {
@@ -21962,6 +22209,7 @@
          "SeqID" : 240,
          "TelPref" : "263",
          "Year" : "1980",
+         "wp_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Zimbabwe.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe"
       }
    }

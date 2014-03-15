@@ -38,7 +38,7 @@ binmode(STDERR, ":utf8");
 
 local $| = 1; # auto flush
 
-my $cmd; # cmd, see "cmds" above
+my $cmd; # cmd, see "cmds" below
 
 my $geo; # geometry, eg.: 77x77+1129x807
 my $geoScale; # geometry scale factor. eg.: 0.781
@@ -81,7 +81,7 @@ GetOptions(
     "pngs=s"  => \$pngDir,
     );
 
-my $cmds = "help|svg2png|png2png|svg2svg|example";
+my $cmds = "help|svg2png|png2png|svg2svg|example|db";
 my $stys = "none|flat|simple|fancy|glossy";
 
 sub u {
@@ -386,6 +386,49 @@ sub add_png_file {
     } else {
 #	print STDERR " skipping " . $file . "\n";
     }
+}
+
+if ($cmd eq "db") {
+    if (!defined $jsonDB) {
+        u("missing --json [file], eg.: iso-3166-1.json.");
+    }
+
+	my $subcmd = shift || "list";
+
+    if ($subcmd eq "list" or $subcmd eq "help") {
+        print STDERR "Available --cmd db commands:\n\n";
+        print STDERR " wp_en      - list links to en.wikipedia.org.\n";
+        print STDERR " wp_commons - list links to commons.wikipedia.org.\n";
+        print STDERR "\n";
+    } elsif ($subcmd eq "wp_en") {
+		my %d = %{$jsonDB->{Results}};
+		
+		my @cos = sort keys %d;
+		foreach my $co (@cos) {
+			my $img = lc($co);
+			my $url = $d{$co}{wp_en};
+			
+			print STDOUT $img." ".$url."\n";
+		}
+	} elsif ($subcmd eq "wp_commons") {
+		my %d = %{$jsonDB->{Results}};
+		
+		my @cos = sort keys %d;
+		foreach my $co (@cos) {
+			my $img = lc($co);
+			my $url = $d{$co}{wp_commons};
+			
+			print STDOUT $img." ".$url."\n";
+		}
+	}
+
+#	elsif ($subcmd eq "set") {
+#		my $co = shift;
+#		my $url = shift;
+#		print STDERR $co." ".$url."\n";
+#		$jsonDB->{Results}{uc($co)}{wp_commons} = $url;
+#		writeJson($json, $jsonDB);
+#	}
 }
 
 if ($cmd eq "svg2svg") {
@@ -795,6 +838,13 @@ sub readJson {
     } else {
         u("Error reading ".$file.". Exiting.", 1);
     }
+}
+
+sub writeJson {
+	my $file = shift;
+	my $json = shift;
+
+	return writeFile($file, to_json($json, { utf8  => 0, pretty => 1, canonical => 1 }), ":utf8")
 }
 
 sub svg2png {
