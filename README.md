@@ -48,7 +48,7 @@ to see all build targets.
   
 ## Download
 
-You can download pre built png icon sets from my [dropbox folder](http://goo.gl/oaoEl).
+You can download pre built PNG icon sets from my [Dropbox](http://goo.gl/oaoEl).
 
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=koppi&url=https://github.com/koppi/iso-country-flags-svg-collection&title=&language=&tags=svg,country,flags&category=images)
 
@@ -56,35 +56,35 @@ You can download pre built png icon sets from my [dropbox folder](http://goo.gl/
 
 ### Tools required
 
-For converting the SVG files to different formats using different templates, you need to install the following software packages:
+For converting the SVG files to the PNG format using different templates, you need to install the following software packages:
 
-* librsvg - an SVG rendering library associated with the Gnome Project.
-* Perl Modules: XML::LibXML, JSON.
-* ImageMagick [here](http://www.imagemagick.org/).
+* Perl modules: XML::LibXML, JSON
+* Inkscape
+* ImageMagick
+* pngcrush
+* optipng
 
 On Debian/Ubuntu you can install these packages with the following command:
 
 ```
- $ sudo apt-get -y install imagemagick libxml-libxml-perl libjson-perl librsvg2-bin
+ $ sudo apt-get -y install libxml-libxml-perl libjson-perl inkscape imagemagick pngcrush optipng
 ```
 
-Simply type "make" to generate the icon sets. By default the Makefile generates icon sets with the following resolutions.
-
-For the country-squared svg files:
+Simply type "make" to generate the icon sets. By default the Makefile generates icon sets with the following resolutions. For the country-squared SVG files:
 
 ```
 512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16
 ```
 
-And for the country-4x3 svg files:
+and for the country-4x3 SVG files:
 
 ```
 1280x960 640x480 320x240 160x120 80x60 40x30 20x15
 ```
 
-### Building your own icon sets
+### Building your own PNG icon sets
 
-If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under [svg/](https://github.com/koppi/iso-country-flags-svg-collection/tree/master/svg), and drop your .svg files in there. Run make to (re-)generate the output.
+If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under [svg/](https://github.com/koppi/iso-country-flags-svg-collection/tree/master/svg), and drop your SVG files in there. Run make to (re-)generate the output.
 
 Country flag examples use a surface area of 512x512 (1:1) and 640x480 (4:3), so be sure to keep the 1:1 or 4:3 ratios for best results.
 
