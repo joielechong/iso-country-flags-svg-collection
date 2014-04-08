@@ -197,7 +197,6 @@ help:
 	@echo  ''
 	@echo  'Example targets:'
 	@echo  '  kml                - Build kml example file.'
-	@echo  '  kmz                - Build kmz example file (wip).'
 	@echo  '  poster             - Build svg flags of the world poster (wip).'
 	@echo  '  xplanet            - Build xplanet marker files.'
 	@echo  ''
