@@ -172,6 +172,9 @@ xplanet:
 kml:
 	$(Q)scripts/build.pl --cmd example kml --json iso-3166-1.json --out build --res 16x16 --lang all
 
+wiki:
+	$(Q)scripts/build.pl --cmd example wm_commons --json iso-3166-1.json > ../iso-country-flags-svg-collection.wiki/Credits.md
+
 distclean: clean
 
 clean:
