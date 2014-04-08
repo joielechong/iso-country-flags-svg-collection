@@ -13,10 +13,18 @@ You can build the above icon sheet with different icon styles using the template
 Simply type
 
 ```
-$ make -j4
+$ make
 ```
 
-to build PNG versions of the country flags contained in this collection. This will create about 320MB of data: none, flat, simple, fancy, glossy template based PNG files with the following resolutions: "512x512 (web), 256x256, 128x128, 96x96, 72x72, 64x64, 48x48, 36x36, 32x32, 24x24, 16x16".
+to build PNG versions of the country flags contained in this collection. This will create about 320MB of data: none, flat, simple, fancy, glossy template based PNG files with the following resolutions:
+
+```
+512x512 256x256 128x128 96x96 72x72 64x64 48x48 36x36 32x32 24x24 16x16 – ratio 1:1
+```
+
+```
+1280x960 640x480 320x240 160x120 80x60 40x30 20x15 – ratio 4:3
+```
 
 For example the results with the template "flat" applied to the "United States" country flag icon looks like follows:
 
@@ -32,7 +40,7 @@ $ make help
 
 to see all build targets.
 
-* Country flags icon sheets - type ```$ make -j4 sheets```.
+* Country flags icon sheets - type ```$ make sheets```.
 
 * [WebGL Earth - ISO country flags](http://tinyurl.com/webgl-earth-iso-country-flags).
 
@@ -44,7 +52,7 @@ to see all build targets.
 
 * Xplanet - [howto generate xplanet marker config files](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet):
 
-  ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xplanet marker config files: ```$ make -j4 xplanet```, a shortcut for the command: ```$ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all```.
+  ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xplanet marker config files: ```$ make xplanet```, a shortcut for the command: ```$ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all```.
   
 ## Download
 
@@ -79,7 +87,7 @@ Simply type "make" to generate the icon sets. By default the Makefile generates 
 and for the country-4x3 SVG files:
 
 ```
-1280x960 640x480 320x240 160x120 80x60 40x30 20x15
+
 ```
 
 ### Building your own PNG icon sets
