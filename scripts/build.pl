@@ -52,13 +52,7 @@ my $imgSvg; # rel. image path to svg file
 my $imgFore; my $imgFlag; my $imgBack; # images for template command
 my $mask; # [D+D+DxD] mask spec for template command
 
-my $zoom; # for svg2png
-
-# for png2png
-my $png;
-my $pngDir; # rel. image path to png file
-
-# for example cmd xplanet
+# for --cmd example xplanet
 my $json; my $lang;
 
 GetOptions(
@@ -74,14 +68,13 @@ GetOptions(
     "flag=s" => \$imgFlag,
     "mask=s" => \$mask,
     "back=s" => \$imgBack,
-    "zoom=f" => \$zoom,
     "json=s" => \$json,
     "lang=s" => \$lang,
     "png=s"   => \$png,
     "pngs=s"  => \$pngDir,
     );
 
-my $cmds = "help|svg2png|png2png|svg2svg|example|db";
+my $cmds = "help|svg2png|svg2svg|example|db";
 my $stys = "none|flat|simple|fancy|glossy";
 
 sub u {
@@ -123,6 +116,8 @@ if ($cmd eq "example") {
         example_xplanet();
     } elsif ($subcmd eq "kml") {
         example_kml();
+    } elsif ($subcmd eq "wm_commons") {
+        example_wm_commons();
     }
 }
 
@@ -364,6 +359,20 @@ sub example_kml {
         writeFile($file, $dom->toString(), ":utf8");
     }
     print STDERR " done.\n";
+}
+
+sub example_wm_commons {
+    if (!defined $jsonDB) {
+        u("missing --json [file], eg.: iso-3166-1.json.");
+    }
+
+    my %d = %{$jsonDB->{Results}};
+
+	foreach my $co (sort keys %d) {
+		my $img = lc($co);
+		print STDOUT "* [".$img.".svg](".$d{$co}{wm_commons}.") – Flag of ".$d{$co}{Name}."\n";
+	}
+	print STDOUT "\n(file generated with ```./scripts/build.pl --json iso-3166-1.json --cmd example wm_commons```)\n\n";
 }
 
 my @svgs = ();
@@ -608,70 +617,6 @@ if ($cmd eq "svg2svg") {
     writeFile($out."/".$imgSvg, $doc->toString());
 }
 
-if ($cmd eq "png2png") {
-    if (!$pngDir){u("missing --pngs [dir], eg.: build/png-country-squared/res-512x512.")}
-    if (!-d $pngDir){u("--pngs \"".$pngDir."\" does not exist.")}
-    
-    if (!$out)   {u("missing --out [dir], e.g.: build.")}
-    if (!-d $out){u("--out dir \"".$out."\" does not exist.")}
-
-    find(\&add_png_file, split(",", $pngDir));
-
-    if (0 eq scalar(@pngs)) {
-        u("no png files in ".$pngDir.".");
-    }
-
-    if (!$res) {u("missing --res [DxD,..], eg.: 64x64,128x128.")}
-
-    my @rs = ();
-    foreach my $r (split (",", $res)) {
-        my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
-        
-        if ($w eq 0) {u("invalid res: \"".$r."\", width  must be > 0.")}
-        if ($h eq 0) {u("invalid res: \"".$r."\", height must be > 0.")}
-        if (!$w or !$h) {
-            u("could not parse: res \"".$r."\", must be [DxD,..]");
-        }
-        
-        push @rs, {"w" => $w, "h" => $h};
-    }
-
-    foreach my $p (@pngs) {
-
-        print STDERR " processing ".$p."\n";
-
-        foreach my $r (@rs) {
-            my %dim = %{$r}; my $rx = $dim{w}; my $ry = $dim{h};
-            my $o = $p;
-            
-            my ($name, $path, $suffix) = fileparse($o, (".png"));
-            
-            # keep things simple, make only 2 sub-dirs:
-            # path style is => build/png-dir/res-DxD, eg.:
-            #                  build/png-country-4x2/res-1280x960
-            $path =~ s#/#-#g; 
-            $path =~ s#-$##g;
-            $path =~ s#^svg#png#g;
-            
-            # case for path starting with "build-png-" => "png-"
-            $path =~ s#^build-png-#png-#g;
-            $path =~ s#-res-.*##g;
-            
-            my $png_out = $out."/".$path."/res-".$rx."x".$ry."/".$name.$suffix;
-            my $cmd = png2png($p, $png_out, $rx, $ry);
-            
-            my ($n, $pa, $s) = fileparse($png_out, (".png"));
-            if (! -d $pa) {
-                print STDERR " mkdir " . $pa . "\n";
-                mkpath($pa);
-            }
-
-#	    print STDERR " " . $cmd . "\n";
-            cmd_exec($cmd);
-        }
-    }
-}
-
 if ($cmd eq "svg2png") {
     if (!$dirSvg){u("missing --svgs [dir], eg.: svg/country-squared.")}
     if (!-d $dirSvg){u("--svgs \"".$dirSvg."\" does not exist.")}
@@ -715,7 +660,7 @@ if ($cmd eq "svg2png") {
             $path =~ s#^build-svg-#png-#g;
             
             my $png_out = $out."/".$path."/res-".$rx."x".$ry."/".$name.$suffix;
-            my $cmd = svg2png($s, $png_out, $rx, $ry, $zoom);
+            my $cmd = svg2png($s, $png_out, $rx, $ry);
             
             my ($n, $p, $s) = fileparse($png_out, (".png"));
             if (! -d $p) {
@@ -848,29 +793,26 @@ sub writeJson {
 }
 
 sub svg2png {
-    my ($in, $out, $w, $h, $zoom) = @_;
+	# Four steps:
+	# * 1. run Inkscape to create the PNG with the given width and height,
+	# * 2. run ImageMagick for PNGs with height smaller than 128
+    #      using Unsharped Resizing (USM) -- Photoshop Resize Technique,
+	#      see http://www.imagemagick.org/Usage/resize/#resize_unsharp
+	# * 3. run pngcrush (reduce the size of the PNG file's IDAT chunk),
+	# * 4. run optipng (reduce PNG file size to a minimum, without losing any information).
 
-    # is $out older than $in?
-
-    if (!-e $out || -M $out > -M $in) {
-        if (defined $zoom) {
-            return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." -z ".$zoom." ".$in;
-#       return "inkscape -w ".$w." -h ".$h." --export-png=".$out. " ".$in;
-        } else {
-            return "rsvg-convert -o ".$out." -w ".$w." -h ".$h." ".$in;
-        }
-    } else {
-        return undef;
-    }
-}
-
-sub png2png {
     my ($in, $out, $w, $h) = @_;
 
     # is $out older than $in?
-    
+
     if (!-e $out || -M $out > -M $in) {
-        return "convert ".$in." -resize ".$w."x".$h." ".$out;
+		my $cmd = "inkscape -z -e ".$out." -w ".$w." -h ".$h." ".$in;
+		if ($h <= 128) {
+			$cmd .= " && convert ".$out." -unsharp 0x1 ".$out;
+		}
+		$cmd .= " && pngcrush -rem allb -brute -reduce ".$out." ".$out.".crushed && mv ".$out.".crushed ".$out;
+		$cmd .= " && optipng -o5 ".$out;
+		return $cmd;
     } else {
         return undef;
     }
