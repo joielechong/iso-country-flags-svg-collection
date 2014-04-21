@@ -70,8 +70,6 @@ GetOptions(
     "back=s" => \$imgBack,
     "json=s" => \$json,
     "lang=s" => \$lang,
-    "png=s"   => \$png,
-    "pngs=s"  => \$pngDir,
     );
 
 my $cmds = "help|svg2png|svg2svg|example|db";
