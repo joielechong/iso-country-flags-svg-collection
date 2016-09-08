@@ -1,16 +1,14 @@
-This project is seeking a new maintainer or a group of maintainers. See [Issue #40](https://github.com/koppi/iso-country-flags-svg-collection/issues/40).
-
 ## Description
 
 [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) defines two-letter country codes which are used most prominently for the Internet's country code top-level domains (with a few exceptions).
 
 This repository contains 248 country flag SVG icons as shown in the following sheet:
 
-![iso-country-flags-sheet-flat.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/iso-country-flags-sheet-flat.png "ISO country flags svg collection")
+![iso-country-flags-sheet-flat.png](https://raw.github.com/joielechong/iso-country-flags-svg-collection/master/examples/iso-country-flags-sheet-flat.png "ISO country flags svg collection")
 
 You can build the above icon sheet with different icon styles using the templates in the build directory: none, flat, simple, fancy, glossy:
 
-![templates.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/templates.png "Country flag icons templates")
+![templates.png](https://raw.github.com/joielechong/iso-country-flags-svg-collection/master/examples/templates.png "Country flag icons templates")
 
 Simply type
 
@@ -30,7 +28,7 @@ to build PNG versions of the country flags contained in this collection. This wi
 
 For example the results with the template "flat" applied to the "United States" country flag icon looks like follows:
 
-![resolutions.png](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/resolutions.png "Country flag icon resoultions")
+![resolutions.png](https://raw.github.com/joielechong/iso-country-flags-svg-collection/master/examples/resolutions.png "Country flag icon resoultions")
  
 ### Usage examples
 
@@ -46,21 +44,17 @@ to see all build targets.
 
 * [WebGL Earth - ISO country flags](http://tinyurl.com/webgl-earth-iso-country-flags).
 
-  ![WebGL Earth - ISO country flags](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-webgl-earth.png). Open the [live demo](http://tinyurl.com/webgl-earth-iso-country-flags) in your web browser. This demo uses a slightly modified [iso-3166-1.json file](http://dl.dropbox.com/u/3139257/iso-country-flags-svg-collection/examples/iso-3166-1.json) (with an added "var data = " string) an the [WebGL Earth API](http://www.webglearth.org/).
+  ![WebGL Earth - ISO country flags](https://raw.github.com/joielechong/iso-country-flags-svg-collection/master/examples/example-webgl-earth.png). Open the [live demo](http://tinyurl.com/webgl-earth-iso-country-flags) in your web browser. This demo uses a slightly modified [iso-3166-1.json file](http://dl.dropbox.com/u/3139257/iso-country-flags-svg-collection/examples/iso-3166-1.json) (with an added "var data = " string) an the [WebGL Earth API](http://www.webglearth.org/).
 
 * Google Maps - [G+ users of the world - PicasaWeb album](http://goo.gl/mHyJb):
 
-  ![G+ users of the world picasaweb album](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-google-maps.png) Notice: you first have to zoom out to see anything on the world map (it seems, that there is a bug in Google Maps, which prevents to show the country icons).
+  ![G+ users of the world picasaweb album](https://raw.github.com/joielechong/iso-country-flags-svg-collection/master/examples/example-google-maps.png) Notice: you first have to zoom out to see anything on the world map (it seems, that there is a bug in Google Maps, which prevents to show the country icons).
 
-* Xplanet - [howto generate xplanet marker config files](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet):
+* Xplanet - [howto generate xplanet marker config files](https://github.com/joielechong/iso-country-flags-svg-collection/wiki/example-xplanet):
 
-  ![example-xplanet-de](https://raw.github.com/koppi/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/koppi/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xplanet marker config files: ```$ make xplanet```, a shortcut for the command: ```$ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all```.
+  ![example-xplanet-de](https://raw.github.com/joielechong/iso-country-flags-svg-collection/master/examples/example-xplanet-de.png) Notice: go to the [Wiki](https://github.com/joielechong/iso-country-flags-svg-collection/wiki/example-xplanet). for howto generate xplanet marker config files. Run the following command to generate all the xplanet marker config files: ```$ make xplanet```, a shortcut for the command: ```$ scripts/build.pl --cmd example xplanet --json iso-3166-1.json --out build --res 16x16 --lang all```.
   
 ## Download
-
-You can download pre built PNG icon sets from my [Dropbox](http://goo.gl/oaoEl).
-
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=koppi&url=https://github.com/koppi/iso-country-flags-svg-collection&title=&language=&tags=svg,country,flags&category=images)
 
 ## Building the icon sets
 
@@ -82,14 +76,14 @@ On Debian/Ubuntu you can install these packages with the following command:
 
 ### Building your own PNG icon sets
 
-If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under [svg/](https://github.com/koppi/iso-country-flags-svg-collection/tree/master/svg), and drop your SVG files in there. Run make to (re-)generate the output.
+If you want to build your own icon sets with the same templates used for the flags here, you just create a folder under [svg/](https://github.com/joielechong/iso-country-flags-svg-collection/tree/master/svg), and drop your SVG files in there. Run make to (re-)generate the output.
 
 Country flag examples use a surface area of 512x512 (1:1) and 640x480 (4:3), so be sure to keep the 1:1 or 4:3 ratios for best results.
 
 ## Related projects / TODO / License
 
-* See [Related](https://github.com/koppi/iso-country-flags-svg-collection/wiki/Related) in the Wiki.
+* See [Related](https://github.com/joielechong/iso-country-flags-svg-collection/wiki/Related) in the Wiki.
 
-* You can [browse issues](https://github.com/koppi/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
+* You can [browse issues](https://github.com/joielechong/iso-country-flags-svg-collection/issues) related to iso-country-flags-svg-collection to see, what's being worked on.
 
 * Most of the country flag icons are licensed under the [Public Domain](http://en.wikipedia.org/wiki/Public_domain).
