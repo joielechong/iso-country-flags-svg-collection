@@ -63,7 +63,7 @@ SVG2SVG_11 = scripts/build.pl --cmd svg2svg --res 512x512 --back back.png --fore
 
 SVG2SVG_43 = scripts/build.pl --cmd svg2svg --res 1280x960 --back back.png --fore fore.png --svgs svg/country-4x3 --mask 107x107+67x67+1065x745 --geo 106x75+1280x960 --geoscale 1.667
 
-SVGS_11 = $(shell cd svg/country-squared; ls -1 ??.svg)
+SVGS_11 = $(shell cd svg/country-squared; ls -1 *.svg)
 
 SVGS_11_FANCY  = ${SVGS_11:%.svg=build/svg-country-squared-fancy/%.svg}
 SVGS_11_SIMPLE = ${SVGS_11:%.svg=build/svg-country-squared-simple/%.svg}
@@ -75,7 +75,7 @@ PNGS_11_SIMPLE = ${SVGS_11:%.svg=build/png-country-squared-simple/%.png}
 PNGS_11_FLAT   = ${SVGS_11:%.svg=build/png-country-squared-flat/%.png}
 PNGS_11_GLOSSY = ${SVGS_11:%.svg=build/png-country-squared-glossy/%.png}
 
-SVGS_43 = $(shell cd svg/country-4x3; ls -1 ??.svg)
+SVGS_43 = $(shell cd svg/country-4x3; ls -1 *.svg)
 
 SVGS_42_FANCY  = ${SVGS_43:%.svg=build/svg-country-4x2-fancy/%.svg}
 SVGS_42_SIMPLE = ${SVGS_43:%.svg=build/svg-country-4x2-simple/%.svg}
@@ -156,7 +156,7 @@ kml:
 distclean: clean
 
 clean:
-	$(Q)/bin/rm -rvf build/svg-*/??.svg
+	$(Q)/bin/rm -rvf build/svg-*/*.svg
 	$(Q)/bin/rm -rvf build/png-*/res-*
 	$(Q)/bin/rm -rvf build/xplanet
 	$(Q)echo "Finished cleaning up build."
