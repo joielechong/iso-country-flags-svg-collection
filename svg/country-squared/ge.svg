@@ -1,83 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg572"
-   sodipodi:version="0.32"
-   width="512"
-   height="512"
-   sodipodi:docname="ge.svg"
-   version="1.1"
-   inkscape:version="0.48.1 r9760">
-  <sodipodi:namedview
-     id="base"
-     showgrid="false"
-     inkscape:zoom="0.47574604"
-     inkscape:cx="331.29922"
-     inkscape:cy="248.03149"
-     inkscape:window-width="1280"
-     inkscape:window-height="723"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg572" />
-  <metadata
-     id="metadata3022">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs574">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3112">
-      <rect
-         id="rect3114"
-         height="494.29181"
-         x="48.901947"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         width="494.29181"
-         y="1.0882894" />
-    </clipPath>
-  </defs>
-  <g
-     transform="matrix(1.0358254,0,0,1.0358254,-50.65388,-1.1272778)"
-     id="flag"
-     clip-path="url(#clipPath3112)"
-     inkscape:label="#g3090">
-    <rect
-       style="font-size:12px;fill:#960000;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="rect575"
-       width="658.98712"
-       height="494.24039"
-       x="0.63126397"
-       y="1.139701" />
-    <rect
-       style="font-size:12px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="rect577"
-       width="292.50961"
-       height="84.054512"
-       x="1.3139729"
-       y="1.088295" />
-    <rect
-       style="font-size:12px;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt"
-       id="rect578"
-       width="292.50961"
-       height="84.054512"
-       x="0.63126099"
-       y="85.194252" />
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="512" width="512" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 170.66667 170.66667" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata27">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs4">
+  <g id="smallcross">
+   <clipPath id="vclip">
+    <path id="path8" d="m-109 104a104 104 0 0 0 0 -208h218a104 104 0 0 0 0 208z"/>
+   </clipPath>
+   <path id="varm" clip-path="url(#vclip)" d="m-55 74a55 55 0 0 1 110 0v-148a55 55 0 0 1 -110 0z"/>
+   <use id="use11" xlink:href="#varm" transform="rotate(90)" height="200" width="300" y="0" x="0"/>
   </g>
+ </defs>
+ <g id="flag">
+  <rect id="rect2993" height="170.67" width="170.67" y=".0000017529" x="0" fill="#fff"/>
+  <g id="sdsds" transform="matrix(.53484 0 0 .53484 5.1077 47.576)">
+   <rect id="rect13" height="200" width="300" y="-29.333" x="0" fill="#fff"/>
+   <path id="path15" fill="#f00" d="m130-29.333v80h-130v40h130v80h40v-80h130v-40h-130v-80h-40z"/>
+   <use id="use17" xlink:href="#smallcross" transform="translate(64.45 10.117)" height="200" width="300" y="0" x="0" fill="#ff0000"/>
+   <use id="use19" xlink:href="#smallcross" transform="translate(235.55 131.22)" height="200" width="300" y="0" x="0" fill="#ff0000"/>
+   <use id="use21" xlink:href="#smallcross" transform="translate(235.55 10.117)" height="200" width="300" y="0" x="0" fill="#ff0000"/>
+   <use id="use23" xlink:href="#smallcross" transform="translate(64.45 131.22)" height="200" width="300" y="0" x="0" fill="#ff0000"/>
+  </g>
+ </g>
 </svg>

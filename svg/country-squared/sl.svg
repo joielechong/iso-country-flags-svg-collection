@@ -36,50 +36,48 @@ methods that have not yet been invented or conceived.
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   style="fill:#28ff09; fill-opacity:0.141176; stroke:none; "
-   width="512"
-   height="512"
    id="canada"
-   sodipodi:docname="sl.svg"
-   sodipodi:version="0.32"
+   height="512"
+   width="512"
    version="1.1"
-   inkscape:version="0.48.1 r9760">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="sl.svg">
+  <defs
+     id="defs10">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2989">
+      <rect
+         style="stroke:none"
+         id="rect2991"
+         width="384.00003"
+         height="512.00006"
+         x="0"
+         y="-5.2961117e-05"
+         rx="4.6274514"
+         ry="7.628283" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
-     id="base"
-     gridtolerance="10px"
-     guidetolerance="5.000000"
-     guidecolor="#0000ff"
-     guideopacity="0.494118"
-     guidehicolor="#ff0000"
-     guidehiopacity="0.494118"
-     showgrid="true"
-     snaptogrid="true"
-     inkscape:zoom="0.44080424"
-     inkscape:cx="372.04724"
-     inkscape:cy="248.03149"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
      inkscape:window-width="1280"
-     inkscape:window-height="723"
+     inkscape:window-height="800"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="0.49166667"
+     inkscape:cx="320"
+     inkscape:cy="240"
      inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="canada">
-    <inkscape:grid
-       empspacing="5"
-       empopacity="0.4"
-       opacity="1.000000"
-       empcolor="#0000ff"
-       color="#000aff"
-       spacingy="17.5mm"
-       spacingx="52.5mm"
-       originy="0.000000"
-       originx="0px"
-       type="xygrid"
-       id="GridFromPre046Settings"
-       units="mm"
-       visible="true"
-       enabled="false"
-       snapvisiblegridlinesonly="true" />
-  </sodipodi:namedview>
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="canada" />
   <metadata
      id="metadata3128">
     <rdf:RDF>
@@ -91,32 +89,31 @@ methods that have not yet been invented or conceived.
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <defs
-     id="defs3" />
   <g
-     transform="matrix(0.68808466,0,0,1.032127,0,-3.9057617e-6)"
      id="flag"
-     inkscape:label="#g4839">
+     transform="matrix(1.3333332,0,0,0.99999993,0,5.2961113e-5)"
+     style="fill-rule:evenodd"
+     clip-path="url(#clipPath2989)">
     <rect
-       style="font-size:12px;fill:#0000cd;fill-opacity:1;fill-rule:evenodd"
        id="rect574"
-       width="744.09448"
-       height="165"
+       height="170.3"
+       width="512"
+       y="341.70001"
        x="0"
-       y="331.06299" />
+       style="fill:#0000cd" />
     <rect
-       style="font-size:12px;fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
        id="rect573"
-       width="744.09448"
-       height="165"
+       height="170.3"
+       width="512"
+       y="171.39999"
        x="0"
-       y="166.06299" />
+       style="fill:#ffffff" />
     <rect
-       style="font-size:12px;fill:#00cd00;fill-opacity:1;fill-rule:evenodd"
        id="rect572"
-       width="744.09448"
-       height="166.063"
+       height="171.39999"
+       width="512"
+       y="-1.9655999e-05"
        x="0"
-       y="-1.5260001e-05" />
+       style="fill:#00cd00" />
   </g>
 </svg>

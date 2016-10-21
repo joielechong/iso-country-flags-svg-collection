@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1"
-   x="0"
-   y="0"
+   version="1.1"
    width="640"
    height="480"
-   id="svg378"
-   sodipodi:version="0.31pre"
-   sodipodi:docname="cn.svg"
-   inkscape:version="0.48.1 r9760">
-  <sodipodi:namedview
-     id="base"
-     showgrid="false"
-     inkscape:zoom="0.30856358"
-     inkscape:cx="531.495"
-     inkscape:cy="354.33051"
-     inkscape:window-width="1280"
-     inkscape:window-height="746"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg378" />
+   viewBox="-5 -5 12.8 9.6"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="cn.svg">
   <metadata
-     id="metadata3004">
+     id="metadata23">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -41,43 +26,98 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1215"
+     inkscape:window-height="776"
+     id="namedview21"
+     showgrid="false"
+     inkscape:zoom="1.24375"
+     inkscape:cx="320"
+     inkscape:cy="240"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title4">Flag of the People's Republic of China</title>
   <defs
-     id="defs380" />
+     id="defs8">
+    <polygon
+       id="s"
+       points="-301930,415571 0,-513674 301930,415571 -488533,-158734 488533,-158734 "
+       transform="scale(1.94676e-6,1.94676e-6)"
+       style="fill:#ffde00" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3010">
+      <rect
+         style="fill:#000000;stroke:none"
+         id="rect3012"
+         width="26.666668"
+         height="20"
+         x="-5"
+         y="-15.400001" />
+    </clipPath>
+  </defs>
   <g
      id="flag"
-     inkscape:label="#g3159">
+     transform="matrix(0.48,0,0,0.48,-2.6000001,2.3920003)"
+     clip-path="url(#clipPath3010)"
+     inkscape:label="#g3000">
     <rect
-       id="rect149"
-       style="font-size:12px;fill:#ff3300;fill-rule:evenodd;stroke-width:1pt"
+       style="fill:#de2910"
+       id="rect6"
+       height="20"
+       width="30"
+       y="-15.4"
+       x="-5" />
+    <use
+       height="20"
+       width="30"
        y="0"
        x="0"
-       height="480"
-       width="640"
-       inkscape:label="#rect149" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path139"
-       d="m 243.6879,272.08408 -74.94395,-53.51493 -74.57673,54.04058 27.73676,-87.81864 -74.439919,-54.2278 92.095809,-0.75607 28.56482,-87.552223 29.17688,87.350603 92.09581,0.11521 -74.05828,54.73905 28.3488,87.62422 z"
-       style="font-size:12px;fill:#ffff00;fill-rule:evenodd;stroke-width:1pt" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path138"
-       d="m 422.6522,82.65824 -14.89377,-20.764291 -24.42506,7.518167 15.14608,-20.582845 -14.69758,-20.906405 24.25675,8.045277 15.33973,-20.438745 -0.15576,25.554476 24.17876,8.274118 -24.35141,7.748027 -0.39774,25.552221 z"
-       style="font-size:12px;fill:#ffff00;fill-rule:evenodd;stroke-width:1pt" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path137"
-       d="m 361.64533,461.3769 -16.99034,-19.08679 -23.50126,10.03959 12.90264,-22.05846 -16.81013,-19.2487 24.96698,5.45555 13.11035,-21.93547 2.52655,25.42968 24.91343,5.69132 -23.40389,10.26045 2.28567,25.45283 z"
-       style="font-size:12px;fill:#ffff00;fill-rule:evenodd;stroke-width:1pt" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path136"
-       d="m 481.18245,216.3415 -8.27481,-24.17668 -25.55553,0.15691 20.43725,-15.3421 -8.04596,-24.25619 20.90725,14.69717 20.58112,-15.14828 -7.51679,24.42452 20.76659,14.8938 -25.55127,0.39825 -7.74785,24.3526 z"
-       style="font-size:12px;fill:#ffff00;fill-rule:evenodd;stroke-width:1pt" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path135"
-       d="m 477.6316,339.56225 -20.90002,-14.70262 -20.58771,15.141 7.52454,-24.42205 -20.76156,-14.9014 25.55312,-0.38997 7.75484,-24.34974 8.26684,24.18082 25.55482,-0.14821 -20.44247,15.3338 8.0376,24.25837 z"
-       style="font-size:12px;fill:#ffff00;fill-rule:evenodd;stroke-width:1pt" />
+       id="use11"
+       transform="matrix(3,0,0,3,0,-10.4)"
+       xlink:href="#s" />
+    <use
+       height="20"
+       width="30"
+       y="0"
+       x="0"
+       id="use13"
+       transform="matrix(-0.51449575,-0.85749293,0.85749293,-0.51449575,5,-13.4)"
+       xlink:href="#s" />
+    <use
+       height="20"
+       width="30"
+       y="0"
+       x="0"
+       id="use15"
+       transform="matrix(-0.14142135,-0.98994949,0.98994949,-0.14142135,7,-11.4)"
+       xlink:href="#s" />
+    <use
+       height="20"
+       width="30"
+       y="0"
+       x="0"
+       id="use17"
+       transform="matrix(0.27472113,-0.96152395,0.96152395,0.27472113,7,-8.4)"
+       xlink:href="#s" />
+    <use
+       height="20"
+       width="30"
+       y="0"
+       x="0"
+       id="use19"
+       transform="matrix(0.62469505,-0.78086881,0.78086881,0.62469505,5,-6.4)"
+       xlink:href="#s" />
   </g>
 </svg>

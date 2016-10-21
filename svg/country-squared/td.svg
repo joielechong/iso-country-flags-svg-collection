@@ -34,50 +34,34 @@ methods that have not yet been invented or conceived.
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   style="fill:#28ff09; fill-opacity:0.141176; stroke:none; "
-   width="512"
-   height="512"
    id="canada"
-   sodipodi:docname="td.svg"
-   sodipodi:version="0.32"
+   height="512"
+   width="512"
    version="1.1"
-   inkscape:version="0.48.1 r9760">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="td.svg">
+  <defs
+     id="defs10" />
   <sodipodi:namedview
-     id="base"
-     gridtolerance="10px"
-     guidetolerance="5.000000"
-     guidecolor="#0000ff"
-     guideopacity="0.494118"
-     guidehicolor="#ff0000"
-     guidehiopacity="0.494118"
-     showgrid="true"
-     snaptogrid="true"
-     inkscape:zoom="0.44080424"
-     inkscape:cx="372.04724"
-     inkscape:cy="248.03149"
-     inkscape:window-width="1280"
-     inkscape:window-height="723"
-     inkscape:window-x="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1215"
+     inkscape:window-height="776"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="0.49166667"
+     inkscape:cx="320"
+     inkscape:cy="240"
+     inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="canada">
-    <inkscape:grid
-       empspacing="5"
-       empopacity="0.4"
-       opacity="1.000000"
-       empcolor="#0000ff"
-       color="#000aff"
-       spacingy="17.5mm"
-       spacingx="52.5mm"
-       originy="0.000000"
-       originx="0px"
-       type="xygrid"
-       id="GridFromPre046Settings"
-       units="mm"
-       visible="true"
-       enabled="false"
-       snapvisiblegridlinesonly="true" />
-  </sodipodi:namedview>
+     inkscape:current-layer="canada" />
   <metadata
      id="metadata3698">
     <rdf:RDF>
@@ -89,32 +73,30 @@ methods that have not yet been invented or conceived.
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <defs
-     id="defs3" />
   <g
-     transform="matrix(0.68808466,0,0,1.032127,0,1.1844497e-5)"
      id="flag"
-     inkscape:label="#g7192">
+     style="fill-rule:evenodd"
+     transform="scale(0.8,1.0666667)">
     <rect
-       style="font-size:12px;fill:#000067;fill-opacity:1;fill-rule:evenodd"
        id="rect555"
-       width="248.77188"
-       height="496.06299"
+       height="480"
+       width="213.97"
+       y="0"
        x="0"
-       y="-1.5260001e-05" />
+       style="fill:#000067" />
     <rect
-       style="font-size:12px;fill:#ff0000;fill-opacity:1;fill-rule:evenodd"
        id="rect557"
-       width="248.77191"
-       height="496.06299"
-       x="495.32257"
-       y="-1.5260001e-05" />
+       height="480"
+       width="213.97"
+       y="0"
+       x="426.03"
+       style="fill:#ff0000" />
     <rect
-       style="font-size:12px;fill:#ffff00;fill-opacity:1;fill-rule:evenodd"
        id="rect556"
-       width="246.55069"
-       height="496.06299"
-       x="248.77188"
-       y="-1.5260001e-05" />
+       height="480"
+       width="212.06"
+       y="0"
+       x="213.97"
+       style="fill:#ffff00" />
   </g>
 </svg>
