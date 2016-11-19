@@ -1,121 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg1646"
-   sodipodi:version="0.32"
-   width="640"
-   height="480"
-   sodipodi:docname="pa.svg"
-   version="1.1"
-   inkscape:version="0.48.1 r9760">
-  <sodipodi:namedview
-     id="base"
-     showgrid="false"
-     inkscape:zoom="0.44080424"
-     inkscape:cx="83.937489"
-     inkscape:cy="248.03149"
-     inkscape:window-width="1280"
-     inkscape:window-height="746"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1646" />
-  <metadata
-     id="metadata3564">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs1648">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath10940">
-      <rect
-         id="rect10942"
-         height="512"
-         x="0"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         width="512"
-         y="0" />
-    </clipPath>
-    <clipPath
-       id="clipPath9230"
-       clipPathUnits="userSpaceOnUse">
-      <rect
-         y="0"
-         width="640"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         x="0"
-         height="480"
-         id="rect9232" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3037">
-      <rect
-         id="rect3039"
-         height="480"
-         x="0"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         width="640"
-         y="0" />
-    </clipPath>
-  </defs>
-  <g
-     id="flag"
-     clip-path="url(#clipPath3037)"
-     inkscape:label="#g2998">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       id="rect2996"
-       width="640"
-       height="480"
-       x="0"
-       y="0" />
-    <rect
-       y="1.5938565e-07"
-       x="92.461983"
-       height="480"
-       width="477.19034"
-       id="rect555"
-       style="font-size:12px;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt" />
-    <rect
-       y="3.6546078"
-       x="323.07465"
-       height="221.68045"
-       width="357.99594"
-       id="rect1649"
-       style="font-size:12px;fill:#db0000;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt" />
-    <rect
-       y="225.33496"
-       x="3.2267244"
-       height="254.6619"
-       width="319.8714"
-       id="rect1650"
-       style="font-size:12px;fill:#0000ab;fill-opacity:1;fill-rule:evenodd;stroke-width:1pt" />
-    <path
-       id="path205"
-       style="font-size:12px;fill:#0000ab;fill-opacity:1;fill-rule:evenodd;stroke-width:0.112872"
-       d="m 214.80329,177.64825 -41.95922,-29.32551 -41.7536,29.61355 15.5291,-48.12353 -41.677,-29.71617 51.56208,-0.4143 15.99272,-47.977538 16.33539,47.867043 51.5621,0.06322 -41.46334,29.996325 15.87177,48.01699 z"
-       inkscape:connector-curvature="0" />
-    <path
-       id="path1660"
-       style="font-size:12px;fill:#d80000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.112872"
-       d="m 516.84826,413.89102 -42.35396,-27.74445 -42.14642,28.01697 15.6752,-45.52896 -42.0691,-28.11402 52.04718,-0.39198 16.14318,-45.39085 16.48907,45.28633 52.04718,0.0598 -41.85343,28.37908 16.0211,45.42816 z"
-       inkscape:connector-curvature="0" />
-  </g>
+<svg id="svg1646" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="480" width="640" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata3564">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs1648">
+  <clipPath id="clipPath3037" clipPathUnits="userSpaceOnUse">
+   <rect id="rect3039" fill-opacity="0.67" height="480" width="640" y="0" x="0"/>
+  </clipPath>
+ </defs>
+ <g id="flag" clip-path="url(#clipPath3037)">
+  <rect id="rect2996" height="480" width="640" y="0" x="0" fill="#fff"/>
+  <rect id="rect555" fill-rule="evenodd" height="480" width="477.19" y="1.5939e-7" x="92.462" stroke-width="1pt" fill="#fff"/>
+  <rect id="rect1649" fill-rule="evenodd" height="221.68" width="358" y="3.6546" x="323.07" stroke-width="1pt" fill="#db0000"/>
+  <rect id="rect1650" fill-rule="evenodd" height="254.66" width="319.87" y="225.33" x="3.2267" stroke-width="1pt" fill="#0000ab"/>
+  <path id="path205" d="m214.8 177.65-41.959-29.326-41.754 29.614 15.529-48.124-41.677-29.716 51.562-0.4143 15.993-47.978 16.335 47.867 51.562 0.06322-41.463 29.996 15.872 48.017z" fill-rule="evenodd" stroke-width=".11287" fill="#0000ab"/>
+  <path id="path1660" d="m516.85 413.89-42.354-27.744-42.146 28.017 15.675-45.529-42.069-28.114 52.047-0.39198 16.143-45.391 16.489 45.286 52.047 0.0598-41.853 28.379 16.021 45.428z" fill-rule="evenodd" stroke-width=".11287" fill="#d80000"/>
+ </g>
 </svg>

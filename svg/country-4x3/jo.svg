@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
 <!-- /Creative Commons Public Domain -->
-
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -25,118 +23,27 @@ Guinea, Honduras, Israel, Jamaica, Jordan, and Romania Flags</dc:title>
 </License>
 </rdf:RDF>
 -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1"
-   x="0.00000000"
-   y="0.00000000"
-   width="640"
-   height="480"
-   id="svg548"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="jo.svg">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="746"
-     id="namedview4627"
-     showgrid="false"
-     inkscape:zoom="0.5177305"
-     inkscape:cx="493.5"
-     inkscape:cy="270.89384"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg548" />
-  <metadata
-     id="metadata4629">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs550">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath5782">
-      <rect
-         id="rect5784"
-         height="493.50003"
-         x="113.56469"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         width="493.50003"
-         y="-1.6819484e-05" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3191">
-      <rect
-         id="rect3193"
-         height="512"
-         x="-117.82192"
-         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
-         width="682.66669"
-         y="1.6180666e-05" />
-    </clipPath>
-  </defs>
-  <g
-     transform="matrix(0.93750001,0,0,0.93750001,110.45805,-1.5169375e-5)"
-     id="flag"
-     clip-path="url(#clipPath3191)"
-     inkscape:label="#g3156">
-    <g
-       transform="matrix(24.380952,0,0,24.380952,-117.82192,1.745e-5)"
-       style="font-size:12px"
-       id="g558">
-      <rect
-         width="42"
-         height="7"
-         x="0"
-         y="0"
-         style="fill-rule:evenodd;stroke-width:1pt"
-         id="rect551" />
-      <rect
-         width="42"
-         height="7"
-         x="0"
-         y="7"
-         style="fill:#ffffff;fill-rule:evenodd;stroke-width:1pt"
-         id="rect552" />
-      <rect
-         width="42"
-         height="7"
-         x="0"
-         y="14"
-         style="fill:#009900;fill-rule:evenodd;stroke-width:1pt"
-         id="rect553" />
-      <path
-         inkscape:connector-curvature="0"
-         d="M 0,21 21,10.5 0,0 0,21 z"
-         style="fill:#ff0000;fill-rule:evenodd;stroke-width:1pt"
-         id="path554" />
-      <polygon
-         points="5.83853,11.8515 6.07081,10.8338 5.02697,10.8338 5.96744,10.3809 5.31661,9.56476 6.25708,10.0177 6.48936,9 6.48936,9 6.72163,10.0177 7.6621,9.56476 7.01128,10.3809 7.95175,10.8338 6.90791,10.8338 7.14018,11.8515 6.48936,11.0353 "
-         style="fill:#ffffff;fill-rule:evenodd;stroke-width:1pt"
-         id="polygon557" />
-    </g>
+<svg id="svg548" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="480" width="640" version="1" y="0" x="0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata4629">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs550">
+  <clipPath id="clipPath3191" clipPathUnits="userSpaceOnUse">
+   <rect id="rect3193" fill-opacity="0.67" height="512" width="682.67" y=".000016181" x="-117.82"/>
+  </clipPath>
+ </defs>
+ <g id="flag" clip-path="url(#clipPath3191)" transform="matrix(.93750 0 0 .93750 110.46 -.000015169)">
+  <g id="g558" fill-rule="evenodd" stroke-width="1pt" transform="matrix(24.381 0 0 24.381 -117.82 .00001745)">
+   <rect id="rect551" height="7" width="42" y="0" x="0"/>
+   <rect id="rect552" height="7" width="42" y="7" x="0" fill="#fff"/>
+   <rect id="rect553" height="7" width="42" y="14" x="0" fill="#090"/>
+   <path id="path554" d="m0 21 21-10.5-21-10.5v21z" fill="#f00"/>
+   <polygon id="polygon557" points="5.8385 11.852 6.0708 10.834 5.027 10.834 5.9674 10.381 5.3166 9.5648 6.2571 10.018 6.4894 9 6.4894 9 6.7216 10.018 7.6621 9.5648 7.0113 10.381 7.9518 10.834 6.9079 10.834 7.1402 11.852 6.4894 11.035" fill="#fff"/>
   </g>
+ </g>
 </svg>
