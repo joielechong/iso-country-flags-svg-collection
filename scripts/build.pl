@@ -52,6 +52,8 @@ my $imgSvg; # rel. image path to svg file
 my $imgFore; my $imgFlag; my $imgBack; # images for template command
 my $mask; # [D+D+DxD] mask spec for template command
 
+my $zoom; # for rsvg2png
+
 # for --cmd example xplanet
 my $json; my $lang;
 
@@ -68,11 +70,12 @@ GetOptions(
     "flag=s" => \$imgFlag,
     "mask=s" => \$mask,
     "back=s" => \$imgBack,
+    "zoom=f" => \$zoom,
     "json=s" => \$json,
     "lang=s" => \$lang,
     );
 
-my $cmds = "help|svg2png|svg2svg|example|db";
+my $cmds = "help|svg2png|svg2svg|rsvg2png|example|db";
 my $stys = "none|flat|simple|fancy|glossy";
 
 sub u {
@@ -615,10 +618,10 @@ if ($cmd eq "svg2svg") {
     writeFile($out."/".$imgSvg, $doc->toString());
 }
 
-if ($cmd eq "svg2png") {
+if (($cmd eq "svg2png") || ($cmd eq "rsvg2png")) {
     if (!$dirSvg){u("missing --svgs [dir], eg.: svg/country-squared.")}
     if (!-d $dirSvg){u("--svgs \"".$dirSvg."\" does not exist.")}
-    
+
     if (!$out)   {u("missing --out [dir], eg.: build.")}
     if (!-d $out){u("--out dir \"".$out."\" does not exist.")}
 
@@ -630,7 +633,7 @@ if ($cmd eq "svg2png") {
     my @rs = ();
     foreach my $r (split (",", $res)) {
         my ($w, $h) = ($r =~ m /(\d+)x(\d+)/);
-        
+
         if ($w eq 0) {u("invalid res: \"".$r."\", width  must be > 0.")}
         if ($h eq 0) {u("invalid res: \"".$r."\", height must be > 0.")}
         if (!$w or !$h) {
@@ -644,30 +647,35 @@ if ($cmd eq "svg2png") {
         foreach my $r (@rs) {
             my %dim = %{$r}; my $rx = $dim{w}; my $ry = $dim{h};
             my $o = $s; $o =~ s/.svg$/.png/;
-            
+
             my ($name, $path, $suffix) = fileparse($o, (".png"));
-            
+
             # keep things simple, make only 2 sub-dirs:
             # path style is => build/png-dir/res-DxD, eg.:
             #                  build/png-country-4x2/res-1280x960
             $path =~ s#/#-#g; 
             $path =~ s#-$##g;
             $path =~ s#^svg#png#g;
-            
+
             # case for path starting with "build-svg-" => "png-"
             $path =~ s#^build-svg-#png-#g;
-            
+
             my $png_out = $out."/".$path."/res-".$rx."x".$ry."/".$name.$suffix;
-            my $cmd = svg2png($s, $png_out, $rx, $ry);
-            
+            my $actual_cmd;
+            if ($cmd eq "rsvg2png") {
+                $actual_cmd = rsvg2png($s, $png_out, $rx, $ry, $zoom);
+            } else {
+                $actual_cmd = svg2png($s, $png_out, $rx, $ry);
+            }
+
             my ($n, $p, $s) = fileparse($png_out, (".png"));
             if (! -d $p) {
                 print STDERR " mkdir " . $p . "\n";
                 mkpath($p);
             }
-            
-#	    print STDERR " " . $cmd . "\n";
-            cmd_exec($cmd);
+
+#           print STDERR " " . $actual_cmd . "\n";
+            cmd_exec($actual_cmd);
         }
     }
 }
@@ -813,6 +821,16 @@ sub svg2png {
 		return $cmd;
     } else {
         return undef;
+    }
+}
+
+sub rsvg2png {
+    my ($in, $o, $w, $h, $zoom) = @_;
+
+    if (defined $zoom) {
+        return "rsvg-convert -o ".$o." -w ".$w." -h ".$h." -z ".$zoom." ".$in;
+    } else {
+        return "rsvg-convert -o ".$o." -w ".$w." -h ".$h." ".$in;
     }
 }
 
