@@ -160,6 +160,9 @@ build/svg-country-4x2-none/%.svg: svg/country-4x3/%.svg
 png-country-4x2: $(SVGS_42ALL)
 	$(Q)scripts/png-country-4x2.sh
 
+png-country-320x240-fancy: $(SVGS_42_FANCY)
+	$(Q)scripts/build.pl --cmd rsvg2png --out build --res "320x240" --svgs build/svg-country-4x2-fancy
+
 png-country-squared: $(SVGS_11ALL)
 	$(Q)scripts/png-country-squared.sh
 
