@@ -82,7 +82,7 @@ PNGS_11_FLAT   = ${SVGS_11:%.svg=build/png-country-squared-flat/%.png}
 PNGS_11_GLOSSY = ${SVGS_11:%.svg=build/png-country-squared-glossy/%.png}
 PNGS_11_NONE = ${SVGS_11:%.svg=build/png-country-squared-none/%.png}
 
-SVGS_43 = $(shell cd svg/country-4x3; ls -1 ??.svg)
+SVGS_43 = $(shell cd svg/country-4x3; ls -1 *.svg)
 
 SVGS_42_FANCY  = ${SVGS_43:%.svg=build/svg-country-4x2-fancy/%.svg}
 SVGS_42_SIMPLE = ${SVGS_43:%.svg=build/svg-country-4x2-simple/%.svg}
@@ -160,6 +160,9 @@ build/svg-country-4x2-none/%.svg: svg/country-4x3/%.svg
 png-country-4x2: $(SVGS_42ALL)
 	$(Q)scripts/png-country-4x2.sh
 
+png-country-320x240-fancy: $(SVGS_42_FANCY)
+	$(Q)scripts/build.pl --cmd rsvg2png --out build --res "320x240" --svgs build/svg-country-4x2-fancy
+
 png-country-squared: $(SVGS_11ALL)
 	$(Q)scripts/png-country-squared.sh
 
@@ -178,7 +181,7 @@ wiki:
 distclean: clean
 
 clean:
-	$(Q)/bin/rm -rvf build/svg-*/??.svg
+	$(Q)/bin/rm -rvf build/svg-*/*.svg
 	$(Q)/bin/rm -rvf build/png-*/res-*
 	$(Q)/bin/rm -rvf build/png-*/sheets
 	$(Q)/bin/rm -rvf build/xplanet
