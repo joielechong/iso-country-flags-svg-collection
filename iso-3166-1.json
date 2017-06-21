@@ -6183,6 +6183,105 @@
          "wm_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Ethiopia.svg",
          "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
       },
+      
+      
+      
+      
+      "EU" : {
+         "Capital" : {
+            "DLST" : null,
+            "Flg" : 2,
+            "GeoPt" : [
+               50.51,
+               4.21
+            ],
+            "Name" : "Brussels",
+            "TD" : 3
+         },
+         "CountryCodes" : {
+            "fips" : "ET",
+            "iso2" : "ET",
+            "iso3" : "ETH",
+            "isoN" : 231,
+            "tld" : "et"
+         },
+         "GeoPt" : [
+            8,
+            38
+         ],
+         "GeoRectangle" : {
+            "East" : 47.9861831665,
+            "North" : 14.8937511444,
+            "South" : 3.40242171288,
+            "West" : 32.9999351501
+         },
+         "Name" : "Ethiopia",
+         "Names" : {
+            "af" : "Ethiopië",
+            "ar" : "أثيوبيا",
+            "be" : "Эфіопія",
+            "bg" : "Етиопия",
+            "ca" : "Etiòpia",
+            "cs" : "Etiopie",
+            "cy" : "Ethiopia",
+            "da" : "Etiopien",
+            "de" : "Äthiopien",
+            "el" : "Αιθιοπία",
+            "es" : "Etiopía",
+            "et" : "Etioopia",
+            "fa" : "اتیوپی",
+            "fi" : "Etiopia",
+            "fr" : "L'Ethiopie",
+            "ga" : "An Aetóip",
+            "gl" : "Etiopía",
+            "hi" : "इथियोपिया",
+            "hr" : "Etiopija",
+            "ht" : "Etyopi",
+            "hu" : "Etiópia",
+            "id" : "Etiopia",
+            "is" : "Eþíópía",
+            "it" : "Etiopia",
+            "iw" : "אתיופיה",
+            "ja" : "エチオピア",
+            "ko" : "에티오피아",
+            "lt" : "Etiopija",
+            "lv" : "Etiopija",
+            "mk" : "Етиопија",
+            "ms" : "Ethiopia",
+            "mt" : "Etijopja",
+            "nl" : "Ethiopië",
+            "no" : "Etiopia",
+            "pl" : "Etiopia",
+            "pt" : "Etiópia",
+            "ro" : "Etiopia",
+            "ru" : "Эфиопия",
+            "sk" : "Etiópia",
+            "sl" : "Etiopija",
+            "sq" : "Etiopi",
+            "sr" : "Етиопија",
+            "sv" : "Etiopien",
+            "sw" : "Ethiopia",
+            "th" : "สาธารณรัฐเอธิโอเปีย",
+            "tl" : "Etyopya",
+            "tr" : "Etiyopya",
+            "uk" : "Ефіопія",
+            "vi" : "Ethiopia",
+            "yi" : "עטיאפיע",
+            "zh" : "埃塞俄比亚",
+            "zh-TW" : "埃塞俄比亞"
+         },
+         "Notes" : null,
+         "SeqID" : 67,
+         "TelPref" : "251",
+         "Year" : "1974",
+         "wm_commons" : "https://commons.wikimedia.org/wiki/File:Flag_of_Ethiopia.svg",
+         "wp_en" : "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
+      },
+      
+      
+      
+      
+      
       "FI" : {
          "Capital" : {
             "DLST" : 1,
