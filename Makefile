@@ -68,7 +68,7 @@ SVG2SVG_43 = scripts/build.pl --cmd svg2svg --res 1280x960 --back back.png --for
 
 SVG2SVG_430 = scripts/build.pl --cmd svg2svg --res 1280x960 --back back.png --fore fore.png --svgs svg/country-4x3 --mask 0x0+0x0+1280x960 --geo 0x0+1280x960 --geoscale 2
 
-SVGS_11 = $(shell cd svg/country-squared; ls -1 ??.svg)
+SVGS_11 = $(shell cd svg/country-squared; ls -1 *.svg)
 
 SVGS_11_FANCY  = ${SVGS_11:%.svg=build/svg-country-squared-fancy/%.svg}
 SVGS_11_SIMPLE = ${SVGS_11:%.svg=build/svg-country-squared-simple/%.svg}
@@ -95,6 +95,7 @@ PNGS_42_SIMPLE = ${SVGS_43:%.svg=build/png-country-4x2-simple/%.png}
 PNGS_42_FLAT   = ${SVGS_43:%.svg=build/png-country-4x2-flat/%.png}
 PNGS_42_GLOSSY = ${SVGS_43:%.svg=build/png-country-4x2-glossy/%.png}
 PNGS_42_NONE = ${SVGS_43:%.svg=build/png-country-4x2-none/%.png}
+
 
 SVGS_11ALL=$(SVGS_11_FANCY) $(SVGS_11_SIMPLE) $(SVGS_11_FLAT) $(SVGS_11_GLOSSY) $(SVGS_11_NONE)
 SVGS_42ALL=$(SVGS_42_FANCY) $(SVGS_42_SIMPLE) $(SVGS_42_FLAT) $(SVGS_42_GLOSSY) $(SVGS_42_NONE) 
@@ -165,6 +166,15 @@ png-country-320x240-fancy: $(SVGS_42_FANCY)
 
 png-country-squared: $(SVGS_11ALL)
 	$(Q)scripts/png-country-squared.sh
+
+png-country-20x15-flat: $(SVGS_42_FLAT)
+	$(Q)scripts/build.pl --cmd rsvg2png --out build --res "20x15" --svgs build/svg-country-4x2-flat
+
+png-country-72x72-flat: $(SVGS_11_FLAT)
+	$(Q)scripts/build.pl --cmd rsvg2png --out build --res "72x72" --svgs build/svg-country-squared-flat
+
+png-country-48x48-flat: $(SVGS_11_FLAT)
+	$(Q)scripts/build.pl --cmd rsvg2png --out build --res "48x48" --svgs build/svg-country-squared-flat
 
 sheets:
 	$(Q)scripts/sheets.sh
