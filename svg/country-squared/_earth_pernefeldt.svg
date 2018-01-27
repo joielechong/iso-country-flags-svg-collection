@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+
+<!-- /Creative Commons Public Domain -->
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+    <dc:title>New Zealand, Australia, United Kingdom, United States, 
+Bosnia and Herzegovina, Azerbaijan, Armenia, Bahamas, Belgium, Benin, 
+Bulgaria, Estonia, Finland, Gabon, Gambia, Germany, Greece, Greenland, 
+Guinea, Honduras, Israel, Jamaica, Jordan, and Romania Flags</dc:title>
+    <dc:rights><Agent>
+       <dc:title>Daniel McRae</dc:title>
+    </Agent></dc:rights>
+    <license rdf:resource="http://web.resource.org/cc/PublicDomain" />
+</Work>
+
+<License rdf:about="http://web.resource.org/cc/PublicDomain">
+    <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+    <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+    <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+</License>
+</rdf:RDF>
+-->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg153"
+   sodipodi:version="0.29win"
+   width="480"
+   height="480"
+   sodipodi:docname="_earth_pernefeldt.svg"
+   version="1.1"
+   inkscape:version="0.91 r13725">
+  <sodipodi:namedview
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.79569286"
+     inkscape:cx="805.94408"
+     inkscape:cy="406.22005"
+     inkscape:window-width="3775"
+     inkscape:window-height="2136"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg153" />
+  <metadata
+     id="metadata3151">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <desc
+     id="desc3066">
+    The United States of America flag, produced by Daniel McRae
+  </desc>
+  <defs
+     id="defs155">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6304">
+      <rect
+         id="rect6306"
+         height="130"
+         x="0"
+         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
+         width="130"
+         y="-1.2695313e-06" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4293">
+      <rect
+         id="rect4295"
+         height="512"
+         x="0"
+         style="fill:#000000;fill-opacity:0.67000002;stroke:none"
+         width="682.66669"
+         y="5.2306668e-06" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4164">
+      <rect
+         style="opacity:0.744;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.14086294;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4166"
+         width="995.30212"
+         height="557.94745"
+         x="-160.83763"
+         y="59.011711" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4168">
+      <rect
+         style="opacity:0.744;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.14086294;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4170"
+         width="995.30212"
+         height="557.94745"
+         x="-160.83763"
+         y="59.011711" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4172">
+      <rect
+         style="opacity:0.744;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.14086294;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4174"
+         width="995.30212"
+         height="557.94745"
+         x="-160.83763"
+         y="59.011711" />
+    </clipPath>
+    <clipPath
+       id="clip_white">
+      <path
+         id="path4629"
+         d="m 0,0 -11,-5.5 0,11 11,-5.5 0.2,-11 10,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clip_color">
+      <path
+         id="path4632"
+         d="m 0,0 -11,-11 0,22 11,-11 0,-11 11,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <circle
+       r="145.6633"
+       id="rb"
+       cx="0"
+       cy="0"
+       style="fill:none;stroke:#013ba6;stroke-width:39.03036118" />
+    <circle
+       r="145.6633"
+       id="rw"
+       cx="0"
+       cy="0"
+       style="fill:none;stroke:#ffffff;stroke-width:17.34682655" />
+    <clipPath
+       id="o">
+      <path
+         id="path4724"
+         d="m 0,-200 0,400 200,0 0,-400 z m -200,0 0,400 100,0 0,-400 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="h">
+      <path
+         id="path4727"
+         d="m -200,-200 400,0 0,250 -400,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="i1">
+      <path
+         id="path4730"
+         d="m 0,0 -200,-150 0,300 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="i2">
+      <path
+         id="path4733"
+         d="m 0,0 -200,-200 0,400 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="l1">
+      <path
+         id="path4736"
+         d="m 0,0 -50,-200 -150,0 0,350 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="l2">
+      <path
+         id="path4739"
+         d="m 0,0 0,-200 -200,0 0,400 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <rect
+     style="fill:#013ba6"
+     width="481.64743"
+     height="480"
+     x="2e-06"
+     y="0"
+     id="rect4741" />
+  <g
+     id="ro"
+     transform="matrix(0.53333333,0,0,0.6,317.25404,243.7703)">
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       xlink:href="#rb"
+       clip-path="url(#o)"
+       id="use4744" />
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       xlink:href="#rw"
+       id="use4746" />
+  </g>
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     xlink:href="#ro"
+     transform="matrix(0.5,-0.97427858,0.76980035,0.5,-67.870985,355.2901)"
+     id="use4748" />
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     xlink:href="#ro"
+     transform="matrix(0.5,0.97427858,-0.76980035,0.5,307.43793,-111.51981)"
+     id="use4750" />
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     xlink:href="#ro"
+     transform="matrix(-0.5,0.97427858,-0.76980035,-0.5,547.00488,132.2505)"
+     id="use4752" />
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     xlink:href="#ro"
+     transform="matrix(-1,0,0,-1,479.1339,487.5406)"
+     id="use4754" />
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     xlink:href="#ro"
+     transform="matrix(-0.5,-0.97427858,0.76980035,-0.5,171.69597,599.06041)"
+     id="use4756" />
+  <g
+     id="g4758"
+     transform="matrix(0.53333333,0,0,0.6,239.56695,243.7703)">
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       xlink:href="#rb"
+       clip-path="url(#h)"
+       id="use4760" />
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       xlink:href="#rw"
+       id="use4762" />
+  </g>
+  <g
+     transform="matrix(0.53333333,0,0,0.6,317.25404,243.7703)"
+     id="g4764">
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       xlink:href="#rb"
+       clip-path="url(#i1)"
+       id="use4766" />
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       xlink:href="#rw"
+       clip-path="url(#i2)"
+       id="use4768" />
+  </g>
+  <g
+     id="rl"
+     transform="matrix(-0.26666667,0.51961524,-0.46188021,-0.3,200.72341,319.45917)">
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       xlink:href="#rb"
+       clip-path="url(#l1)"
+       id="use4771" />
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       xlink:href="#rw"
+       clip-path="url(#l2)"
+       id="use4773" />
+  </g>
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     xlink:href="#rl"
+     transform="matrix(-1,0,0,1,479.1339,7.2804148e-7)"
+     id="use4775" />
+</svg>
